@@ -1,0 +1,2085 @@
+/* ==========================================================================
+   POWERBOX TEKNOLOJİ - MODERN LIGHT THEME & SALES FUNNEL STYLESHEET
+   ========================================================================== */
+
+:root {
+  /* Crisp Light Theme Palette */
+  --bg-main: #f8fafc;
+  --bg-white: #ffffff;
+  --bg-soft: #f1f5f9;
+  --bg-subtle: #e2e8f0;
+
+  /* Brand Accents */
+  --primary: #0284c7;
+  --primary-hover: #0369a1;
+  --primary-soft: #e0f2fe;
+  --primary-light: #f0f9ff;
+
+  --whatsapp: #25d366;
+  --whatsapp-hover: #1ebd5a;
+  --whatsapp-soft: #dcfce7;
+  --whatsapp-dark: #15803d;
+
+  --accent-amber: #d97706;
+  --amber-soft: #fef3c7;
+  --accent-red: #dc2626;
+  --red-soft: #fee2e2;
+  --accent-purple: #9333ea;
+  --purple-soft: #f3e8ff;
+
+  /* Typography Colors */
+  --text-dark: #0f172a;
+  --text-body: #334155;
+  --text-muted: #64748b;
+  --text-light: #94a3b8;
+
+  /* Borders & Shadows */
+  --border-light: #e2e8f0;
+  --border-card: #cbd5e1;
+  
+  --shadow-sm: 0 1px 3px 0 rgba(0, 0, 0, 0.06), 0 1px 2px -1px rgba(0, 0, 0, 0.06);
+  --shadow-md: 0 4px 12px -2px rgba(15, 23, 42, 0.08), 0 2px 6px -2px rgba(15, 23, 42, 0.04);
+  --shadow-lg: 0 12px 28px -4px rgba(15, 23, 42, 0.12), 0 4px 10px -2px rgba(15, 23, 42, 0.06);
+  --shadow-wa: 0 6px 20px rgba(37, 211, 102, 0.35);
+
+  /* Fonts */
+  --font-main: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --font-display: 'Space Grotesk', system-ui, sans-serif;
+
+  /* Radii */
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --radius-full: 9999px;
+
+  --transition: all 0.22s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Base Reset */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: var(--font-main);
+  background-color: var(--bg-main);
+  color: var(--text-body);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  overflow-x: hidden;
+  position: relative;
+  min-height: 100vh;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+button, input, select {
+  font-family: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* ==========================================================================
+   BUTTONS & BADGES
+   ========================================================================== */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 24px;
+  border-radius: var(--radius-full);
+  font-size: 0.95rem;
+  font-weight: 700;
+  text-align: center;
+  transition: var(--transition);
+  white-space: nowrap;
+}
+
+.btn-sm {
+  padding: 8px 16px;
+  font-size: 0.85rem;
+}
+
+.btn-lg {
+  padding: 14px 28px;
+  font-size: 1.05rem;
+}
+
+.btn-block {
+  width: 100%;
+  display: flex;
+}
+
+.btn-primary {
+  background: var(--primary);
+  color: #ffffff;
+  box-shadow: 0 4px 14px rgba(2, 132, 199, 0.3);
+}
+
+.btn-primary:hover {
+  background: var(--primary-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(2, 132, 199, 0.4);
+}
+
+.btn-whatsapp {
+  background: var(--whatsapp);
+  color: #ffffff;
+  box-shadow: var(--shadow-wa);
+}
+
+.btn-whatsapp:hover {
+  background: var(--whatsapp-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(37, 211, 102, 0.5);
+}
+
+.btn-purple {
+  background: var(--accent-purple);
+  color: #ffffff;
+  box-shadow: 0 4px 14px rgba(147, 51, 234, 0.3);
+}
+
+.btn-purple:hover {
+  background: #7e22ce;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(147, 51, 234, 0.4);
+}
+
+.btn-outline-primary {
+  background: #ffffff;
+  border: 1.5px solid var(--primary);
+  color: var(--primary);
+}
+
+.btn-outline-primary:hover {
+  background: var(--primary-light);
+  transform: translateY(-2px);
+}
+
+.btn-outline-wa {
+  background: #ffffff;
+  border: 1.5px solid var(--whatsapp);
+  color: var(--whatsapp-dark);
+}
+
+.btn-outline-wa:hover {
+  background: var(--whatsapp-soft);
+}
+
+.shadow-lift:hover {
+  transform: translateY(-2px);
+}
+
+.section-badge {
+  display: inline-block;
+  background: var(--primary-soft);
+  color: var(--primary);
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+  padding: 5px 14px;
+  border-radius: var(--radius-full);
+  margin-bottom: 12px;
+}
+
+.badge-purple-light {
+  background: var(--purple-soft);
+  color: var(--accent-purple);
+}
+
+.badge-amber-light {
+  background: var(--amber-soft);
+  color: var(--accent-amber);
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient-text-purple {
+  background: linear-gradient(135deg, #9333ea 0%, #c026d3 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient-text-amber {
+  background: linear-gradient(135deg, #d97706 0%, #ea580c 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* ==========================================================================
+   TOP ANNOUNCEMENT BAR
+   ========================================================================== */
+
+.announcement-bar {
+  background: #0f172a;
+  color: #f8fafc;
+  font-size: 0.82rem;
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.announcement-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.announcement-left {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.live-pulse {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #22c55e;
+  box-shadow: 0 0 8px #22c55e;
+  animation: pulseLight 1.8s infinite;
+}
+
+@keyframes pulseLight {
+  0% { transform: scale(0.9); opacity: 0.8; }
+  50% { transform: scale(1.25); opacity: 1; }
+  100% { transform: scale(0.9); opacity: 0.8; }
+}
+
+.announcement-right {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.top-link, .top-link-wa {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-weight: 700;
+  color: #38bdf8;
+}
+
+.top-link-wa {
+  color: #4ade80;
+}
+
+.top-link:hover, .top-link-wa:hover {
+  text-decoration: underline;
+}
+
+/* ==========================================================================
+   HEADER & NAVBAR
+   ========================================================================== */
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(255, 255, 255, 0.94);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border-light);
+  padding: 12px 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brand-logo img {
+  height: 40px;
+  width: auto;
+}
+
+.desktop-nav {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+.nav-link {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-body);
+  padding: 6px 0;
+  position: relative;
+}
+
+.nav-link:hover {
+  color: var(--primary);
+}
+
+.nav-link.text-highlight {
+  color: var(--primary);
+  font-weight: 700;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.mobile-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 32px;
+  height: 24px;
+  padding: 0;
+}
+
+.mobile-toggle .bar {
+  width: 100%;
+  height: 2.5px;
+  background: var(--text-dark);
+  border-radius: 4px;
+  transition: var(--transition);
+}
+
+/* Mobile Drawer Nav */
+.mobile-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background: #ffffff;
+  border-bottom: 1px solid var(--border-light);
+  padding: 20px;
+  box-shadow: var(--shadow-lg);
+}
+
+.mobile-menu.active {
+  display: block;
+  animation: slideDownMenu 0.25s ease;
+}
+
+@keyframes slideDownMenu {
+  from { opacity: 0; transform: translateY(-8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.mobile-nav-link {
+  display: block;
+  padding: 12px 14px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-dark);
+  border-bottom: 1px solid var(--bg-soft);
+  border-radius: var(--radius-sm);
+}
+
+.mobile-nav-link:hover {
+  background: var(--bg-soft);
+  color: var(--primary);
+}
+
+.mobile-nav-link.text-primary-link {
+  color: var(--primary);
+  font-weight: 700;
+}
+
+.mobile-nav-link.text-amber {
+  color: var(--accent-amber);
+  font-weight: 700;
+}
+
+.mobile-menu-cta {
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* ==========================================================================
+   HERO HOOK SECTION
+   ========================================================================== */
+
+.hero-section {
+  padding: 60px 0 50px;
+  background: linear-gradient(180deg, #ffffff 0%, var(--bg-main) 100%);
+  border-bottom: 1px solid var(--border-light);
+}
+
+.hero-container {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  align-items: center;
+  gap: 50px;
+}
+
+.social-proof-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #fffbeb;
+  border: 1px solid #fde68a;
+  padding: 6px 14px;
+  border-radius: var(--radius-full);
+  font-size: 0.82rem;
+  color: #92400e;
+  margin-bottom: 20px;
+}
+
+.stars {
+  color: #f59e0b;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+}
+
+.hero-title {
+  font-family: var(--font-display);
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 1.15;
+  color: var(--text-dark);
+  letter-spacing: -0.5px;
+  margin-bottom: 18px;
+}
+
+.hero-desc {
+  font-size: 1.1rem;
+  color: var(--text-body);
+  line-height: 1.7;
+  margin-bottom: 30px;
+  max-width: 580px;
+}
+
+.hero-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-bottom: 35px;
+}
+
+.hero-trust-row {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding-top: 24px;
+  border-top: 1px solid var(--border-light);
+}
+
+.trust-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.icon-circle {
+  font-size: 1.3rem;
+}
+
+.trust-item strong {
+  display: block;
+  font-size: 0.9rem;
+  color: var(--text-dark);
+  line-height: 1.2;
+}
+
+.trust-item small {
+  font-size: 0.76rem;
+  color: var(--text-muted);
+}
+
+/* Featured Device Card in Hero */
+.hero-visual {
+  display: flex;
+  justify-content: center;
+}
+
+.hero-card-featured {
+  background: #ffffff;
+  border: 1.5px solid #bfdbfe;
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  box-shadow: var(--shadow-lg);
+  width: 100%;
+  max-width: 440px;
+  position: relative;
+  transition: var(--transition);
+}
+
+.hero-card-featured:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 35px -5px rgba(2, 132, 199, 0.15);
+}
+
+.featured-tag {
+  display: inline-block;
+  background: #fee2e2;
+  color: #b91c1c;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  padding: 4px 12px;
+  border-radius: var(--radius-full);
+  margin-bottom: 14px;
+}
+
+.featured-img-wrap {
+  background: var(--bg-soft);
+  border-radius: var(--radius-md);
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.hero-device-img {
+  max-height: 240px;
+  width: auto;
+}
+
+.featured-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.featured-header h3 {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--text-dark);
+}
+
+.status-online {
+  background: #dcfce7;
+  color: #15803d;
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: var(--radius-full);
+}
+
+.featured-details p {
+  font-size: 0.88rem;
+  color: var(--text-body);
+  line-height: 1.5;
+  margin-bottom: 14px;
+}
+
+.featured-bullets {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 18px;
+}
+
+.featured-bullets span {
+  font-size: 0.84rem;
+  font-weight: 600;
+  color: #1e293b;
+}
+
+/* ==========================================================================
+   FUNNEL STEP 2: SOLUTION FINDER
+   ========================================================================== */
+
+.solution-finder-section {
+  padding: 70px 0;
+  background: #ffffff;
+}
+
+.section-title-wrap {
+  max-width: 680px;
+  margin: 0 auto 40px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.section-heading {
+  font-family: var(--font-display);
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: var(--text-dark);
+  line-height: 1.25;
+  margin-bottom: 12px;
+}
+
+.section-subtext {
+  font-size: 1rem;
+  color: var(--text-muted);
+}
+
+.solution-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 26px;
+}
+
+.solution-card {
+  background: var(--bg-main);
+  border: 1.5px solid var(--border-light);
+  border-radius: var(--radius-lg);
+  padding: 30px 24px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  transition: var(--transition);
+}
+
+.solution-card:hover {
+  border-color: var(--primary);
+  background: #ffffff;
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+
+.featured-solution {
+  border-color: #fca5a5;
+  background: #fffcfc;
+}
+
+.solution-pill-top {
+  position: absolute;
+  top: -12px;
+  right: 20px;
+  background: var(--accent-red);
+  color: #ffffff;
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+  padding: 3px 10px;
+  border-radius: var(--radius-full);
+}
+
+.solution-icon-box {
+  width: 54px;
+  height: 54px;
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.bg-blue { background: #e0f2fe; }
+.bg-red { background: #fee2e2; }
+.bg-purple { background: #f3e8ff; }
+
+.solution-card h3 {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--text-dark);
+  margin-bottom: 10px;
+}
+
+.solution-card p {
+  font-size: 0.9rem;
+  color: var(--text-body);
+  line-height: 1.55;
+  margin-bottom: 18px;
+}
+
+.solution-perks {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 24px;
+  flex-grow: 1;
+}
+
+.solution-perks li {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #1e293b;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.solution-perks li::before {
+  content: '✓';
+  color: var(--whatsapp-dark);
+  font-weight: 900;
+}
+
+/* ==========================================================================
+   FUNNEL STEP 3: PRODUCTS CATALOG (Tık Tık Ürünler)
+   ========================================================================== */
+
+.products-section {
+  padding: 80px 0;
+  background: var(--bg-main);
+  border-top: 1px solid var(--border-light);
+}
+
+.filter-tab-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+  overflow-x: auto;
+  padding-bottom: 6px;
+}
+
+.filter-tabs {
+  display: inline-flex;
+  background: #ffffff;
+  padding: 6px;
+  border-radius: var(--radius-full);
+  border: 1px solid var(--border-light);
+  box-shadow: var(--shadow-sm);
+  gap: 6px;
+}
+
+.filter-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  border-radius: var(--radius-full);
+  color: var(--text-body);
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: var(--transition);
+  white-space: nowrap;
+}
+
+.filter-btn:hover {
+  background: var(--bg-soft);
+  color: var(--text-dark);
+}
+
+.filter-btn.active {
+  background: var(--primary);
+  color: #ffffff;
+  box-shadow: 0 4px 12px rgba(2, 132, 199, 0.3);
+}
+
+.badge-count {
+  background: #f1f5f9;
+  color: #0f172a;
+  font-size: 0.72rem;
+  font-weight: 800;
+  padding: 2px 7px;
+  border-radius: var(--radius-full);
+}
+
+.filter-btn.active .badge-count {
+  background: rgba(255, 255, 255, 0.25);
+  color: #ffffff;
+}
+
+/* Products Grid */
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+  gap: 26px;
+}
+
+.product-card {
+  background: #ffffff;
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-lg);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  transition: var(--transition);
+  box-shadow: var(--shadow-sm);
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+  border-color: #93c5fd;
+}
+
+.card-badge {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  padding: 3px 10px;
+  border-radius: var(--radius-full);
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  z-index: 2;
+}
+
+.badge-blue { background: #e0f2fe; color: #0369a1; }
+.badge-red { background: #fee2e2; color: #b91c1c; }
+.badge-amber { background: #fef3c7; color: #b45309; }
+.badge-green { background: #dcfce7; color: #15803d; }
+.badge-purple { background: #f3e8ff; color: #7e22ce; }
+
+.card-img-box {
+  width: 100%;
+  height: 200px;
+  background: var(--bg-soft);
+  border-radius: var(--radius-md);
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+  overflow: hidden;
+}
+
+.card-img-box img {
+  max-height: 100%;
+  width: auto;
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover .card-img-box img {
+  transform: scale(1.05);
+}
+
+.card-content {
+  flex-grow: 1;
+}
+
+.card-cat-label {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--primary);
+  letter-spacing: 0.5px;
+}
+
+.card-product-title {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: var(--text-dark);
+  margin: 4px 0 8px;
+  line-height: 1.3;
+}
+
+.card-desc {
+  font-size: 0.86rem;
+  color: var(--text-body);
+  line-height: 1.5;
+  margin-bottom: 12px;
+}
+
+.card-perks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-bottom: 16px;
+}
+
+.card-perks span {
+  background: var(--bg-soft);
+  color: #334155;
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 3px 8px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border-light);
+}
+
+.card-action-bar {
+  display: grid;
+  grid-template-columns: 1fr 1.35fr;
+  gap: 8px;
+  padding-top: 14px;
+  border-top: 1px solid var(--border-light);
+}
+
+.btn-outline-card {
+  background: #ffffff;
+  border: 1.5px solid var(--border-card);
+  color: var(--text-dark);
+  font-weight: 700;
+  font-size: 0.85rem;
+  padding: 9px 12px;
+  border-radius: var(--radius-sm);
+}
+
+.btn-outline-card:hover {
+  background: var(--bg-soft);
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+.btn-card-wa {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  background: var(--whatsapp);
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 0.85rem;
+  padding: 9px 12px;
+  border-radius: var(--radius-sm);
+}
+
+.btn-card-wa:hover {
+  background: var(--whatsapp-hover);
+  box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4);
+}
+
+/* ==========================================================================
+   FUNNEL STEP 4: COMPARISON SECTION (Neden PX Serisi?)
+   ========================================================================== */
+
+.comparison-section {
+  padding: 80px 0;
+  background: #ffffff;
+  border-top: 1px solid var(--border-light);
+}
+
+.compare-table-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.compare-col {
+  border-radius: var(--radius-lg);
+  padding: 36px 30px;
+  box-shadow: var(--shadow-md);
+}
+
+.col-bad {
+  background: #fef2f2;
+  border: 1.5px solid #fecaca;
+}
+
+.col-good {
+  background: #f0fdf4;
+  border: 2px solid #86efac;
+  box-shadow: 0 10px 30px rgba(22, 163, 74, 0.12);
+}
+
+.col-header {
+  margin-bottom: 24px;
+}
+
+.col-badge {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+  padding: 3px 10px;
+  border-radius: var(--radius-full);
+  margin-bottom: 10px;
+}
+
+.header-bad .col-badge { background: #fee2e2; color: #b91c1c; }
+.badge-winner { background: #22c55e; color: #ffffff; }
+
+.col-header h3 {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: var(--text-dark);
+  margin-bottom: 4px;
+}
+
+.price-hint {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #64748b;
+}
+
+.text-green {
+  color: #15803d;
+}
+
+.col-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.col-list li {
+  font-size: 0.95rem;
+  color: #1e293b;
+  line-height: 1.5;
+}
+
+/* ==========================================================================
+   FUNNEL STEP 5: PROOF & CAMERA TEST
+   ========================================================================== */
+
+.camera-test-section {
+  padding: 80px 0;
+  background: var(--bg-main);
+  border-top: 1px solid var(--border-light);
+}
+
+.camera-card-wrap {
+  background: linear-gradient(135deg, #faf5ff 0%, #ffffff 100%);
+  border: 1.5px solid #d8b4fe;
+  border-radius: var(--radius-lg);
+  padding: 45px 40px;
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  align-items: center;
+  gap: 40px;
+  box-shadow: var(--shadow-md);
+}
+
+.camera-text-col p {
+  font-size: 0.98rem;
+  color: var(--text-body);
+  line-height: 1.6;
+  margin: 14px 0 24px;
+}
+
+.test-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-bottom: 26px;
+}
+
+.test-step-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+.step-badge {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--accent-purple);
+  color: #ffffff;
+  font-weight: 800;
+  font-size: 0.85rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.test-step-item strong {
+  display: block;
+  font-size: 0.95rem;
+  color: var(--text-dark);
+}
+
+.test-step-item p {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin: 2px 0 0;
+}
+
+.wave-visual-box {
+  background: #ffffff;
+  border: 1.5px solid #e9d5ff;
+  border-radius: var(--radius-lg);
+  padding: 30px;
+  text-align: center;
+  box-shadow: var(--shadow-md);
+}
+
+.wave-tag {
+  display: inline-block;
+  background: #f3e8ff;
+  color: #7e22ce;
+  font-size: 0.72rem;
+  font-weight: 800;
+  padding: 3px 10px;
+  border-radius: var(--radius-full);
+  margin-bottom: 16px;
+}
+
+.meter-num {
+  font-family: var(--font-display);
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: var(--accent-purple);
+  line-height: 1;
+  display: block;
+}
+
+.meter-unit {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #6b21a8;
+}
+
+.sound-wave-bars {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  height: 60px;
+  margin: 20px 0;
+}
+
+.sound-wave-bars span {
+  display: inline-block;
+  width: 5px;
+  background: linear-gradient(180deg, #9333ea, #c084fc);
+  border-radius: 4px;
+  animation: barsWave 1.2s infinite ease-in-out;
+}
+
+.sound-wave-bars span:nth-child(1) { height: 20px; animation-delay: 0.1s; }
+.sound-wave-bars span:nth-child(2) { height: 40px; animation-delay: 0.3s; }
+.sound-wave-bars span:nth-child(3) { height: 55px; animation-delay: 0.2s; }
+.sound-wave-bars span:nth-child(4) { height: 35px; animation-delay: 0.4s; }
+.sound-wave-bars span:nth-child(5) { height: 60px; animation-delay: 0.15s; }
+.sound-wave-bars span:nth-child(6) { height: 45px; animation-delay: 0.35s; }
+.sound-wave-bars span:nth-child(7) { height: 50px; animation-delay: 0.25s; }
+.sound-wave-bars span:nth-child(8) { height: 25px; animation-delay: 0.45s; }
+.sound-wave-bars span:nth-child(9) { height: 15px; animation-delay: 0.2s; }
+
+@keyframes barsWave {
+  0%, 100% { transform: scaleY(0.4); opacity: 0.6; }
+  50% { transform: scaleY(1); opacity: 1; }
+}
+
+.wave-caption {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  line-height: 1.45;
+}
+
+/* ==========================================================================
+   FUNNEL STEP 6: 1-CLICK ORDER WIZARD (Hızlı Sipariş Sihirbazı)
+   ========================================================================== */
+
+.wizard-section {
+  padding: 80px 0;
+  background: #ffffff;
+  border-top: 1px solid var(--border-light);
+}
+
+.wizard-box {
+  background: linear-gradient(180deg, #f0f9ff 0%, #ffffff 100%);
+  border: 1.5px solid #bae6fd;
+  border-radius: var(--radius-lg);
+  padding: 45px 36px;
+  box-shadow: var(--shadow-md);
+  max-width: 820px;
+  margin: 0 auto;
+}
+
+.wizard-form {
+  margin-top: 30px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-group label {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--text-dark);
+}
+
+.form-control {
+  width: 100%;
+  padding: 12px 16px;
+  border-radius: var(--radius-md);
+  border: 1.5px solid var(--border-card);
+  background: #ffffff;
+  color: var(--text-dark);
+  font-size: 0.95rem;
+  outline: none;
+  transition: var(--transition);
+}
+
+.form-control:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(2, 132, 199, 0.15);
+}
+
+.wizard-submit-wrap {
+  margin-top: 24px;
+}
+
+.wizard-note {
+  display: block;
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  margin-top: 10px;
+}
+
+/* ==========================================================================
+   FUNNEL STEP 7: WHOLESALE (Toptan Satış & Bayilik)
+   ========================================================================== */
+
+.wholesale-section {
+  padding: 80px 0;
+  background: var(--bg-main);
+  border-top: 1px solid var(--border-light);
+}
+
+.wholesale-banner {
+  background: #ffffff;
+  border: 1.5px solid #fde68a;
+  border-radius: var(--radius-lg);
+  padding: 45px 40px;
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 40px;
+  align-items: center;
+  box-shadow: var(--shadow-md);
+}
+
+.wholesale-content p {
+  font-size: 0.98rem;
+  color: var(--text-body);
+  line-height: 1.6;
+  margin: 14px 0 24px;
+}
+
+.wholesale-perks-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.perk-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.check-icon {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: #dcfce7;
+  color: #15803d;
+  font-weight: 800;
+  font-size: 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.perk-item strong {
+  display: block;
+  font-size: 0.92rem;
+  color: var(--text-dark);
+}
+
+.perk-item p {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin: 2px 0 0;
+}
+
+.wholesale-contact-card {
+  background: var(--bg-soft);
+  border: 1.5px solid #cbd5e1;
+  border-radius: var(--radius-md);
+  padding: 30px 24px;
+  text-align: center;
+}
+
+.card-top-title {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: var(--text-dark);
+  margin-bottom: 6px;
+}
+
+.wholesale-contact-card p {
+  font-size: 0.86rem;
+  color: var(--text-muted);
+  margin-bottom: 16px;
+}
+
+.phone-big-link {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--primary);
+  display: block;
+  letter-spacing: 0.5px;
+}
+
+.phone-big-link:hover {
+  color: var(--primary-hover);
+}
+
+.rep-title {
+  display: block;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+.wholesale-contact-card .btn {
+  margin-top: 10px;
+}
+
+/* ==========================================================================
+   FUNNEL STEP 8: REVIEWS (Müşteri Yorumları)
+   ========================================================================== */
+
+.reviews-section {
+  padding: 80px 0;
+  background: #ffffff;
+  border-top: 1px solid var(--border-light);
+}
+
+.reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 22px;
+}
+
+.review-card {
+  background: var(--bg-main);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  padding: 24px 20px;
+  display: flex;
+  flex-direction: column;
+  transition: var(--transition);
+}
+
+.review-card:hover {
+  background: #ffffff;
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+  border-color: #93c5fd;
+}
+
+.review-stars {
+  color: #f59e0b;
+  font-size: 1.1rem;
+  letter-spacing: 2px;
+  margin-bottom: 12px;
+}
+
+.review-text {
+  font-size: 0.9rem;
+  color: #334155;
+  line-height: 1.55;
+  flex-grow: 1;
+  margin-bottom: 18px;
+}
+
+.review-author {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding-top: 14px;
+  border-top: 1px solid var(--border-light);
+}
+
+.author-avatar {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: #e0f2fe;
+  color: var(--primary);
+  font-weight: 800;
+  font-size: 0.85rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.review-author strong {
+  display: block;
+  font-size: 0.88rem;
+  color: var(--text-dark);
+}
+
+.review-author small {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+/* ==========================================================================
+   FUNNEL STEP 9: FAQ (Sıkça Sorulan Sorular)
+   ========================================================================== */
+
+.faq-section {
+  padding: 80px 0;
+  background: var(--bg-main);
+  border-top: 1px solid var(--border-light);
+}
+
+.faq-container {
+  max-width: 820px;
+}
+
+.faq-accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.faq-item {
+  background: #ffffff;
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+}
+
+.faq-item:hover {
+  border-color: #cbd5e1;
+}
+
+.faq-question {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 22px;
+  text-align: left;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text-dark);
+  gap: 16px;
+}
+
+.faq-arrow {
+  font-size: 1.4rem;
+  font-weight: 300;
+  color: var(--primary);
+  transition: transform 0.3s ease;
+  line-height: 1;
+}
+
+.faq-item.active .faq-arrow {
+  transform: rotate(45deg);
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s ease, padding 0.35s ease;
+  padding: 0 22px;
+}
+
+.faq-item.active .faq-answer {
+  max-height: 250px;
+  padding: 0 22px 20px;
+}
+
+.faq-answer p {
+  color: var(--text-body);
+  font-size: 0.92rem;
+  line-height: 1.6;
+}
+
+/* ==========================================================================
+   FUNNEL STEP 10: CONTACT BANNER
+   ========================================================================== */
+
+.contact-banner-section {
+  padding: 70px 0;
+  background: #ffffff;
+}
+
+.contact-box-clean {
+  background: var(--bg-soft);
+  border: 1.5px solid var(--border-light);
+  border-radius: var(--radius-lg);
+  padding: 45px 40px;
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.contact-box-left h2 {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--text-dark);
+  margin: 10px 0 12px;
+}
+
+.contact-box-left p {
+  font-size: 0.95rem;
+  color: var(--text-body);
+  margin-bottom: 24px;
+}
+
+.contact-numbers {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contact-num-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background: #ffffff;
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  padding: 12px 18px;
+  transition: var(--transition);
+}
+
+.contact-num-item:hover {
+  border-color: var(--primary);
+  box-shadow: var(--shadow-sm);
+}
+
+.c-icon {
+  font-size: 1.4rem;
+}
+
+.contact-num-item small {
+  display: block;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+.contact-num-item strong {
+  font-size: 1.1rem;
+  color: var(--text-dark);
+}
+
+.fast-action-card {
+  background: #ffffff;
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  padding: 30px 24px;
+  text-align: center;
+  box-shadow: var(--shadow-sm);
+}
+
+.fast-action-card h3 {
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: var(--text-dark);
+  margin-bottom: 6px;
+}
+
+.fast-action-card p {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  margin-bottom: 20px;
+}
+
+/* ==========================================================================
+   PRODUCT DETAIL MODAL
+   ========================================================================== */
+
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(15, 23, 42, 0.6);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  opacity: 0;
+  visibility: hidden;
+  transition: var(--transition);
+}
+
+.modal-backdrop.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal-dialog {
+  background: #ffffff;
+  border-radius: var(--radius-lg);
+  max-width: 800px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.25);
+  transform: scale(0.95);
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.modal-backdrop.active .modal-dialog {
+  transform: scale(1);
+}
+
+.modal-close {
+  position: absolute;
+  top: 16px;
+  right: 18px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: var(--bg-soft);
+  color: var(--text-dark);
+  font-size: 1.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  transition: var(--transition);
+}
+
+.modal-close:hover {
+  background: #e2e8f0;
+  transform: rotate(90deg);
+}
+
+.modal-content-grid {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 30px;
+  padding: 34px 30px;
+}
+
+.modal-image-col {
+  background: var(--bg-soft);
+  border-radius: var(--radius-md);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.modal-badge-wrapper {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  font-size: 0.72rem;
+  font-weight: 800;
+  padding: 4px 10px;
+  border-radius: var(--radius-full);
+}
+
+.modal-image-col img {
+  max-height: 250px;
+  object-fit: contain;
+}
+
+.modal-category {
+  font-size: 0.75rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: var(--primary);
+  letter-spacing: 0.5px;
+}
+
+.modal-title {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--text-dark);
+  margin: 6px 0 12px;
+}
+
+.modal-description {
+  font-size: 0.92rem;
+  color: var(--text-body);
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.modal-specs-section h4 {
+  font-size: 0.95rem;
+  font-weight: 800;
+  color: var(--text-dark);
+  margin-bottom: 10px;
+}
+
+.modal-specs-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.modal-specs-list li {
+  font-size: 0.86rem;
+  color: var(--text-body);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.modal-specs-list li::before {
+  content: '✓';
+  color: var(--whatsapp-dark);
+  font-weight: 900;
+}
+
+.modal-box-info {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  background: var(--bg-soft);
+  border-radius: var(--radius-sm);
+  padding: 12px;
+  font-size: 0.82rem;
+  color: var(--text-body);
+  margin-bottom: 24px;
+}
+
+.modal-box-info strong {
+  display: block;
+  color: var(--text-dark);
+  margin-bottom: 2px;
+}
+
+.modal-cta-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* ==========================================================================
+   FIXED BOTTOM STICKY BAR (Mobile High Conversion Machine)
+   ========================================================================== */
+
+.mobile-sticky-bar {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #ffffff;
+  border-top: 1px solid var(--border-light);
+  padding: 10px 16px;
+  box-shadow: 0 -4px 16px rgba(0, 0, 0, 0.08);
+  z-index: 999;
+}
+
+.sticky-bar-inner {
+  display: grid;
+  grid-template-columns: 1fr 1.6fr;
+  gap: 10px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.btn-call-mobile {
+  background: var(--bg-soft);
+  color: var(--text-dark);
+  border: 1px solid var(--border-light);
+  font-size: 0.9rem;
+  padding: 11px 12px;
+  border-radius: var(--radius-full);
+}
+
+.btn-wa-mobile {
+  background: var(--whatsapp);
+  color: #ffffff;
+  font-size: 0.95rem;
+  padding: 11px 16px;
+  border-radius: var(--radius-full);
+  box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4);
+}
+
+/* ==========================================================================
+   FOOTER
+   ========================================================================== */
+
+.site-footer {
+  background: #ffffff;
+  border-top: 1px solid var(--border-light);
+  padding: 70px 0 20px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 0.9fr 1.1fr;
+  gap: 50px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.footer-p {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin: 16px 0 18px;
+}
+
+.footer-badges {
+  display: flex;
+  gap: 12px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.footer-nav h4, .footer-contact h4 {
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: var(--text-dark);
+  margin-bottom: 16px;
+}
+
+.footer-nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-nav a {
+  font-size: 0.88rem;
+  color: var(--text-body);
+}
+
+.footer-nav a:hover {
+  color: var(--primary);
+}
+
+.footer-contact p {
+  font-size: 0.88rem;
+  color: var(--text-body);
+  margin-bottom: 8px;
+}
+
+.footer-contact a {
+  color: var(--primary);
+  font-weight: 700;
+}
+
+.footer-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.footer-wa-btn {
+  background: var(--whatsapp-soft);
+  color: var(--whatsapp-dark);
+  border: 1px solid rgba(37, 211, 102, 0.4);
+  padding: 8px 14px;
+  border-radius: var(--radius-sm);
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+.footer-wa-btn:hover {
+  background: var(--whatsapp);
+  color: #ffffff;
+}
+
+.footer-call-btn {
+  background: var(--primary-soft);
+  color: var(--primary);
+  border: 1px solid rgba(2, 132, 199, 0.4);
+  padding: 8px 14px;
+  border-radius: var(--radius-sm);
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+.footer-call-btn:hover {
+  background: var(--primary);
+  color: #ffffff;
+}
+
+.footer-bottom-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 24px;
+  font-size: 0.82rem;
+  color: var(--text-muted);
+}
+
+/* ==========================================================================
+   RESPONSIVE DESIGN (Mobile First Polish)
+   ========================================================================== */
+
+@media (max-width: 992px) {
+  .hero-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 36px;
+  }
+
+  .hero-desc {
+    margin: 0 auto 24px;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .hero-trust-row {
+    justify-content: center;
+  }
+
+  .solution-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .compare-table-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .camera-card-wrap {
+    grid-template-columns: 1fr;
+  }
+
+  .wholesale-banner {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-box-clean {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .desktop-nav {
+    display: none;
+  }
+
+  .mobile-toggle {
+    display: flex;
+  }
+
+  .announcement-right {
+    display: none;
+  }
+
+  .announcement-content {
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    padding-bottom: 70px; /* Space for sticky bar */
+  }
+
+  .mobile-sticky-bar {
+    display: block;
+  }
+
+  .hero-title {
+    font-size: 2.1rem;
+  }
+
+  .section-heading {
+    font-size: 1.8rem;
+  }
+
+  .brand-logo img {
+    height: 32px;
+  }
+
+  .header-actions .btn-outline-wa {
+    display: none;
+  }
+
+  .header-actions .btn-primary span {
+    display: none;
+  }
+
+  .header-actions .btn-primary {
+    padding: 0;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+  }
+
+  .hero-trust-row {
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .wizard-submit-wrap .btn {
+    white-space: normal;
+    padding: 13px 16px;
+    font-size: 0.95rem;
+    line-height: 1.3;
+    width: 100%;
+  }
+
+  .wholesale-perks-list {
+    grid-template-columns: 1fr;
+  }
+
+  .modal-content-grid {
+    grid-template-columns: 1fr;
+    padding: 24px 18px;
+  }
+
+  .camera-card-wrap, .wholesale-banner, .contact-box-clean, .wizard-box {
+    padding: 26px 18px;
+  }
+
+  .footer-bottom-flex {
+    flex-direction: column;
+    gap: 8px;
+    text-align: center;
+  }
+}

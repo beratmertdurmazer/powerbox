@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="lightBg2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f8fafc"/>
+      <stop offset="100%" stop-color="#eff6ff"/>
+    </linearGradient>
+    <linearGradient id="blueIndigo" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2563eb"/>
+      <stop offset="100%" stop-color="#4f46e5"/>
+    </linearGradient>
+    <filter id="shadow2" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#2563eb" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+  <rect width="500" height="400" fill="url(#lightBg2)" rx="16"/>
+  <g stroke="#e2e8f0" stroke-width="1" stroke-dasharray="4 4">
+    <line x1="60" y1="0" x2="60" y2="400"/>
+    <line x1="440" y1="0" x2="440" y2="400"/>
+  </g>
+  <rect x="145" y="60" width="210" height="270" rx="24" fill="#ffffff" stroke="#93c5fd" stroke-width="2" filter="url(#shadow2)"/>
+  <rect x="165" y="80" width="170" height="230" rx="16" fill="#f0f7ff" stroke="#bfdbfe" stroke-width="1.5"/>
+  <rect x="185" y="105" width="130" height="18" rx="8" fill="#3b82f6"/>
+  <circle cx="210" cy="155" r="9" fill="#10b981"/>
+  <circle cx="250" cy="155" r="9" fill="#3b82f6"/>
+  <circle cx="290" cy="155" r="9" fill="#ef4444"/>
+  <path d="M260 195 L236 242 L254 242 L246 285 L272 237 L254 237 Z" fill="url(#blueIndigo)"/>
+  <text x="250" y="370" text-anchor="middle" fill="#1e40af" font-family="system-ui, sans-serif" font-size="13" font-weight="700" letter-spacing="2">POWERBOX PX2 PRO</text>
+</svg>

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="kgLightBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f0fdf4"/>
+      <stop offset="100%" stop-color="#dcfce7"/>
+    </linearGradient>
+    <filter id="shadowKg" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#16a34a" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+  <rect width="500" height="400" fill="url(#kgLightBg)" rx="16"/>
+  <rect x="150" y="75" width="200" height="230" rx="30" fill="#ffffff" stroke="#86efac" stroke-width="2.5" filter="url(#shadowKg)"/>
+  <circle cx="250" cy="165" r="46" fill="#f0fdf4" stroke="#16a34a" stroke-width="2.5"/>
+  <circle cx="250" cy="165" r="18" fill="#16a34a"/>
+  <rect x="175" y="98" width="150" height="24" rx="7" fill="#15803d"/>
+  <text x="250" y="114" text-anchor="middle" fill="#fff" font-size="10" font-family="sans-serif" font-weight="bold">KARAVAN &amp; TEKNE ÖZEL</text>
+  <text x="250" y="245" text-anchor="middle" fill="#0f766e" font-size="12" font-family="sans-serif" font-weight="bold">3x PİL veya 5V ADAPTÖR</text>
+  <text x="250" y="350" text-anchor="middle" fill="#15803d" font-family="system-ui, sans-serif" font-size="13" font-weight="700" letter-spacing="2">POWERBOX KG TAŞINABİLİR GAZ ALARMI</text>
+</svg>

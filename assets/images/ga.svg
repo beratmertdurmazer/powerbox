@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="gaLightBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef2f2"/>
+      <stop offset="100%" stop-color="#fee2e2"/>
+    </linearGradient>
+    <filter id="shadowGa" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#dc2626" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+  <rect width="500" height="400" fill="url(#gaLightBg)" rx="16"/>
+  <rect x="150" y="80" width="200" height="225" rx="28" fill="#ffffff" stroke="#fca5a5" stroke-width="2.5" filter="url(#shadowGa)"/>
+  <!-- External Gas Sensor Chamber -->
+  <circle cx="250" cy="165" r="46" fill="#fef2f2" stroke="#ef4444" stroke-width="2.5"/>
+  <circle cx="250" cy="165" r="32" fill="#fee2e2"/>
+  <circle cx="250" cy="165" r="16" fill="#dc2626"/>
+  <!-- 100dB Siren Grille -->
+  <path d="M220 235 Q250 245 280 235 M225 247 Q250 257 275 247 M232 259 Q250 267 268 259" stroke="#dc2626" stroke-width="3" stroke-linecap="round" fill="none"/>
+  <!-- Power Options Tag -->
+  <rect x="180" y="100" width="65" height="20" rx="6" fill="#2563eb"/>
+  <text x="212" y="114" text-anchor="middle" fill="#fff" font-size="9" font-family="sans-serif" font-weight="bold">12V AKÜ</text>
+  <rect x="255" y="100" width="65" height="20" rx="6" fill="#16a34a"/>
+  <text x="287" y="114" text-anchor="middle" fill="#fff" font-size="9" font-family="sans-serif" font-weight="bold">3x PİLLİ</text>
+  <text x="250" y="345" text-anchor="middle" fill="#b91c1c" font-family="system-ui, sans-serif" font-size="13" font-weight="700" letter-spacing="2">POWERBOX GA ARAÇ İÇİ LPG ALARMI</text>
+</svg>

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="gcLightBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f0f9ff"/>
+      <stop offset="100%" stop-color="#e0f2fe"/>
+    </linearGradient>
+    <filter id="shadowGc" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#0284c7" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+  <rect width="500" height="400" fill="url(#gcLightBg)" rx="16"/>
+  <rect x="160" y="70" width="180" height="245" rx="26" fill="#ffffff" stroke="#7dd3fc" stroke-width="2.5" filter="url(#shadowGc)"/>
+  <circle cx="250" cy="165" r="44" fill="#f0f9ff" stroke="#0284c7" stroke-width="2.5"/>
+  <circle cx="250" cy="165" r="28" fill="#e0f2fe"/>
+  <circle cx="250" cy="165" r="14" fill="#16a34a"/>
+  <path d="M225 235 Q250 245 275 235 M220 247 Q250 258 280 247 M215 259 Q250 270 285 259" stroke="#0284c7" stroke-width="3" stroke-linecap="round" fill="none"/>
+  <rect x="195" y="95" width="110" height="22" rx="7" fill="#0284c7"/>
+  <text x="250" y="110" text-anchor="middle" fill="#fff" font-size="10" font-family="sans-serif" font-weight="bold">220V PRİZ TİPİ</text>
+  <text x="250" y="355" text-anchor="middle" fill="#0369a1" font-family="system-ui, sans-serif" font-size="13" font-weight="700" letter-spacing="2">POWERBOX GC1 DOĞALGAZ ALARMI</text>
+</svg>

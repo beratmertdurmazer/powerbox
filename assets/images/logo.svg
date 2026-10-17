@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 60" width="240" height="60">
+  <defs>
+    <linearGradient id="logoBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0284c7"/>
+      <stop offset="100%" stop-color="#0ea5e9"/>
+    </linearGradient>
+  </defs>
+  <!-- Power Icon Box -->
+  <rect x="5" y="8" width="44" height="44" rx="12" fill="#eff6ff" stroke="#0284c7" stroke-width="2.5"/>
+  <path d="M28 16 L18 31 L26 31 L22 44 L34 27 L26 27 Z" fill="url(#logoBlue)"/>
+  <!-- Text -->
+  <text x="60" y="34" fill="#0f172a" font-family="system-ui, -apple-system, sans-serif" font-size="22" font-weight="900" letter-spacing="0.5">POWER<tspan fill="#0284c7">BOX</tspan></text>
+  <text x="61" y="48" fill="#64748b" font-family="system-ui, -apple-system, sans-serif" font-size="9" font-weight="700" letter-spacing="3">TEKNOLOJİ</text>
+</svg>

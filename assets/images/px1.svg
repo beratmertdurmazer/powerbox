@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="lightBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f8fafc"/>
+      <stop offset="100%" stop-color="#f1f5f9"/>
+    </linearGradient>
+    <linearGradient id="cyanBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0284c7"/>
+      <stop offset="100%" stop-color="#0ea5e9"/>
+    </linearGradient>
+    <filter id="softShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#0284c7" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+  <rect width="500" height="400" fill="url(#lightBg)" rx="16"/>
+  <!-- Decorative Grid Pattern -->
+  <g stroke="#e2e8f0" stroke-width="1" stroke-dasharray="4 4">
+    <line x1="60" y1="0" x2="60" y2="400"/>
+    <line x1="250" y1="0" x2="250" y2="400"/>
+    <line x1="440" y1="0" x2="440" y2="400"/>
+    <line x1="0" y1="100" x2="500" y2="100"/>
+    <line x1="0" y1="300" x2="500" y2="300"/>
+  </g>
+  <!-- Device Outer Box -->
+  <rect x="155" y="65" width="190" height="260" rx="24" fill="#ffffff" stroke="#cbd5e1" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="175" y="85" width="150" height="220" rx="16" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.5"/>
+  <!-- Night Lamp LED Bar -->
+  <rect x="195" y="115" width="110" height="14" rx="7" fill="#0ea5e9"/>
+  <!-- Status LEDs -->
+  <circle cx="215" cy="160" r="9" fill="#10b981"/>
+  <circle cx="250" cy="160" r="9" fill="#0284c7"/>
+  <circle cx="285" cy="160" r="9" fill="#f59e0b"/>
+  <!-- Lightning Icon -->
+  <path d="M256 195 L234 240 L252 240 L245 282 L268 235 L250 235 Z" fill="url(#cyanBlue)"/>
+  <text x="250" y="365" text-anchor="middle" fill="#0369a1" font-family="system-ui, sans-serif" font-size="13" font-weight="700" letter-spacing="2">POWERBOX PX1 MODÜL</text>
+  <!-- Sticky Mounting Strip Hint -->
+  <rect x="190" y="48" width="120" height="12" rx="4" fill="#94a3b8"/>
+</svg>

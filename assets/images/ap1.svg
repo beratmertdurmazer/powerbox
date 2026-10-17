@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="apLightBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f8fafc"/>
+      <stop offset="100%" stop-color="#f1f5f9"/>
+    </linearGradient>
+    <filter id="shadowAp" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#0284c7" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+  <rect width="500" height="400" fill="url(#apLightBg)" rx="16"/>
+  <!-- Socket Base Body -->
+  <rect x="165" y="75" width="170" height="250" rx="24" fill="#ffffff" stroke="#cbd5e1" stroke-width="2" filter="url(#shadowAp)"/>
+  <circle cx="250" cy="175" r="65" fill="#f8fafc" stroke="#94a3b8" stroke-width="2.5"/>
+  <circle cx="230" cy="175" r="9" fill="#334155"/>
+  <circle cx="270" cy="175" r="9" fill="#334155"/>
+  <rect x="246" y="118" width="8" height="18" rx="2" fill="#64748b"/>
+  <rect x="246" y="214" width="8" height="18" rx="2" fill="#64748b"/>
+  <!-- Capacitor Vault Indicator -->
+  <rect x="195" y="265" width="110" height="30" rx="10" fill="#0284c7"/>
+  <text x="250" y="284" text-anchor="middle" fill="#ffffff" font-family="system-ui, sans-serif" font-size="11" font-weight="bold">16A KAPASİTÖRLÜ</text>
+  <text x="250" y="360" text-anchor="middle" fill="#0369a1" font-family="system-ui, sans-serif" font-size="13" font-weight="700" letter-spacing="2">POWERBOX AP1 AKIM PRİZİ</text>
+</svg>
