@@ -3,493 +3,511 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Powerbox Teknoloji | Akıllı Voltaj Koruma ve Gaz Sistemleri</title>
-  <meta name="description" content="Powerbox Teknoloji - Tek modülle tüm prizleri akım korumalı yapın. Araç, ev ve karavan gaz alarmları, 22kHz ultrasonik haşere kovucu. Perakende ve toptan satış.">
+  <title>POWERBOX | Elektronik Cihazlarınız İçin Güçlü Koruma</title>
+  <meta name="description" content="POWERBOX Teknoloji - Yüksek voltaj koruma modülleri, akım korumalı prizler, araç ve ev gaz alarm sistemleri, 22kHz ultrasonik haşere kovucu.">
   <meta name="theme-color" content="#0284c7">
-  
+
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800;900&family=Space+Grotesk:wght@700;800&display=swap" rel="stylesheet">
-  
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-  <!-- Top Slim Bar -->
-  <aside class="top-bar">
-    <div class="container top-bar-inner">
-      <div class="top-badges">
-        <span class="badge-pill">🚚 Aynı Gün Kargo</span>
-        <span class="badge-pill">🛡️ 2 Yıl Garanti</span>
-        <span class="badge-pill">💳 Kapıda Ödeme</span>
+  <!-- Top Announcement Bar -->
+  <div class="top-announcement">
+    <div class="site-container announcement-inner">
+      <div class="announcement-left">
+        <span>⚡ Türkiye'nin Akıllı Koruma Teknolojisi</span>
+        <span class="sep">•</span>
+        <span>Aynı Gün Ücretsiz Kargo</span>
+        <span class="sep">•</span>
+        <span>2 Yıl Birebir Değişim Garantisi</span>
       </div>
-      <div class="top-contacts">
-        <a href="tel:+905494095353" class="top-phone">📞 0549 409 53 53</a>
-        <a href="https://wa.me/905494095353" target="_blank" rel="noopener" class="top-wa">💬 WhatsApp Destek</a>
+      <div class="announcement-right">
+        <a href="tel:+905494095353" class="ann-phone">📞 0549 409 53 53</a>
+        <a href="https://wa.me/905494095353" target="_blank" rel="noopener" class="ann-wa">💬 WhatsApp Destek</a>
       </div>
     </div>
-  </aside>
+  </div>
 
-  <!-- Sticky Minimal Header -->
-  <header class="main-header">
-    <div class="container header-flex">
-      <a href="#feed" class="logo-link">
-        <img src="assets/images/logo.svg" alt="Powerbox Teknoloji" width="160" height="38">
+  <!-- Main Navigation Header -->
+  <header class="site-header" id="mainHeader">
+    <div class="site-container header-inner">
+      <!-- Logo -->
+      <a href="#hero" class="brand-logo" aria-label="Powerbox Ana Sayfa">
+        <img src="assets/images/logo.svg" alt="POWERBOX" width="180" height="40">
       </a>
-      
-      <!-- Direct Header Phone & Wholesale Actions -->
-      <div class="header-fast-cta">
-        <a href="#toptan-bilgi" class="btn btn-wholesale-sm">
-          💼 Toptan & Bayilik
-        </a>
-        <a href="tel:+905494095353" class="btn btn-phone-sm">
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+
+      <!-- Desktop Nav Menu -->
+      <nav class="nav-menu" id="navMenu">
+        <a href="#hero" class="nav-link active">Ana Sayfa</a>
+        <a href="#urunler" class="nav-link">Ürünlerimiz</a>
+        <a href="#hakkimizda" class="nav-link">Hakkımızda</a>
+        <a href="#iletisim" class="nav-link">İletişim</a>
+      </nav>
+
+      <!-- Right Header Actions -->
+      <div class="header-actions">
+        <button type="button" class="search-trigger-btn" id="searchTriggerBtn" aria-label="Ürün Ara">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+        </button>
+
+        <a href="tel:+905494095353" class="header-phone-btn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
           <span>0549 409 53 53</span>
         </a>
+
+        <!-- Mobile Toggle Button -->
+        <button type="button" class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Menüyü Aç/Kapat">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
       </div>
     </div>
   </header>
 
-  <!-- INSTAGRAM STORY / HIGHLIGHTS TABS (En Üstte Story Formatı) -->
-  <section class="story-section" aria-label="Ürün Hikayeleri ve Hızlı Kategori Filtresi">
-    <div class="container story-container">
-      <div class="story-scroller" id="storyScroller">
+  <!-- HERO SECTION (Tıpkı Referans Görseldeki Tasarım) -->
+  <section class="hero-section" id="hero">
+    <div class="site-container">
+      <div class="hero-banner-wrapper">
+        <img src="assets/images/hero-banner.jpg" alt="Powerbox Elektronik Cihazlarınız İçin Güçlü Koruma" class="hero-banner-img" width="1364" height="466">
         
-        <!-- Story 1: Tümü -->
-        <button type="button" class="story-item active" data-category="all">
-          <div class="story-ring">
-            <div class="story-thumb bg-gradient-all">
-              <span>⚡</span>
-            </div>
-          </div>
-          <span class="story-label">Tüm Ürünler</span>
-        </button>
-
-        <!-- Story 2: PX1 Modül -->
-        <button type="button" class="story-item" data-category="px1">
-          <div class="story-ring">
-            <div class="story-thumb">
-              <img src="assets/images/px1.svg" alt="PX1">
-            </div>
-          </div>
-          <span class="story-label">PX1 Modül</span>
-        </button>
-
-        <!-- Story 3: PX2 & PX3 -->
-        <button type="button" class="story-item" data-category="px-pro">
-          <div class="story-ring">
-            <div class="story-thumb">
-              <img src="assets/images/px2.svg" alt="PX2">
-            </div>
-          </div>
-          <span class="story-label">PX Pro Serisi</span>
-        </button>
-
-        <!-- Story 4: AP1 Kapasitör Priz -->
-        <button type="button" class="story-item" data-category="ap1">
-          <div class="story-ring">
-            <div class="story-thumb">
-              <img src="assets/images/ap1.svg" alt="AP1">
-            </div>
-          </div>
-          <span class="story-label">16A Priz</span>
-        </button>
-
-        <!-- Story 5: GA Araç LPG -->
-        <button type="button" class="story-item" data-category="ga">
-          <div class="story-ring">
-            <div class="story-thumb">
-              <img src="assets/images/ga.svg" alt="GA Araç">
-            </div>
-          </div>
-          <span class="story-label">Araç LPG Alarm</span>
-        </button>
-
-        <!-- Story 6: GC1 Fişli Doğalgaz -->
-        <button type="button" class="story-item" data-category="gc1">
-          <div class="story-ring">
-            <div class="story-thumb">
-              <img src="assets/images/gc1.svg" alt="GC1 Doğalgaz">
-            </div>
-          </div>
-          <span class="story-label">Fişli Ev Alarmı</span>
-        </button>
-
-        <!-- Story 7: KG Karavan/Tekne -->
-        <button type="button" class="story-item" data-category="kg">
-          <div class="story-ring">
-            <div class="story-thumb">
-              <img src="assets/images/kg.svg" alt="KG Karavan">
-            </div>
-          </div>
-          <span class="story-label">Karavan/Tekne</span>
-        </button>
-
-        <!-- Story 8: 22kHz Haşere Kovucu -->
-        <button type="button" class="story-item" data-category="hasere">
-          <div class="story-ring">
-            <div class="story-thumb">
-              <img src="assets/images/hasere.svg" alt="Haşere Kovucu">
-            </div>
-          </div>
-          <span class="story-label">22kHz Kovucu</span>
-        </button>
-
-        <!-- Story 9: Toptan & Bayilik -->
-        <button type="button" class="story-item" data-category="b2b">
-          <div class="story-ring">
-            <div class="story-thumb bg-gradient-b2b">
-              <span>💼</span>
-            </div>
-          </div>
-          <span class="story-label">Toptan Satış</span>
-        </button>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- QUICK ACTION HERO BANNER (Kısa, Net, Doğrudan Amaç) -->
-  <section class="banner-section">
-    <div class="container">
-      <div class="quick-banner">
-        <div class="banner-text">
-          <h1>Tek Modülle Tüm Ev Prizlerini Akım Korumalı Yapın</h1>
-          <p>Kırmadan, delmeden sigorta kutusuna 1 dakikada yapışkanlı montaj. LPG'li araç ve ev için 100dB erken gaz alarmları.</p>
-        </div>
-        <div class="banner-cta-group">
-          <a href="https://wa.me/905494095353?text=Merhaba,%20Powerbox%20ürünleri%20hakkında%20bilgi%20ve%20fiyat%20almak%20istiyorum." target="_blank" rel="noopener" class="btn btn-wa-banner">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
-            <span>WhatsApp Sipariş & Bilgi</span>
+        <!-- Interactive Overlay Hit Zones -->
+        <div class="hero-overlay-content">
+          <!-- Left CTA Link to products -->
+          <a href="#urunler" class="hero-cta-zone" aria-label="Tüm Ürünleri Keşfet">
+            <span class="visually-hidden">Tüm Ürünleri Keşfet</span>
           </a>
-          <a href="tel:+905494095353" class="btn btn-call-banner">
-            <span>📞 0549 409 53 53 Ara</span>
-          </a>
+
+          <!-- Center Play Button Overlay -->
+          <button type="button" class="hero-play-trigger" id="heroPlayBtn" aria-label="Tanıtım Videosunu İzle">
+            <span class="visually-hidden">Tanıtım Videosunu İzle</span>
+          </button>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- PRODUCT SHOWCASE FEED ("TAK TAK" ÜRÜNLERİ GÖZE SOKAN VİTRİN) -->
-  <main class="feed-section" id="feed">
-    <div class="container">
-
-      <!-- Active Filter Pill (Dynamic) -->
-      <div class="feed-header">
-        <h2 id="feedTitle">Tüm Ürünler (8)</h2>
-        <span class="feed-hint">Doğrudan sipariş veya toptan teklif için butonları kullanın</span>
+  <!-- SEARCH OVERLAY / QUICK SEARCH -->
+  <div class="search-modal" id="searchModal" aria-hidden="true">
+    <div class="search-modal-box">
+      <div class="search-input-wrap">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        <input type="text" id="productSearchInput" placeholder="Ürün adı, kod veya koruma tipi ara (örn: PX1, gaz alarmı, haşere)..." autofocus>
+        <button type="button" class="search-close-btn" id="searchCloseBtn" aria-label="Aramayı Kapat">✕</button>
       </div>
-
-      <div class="feed-grid" id="productFeedGrid">
-
-        <!-- 1. POWERBOX PX1 -->
-        <article class="feed-card" data-category="px1">
-          <div class="feed-badge badge-primary">TÜRKİYE'DE İLK VE TEK</div>
-          <div class="feed-img-stage">
-            <img src="assets/images/px1.svg" alt="Powerbox PX1 Yüksek Voltaj Koruma Modülü" loading="lazy">
-          </div>
-          <div class="feed-info">
-            <span class="feed-cat">Sigorta Pano Yanı • Akım Koruma</span>
-            <h3 class="feed-title">POWERBOX PX1</h3>
-            <p class="feed-punchline">Tek modülle evdeki TÜM prizleri akım korumalıya çevirir. Kırmadan yapışkanlı 1 dk montaj.</p>
-            <div class="feed-chips">
-              <span>⚡ 1 Dk Montaj</span>
-              <span>🏠 Tüm Evi Korur</span>
-              <span>💡 Gece Lambası Işıklı</span>
-            </div>
-            <div class="feed-btn-row">
-              <a href="https://wa.me/905494095353?text=Merhaba,%20Powerbox%20PX1%20Yüksek%20Voltaj%20Modülü%20hakkında%20fiyat%20ve%20sipariş%20bilgisi%20almak%20istiyorum." target="_blank" rel="noopener" class="btn btn-feed-wa">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
-                <span>WhatsApp Sipariş</span>
-              </a>
-              <a href="tel:+905494095353" class="btn btn-feed-call">
-                <span>📞 Ara</span>
-              </a>
-            </div>
-          </div>
-        </article>
-
-        <!-- 2. POWERBOX PX2 PRO -->
-        <article class="feed-card" data-category="px-pro">
-          <div class="feed-badge badge-primary">ÇİFT KADEMELİ KORUMA</div>
-          <div class="feed-img-stage">
-            <img src="assets/images/px2.svg" alt="Powerbox PX2 Pro Voltaj Koruma Modülü" loading="lazy">
-          </div>
-          <div class="feed-info">
-            <span class="feed-cat">Klima, Kombi & Hassas Kart</span>
-            <h3 class="feed-title">POWERBOX PX2 PRO</h3>
-            <p class="feed-punchline">Hassas anakartlı inverter klima ve kombileri ani darbelere ve parazitlere karşı korur.</p>
-            <div class="feed-chips">
-              <span>❄️ İnverter Kart Koruma</span>
-              <span>⚡ Aşırı Gerilim Freni</span>
-              <span>🛡️ Çift Kademe</span>
-            </div>
-            <div class="feed-btn-row">
-              <a href="https://wa.me/905494095353?text=Merhaba,%20Powerbox%20PX2%20Pro%20Modülü%20hakkında%20fiyat%20ve%20sipariş%20bilgisi%20almak%20istiyorum." target="_blank" rel="noopener" class="btn btn-feed-wa">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
-                <span>WhatsApp Sipariş</span>
-              </a>
-              <a href="tel:+905494095353" class="btn btn-feed-call">
-                <span>📞 Ara</span>
-              </a>
-            </div>
-          </div>
-        </article>
-
-        <!-- 3. POWERBOX PX3 ULTRA -->
-        <article class="feed-card" data-category="px-pro">
-          <div class="feed-badge badge-amber">AĞIR YÜK DAYANIMI</div>
-          <div class="feed-img-stage">
-            <img src="assets/images/px3.svg" alt="Powerbox PX3 Ultra Yüksek Voltaj Modülü" loading="lazy">
-          </div>
-          <div class="feed-info">
-            <span class="feed-cat">Geniş Ev, Villa & Ofisler</span>
-            <h3 class="feed-title">POWERBOX PX3 ULTRA</h3>
-            <p class="feed-punchline">Çok cihazlı evler ve atölyeler için maksimum Joule sönümleme gücü ve kesintisiz hat zırhı.</p>
-            <div class="feed-chips">
-              <span>🏢 Villa & Ofis Tipi</span>
-              <span>⚡ Yüksek Joule Gücü</span>
-              <span>🛡️ Ağır Yük Zırhı</span>
-            </div>
-            <div class="feed-btn-row">
-              <a href="https://wa.me/905494095353?text=Merhaba,%20Powerbox%20PX3%20Ultra%20hakkında%20fiyat%20ve%20sipariş%20bilgisi%20almak%20istiyorum." target="_blank" rel="noopener" class="btn btn-feed-wa">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
-                <span>WhatsApp Sipariş</span>
-              </a>
-              <a href="tel:+905494095353" class="btn btn-feed-call">
-                <span>📞 Ara</span>
-              </a>
-            </div>
-          </div>
-        </article>
-
-        <!-- 4. POWERBOX AP1 (A1) 16A PRİZ -->
-        <article class="feed-card" data-category="ap1">
-          <div class="feed-badge badge-blue">KAPASİTÖR HAZNELİ</div>
-          <div class="feed-img-stage">
-            <img src="assets/images/ap1.svg" alt="Powerbox AP1 Kapasitörlü Akım Koruma Prizi" loading="lazy">
-          </div>
-          <div class="feed-info">
-            <span class="feed-cat">16A Güçlü Priz • Cihaz Ömrü Uzatır</span>
-            <h3 class="feed-title">POWERBOX AP1 (A1) PRİZ</h3>
-            <p class="feed-punchline">Sadece kesinti yapmaz! Kapasitör haznesiyle voltaj oynamalarını filtreleyip cihaz ömrünü uzatır.</p>
-            <div class="feed-chips">
-              <span>🔋 Kapasitör Filtreli</span>
-              <span>🔌 16A Güçlü Yük</span>
-              <span>📈 Ömür Uzatıcı</span>
-            </div>
-            <div class="feed-btn-row">
-              <a href="https://wa.me/905494095353?text=Merhaba,%20Powerbox%20AP1%2016A%20Kapasitörlü%20Priz%20hakkında%20fiyat%20ve%20sipariş%20bilgisi%20almak%20istiyorum." target="_blank" rel="noopener" class="btn btn-feed-wa">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
-                <span>WhatsApp Sipariş</span>
-              </a>
-              <a href="tel:+905494095353" class="btn btn-feed-call">
-                <span>📞 Ara</span>
-              </a>
-            </div>
-          </div>
-        </article>
-
-        <!-- 5. POWERBOX GA ARAÇ LPG GAZI -->
-        <article class="feed-card" data-category="ga">
-          <div class="feed-badge badge-red">TÜRKİYE'DE İLK VE TEK</div>
-          <div class="feed-img-stage">
-            <img src="assets/images/ga.svg" alt="Powerbox GA Araç İçi Gaz Alarm Cihazı" loading="lazy">
-          </div>
-          <div class="feed-info">
-            <span class="feed-cat">LPG'li Araçlar İçin Özel</span>
-            <h3 class="feed-title">POWERBOX GA ARAÇ İÇİ LPG ALARMI</h3>
-            <p class="feed-punchline">Kablo çekme derdi yok! 3 adet pille veya 12V soketle çalışır. Sızıntıda 100dB sirenle uyarır.</p>
-            <div class="feed-chips">
-              <span>🚗 LPG'li Araç Özel</span>
-              <span>🔋 3x Pil Veya 12V</span>
-              <span>🔊 100dB Sesli İkaz</span>
-            </div>
-            <div class="feed-btn-row">
-              <a href="https://wa.me/905494095353?text=Merhaba,%20Powerbox%20GA%20Araç%20İçi%20Gaz%20Alarm%20Cihazı%20hakkında%20fiyat%20ve%20sipariş%20bilgisi%20almak%20istiyorum." target="_blank" rel="noopener" class="btn btn-feed-wa">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
-                <span>WhatsApp Sipariş</span>
-              </a>
-              <a href="tel:+905494095353" class="btn btn-feed-call">
-                <span>📞 Ara</span>
-              </a>
-            </div>
-          </div>
-        </article>
-
-        <!-- 6. POWERBOX GC1 FİŞLİ DOĞALGAZ ALARMI -->
-        <article class="feed-card" data-category="gc1">
-          <div class="feed-badge badge-primary">FİŞE TAK & UNUT</div>
-          <div class="feed-img-stage">
-            <img src="assets/images/gc1.svg" alt="Powerbox GC1 Fişli Doğalgaz Alarm Cihazı" loading="lazy">
-          </div>
-          <div class="feed-info">
-            <span class="feed-cat">Mutfak & Ev Doğalgazı</span>
-            <h3 class="feed-title">POWERBOX GC1 FİŞLİ GAZ ALARMI</h3>
-            <p class="feed-punchline">220V prize tak ve unut. Doğalgaz sızıntısını anında sezer, 100dB güçlü sirenle haber verir.</p>
-            <div class="feed-chips">
-              <span>🔌 220V Prize Takılır</span>
-              <span>🔥 Doğalgaz Uyumlu</span>
-              <span>🔊 100dB Erken İkaz</span>
-            </div>
-            <div class="feed-btn-row">
-              <a href="https://wa.me/905494095353?text=Merhaba,%20Powerbox%20GC1%20Fişli%20Gaz%20Alarm%20Cihazı%20hakkında%20fiyat%20ve%20sipariş%20bilgisi%20almak%20istiyorum." target="_blank" rel="noopener" class="btn btn-feed-wa">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
-                <span>WhatsApp Sipariş</span>
-              </a>
-              <a href="tel:+905494095353" class="btn btn-feed-call">
-                <span>📞 Ara</span>
-              </a>
-            </div>
-          </div>
-        </article>
-
-        <!-- 7. POWERBOX KG KARAVAN & TEKNE ALARMI -->
-        <article class="feed-card" data-category="kg">
-          <div class="feed-badge badge-green">KARAVAN & TEKNE ÖZEL</div>
-          <div class="feed-img-stage">
-            <img src="assets/images/kg.svg" alt="Powerbox KG Karavan ve Tekne Gaz Alarmı" loading="lazy">
-          </div>
-          <div class="feed-info">
-            <span class="feed-cat">Taşınabilir Seyyar Alarm</span>
-            <h3 class="feed-title">POWERBOX KG PİLLİ GAZ ALARMI</h3>
-            <p class="feed-punchline">İster 3 kalem pille seyyar, ister 5V adaptörle karavan, tekne ve tiny house için montajsız koruma.</p>
-            <div class="feed-chips">
-              <span>🚐 Karavan & Kamp</span>
-              <span>🔋 3x Pil / 5V USB</span>
-              <span>📍 Yapışkanlı Montaj</span>
-            </div>
-            <div class="feed-btn-row">
-              <a href="https://wa.me/905494095353?text=Merhaba,%20Powerbox%20KG%20Karavan%20Gaz%20Alarmı%20hakkında%20fiyat%20ve%20sipariş%20bilgisi%20almak%20istiyorum." target="_blank" rel="noopener" class="btn btn-feed-wa">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
-                <span>WhatsApp Sipariş</span>
-              </a>
-              <a href="tel:+905494095353" class="btn btn-feed-call">
-                <span>📞 Ara</span>
-              </a>
-            </div>
-          </div>
-        </article>
-
-        <!-- 8. POWERBOX HAŞERE KOVUCU -->
-        <article class="feed-card" data-category="hasere">
-          <div class="feed-badge badge-purple">GERÇEK 22 kHz SES ÇIKIŞI</div>
-          <div class="feed-img-stage">
-            <img src="assets/images/hasere.svg" alt="Powerbox Gerçek 22kHz Ultrasonik Haşere Kovucu" loading="lazy">
-          </div>
-          <div class="feed-info">
-            <span class="feed-cat">Kamerayla Test Edilebilir</span>
-            <h3 class="feed-title">POWERBOX ULTRASONİK KOVUCU</h3>
-            <p class="feed-punchline">Sahte LED'li cihazlara kanmayın! 19-22 kHz gerçek ultrasonik ses dalgasıyla sinek ve haşeratı kovar.</p>
-            <div class="feed-chips">
-              <span>🦟 Sinek & Haşere</span>
-              <span>📹 Telefon Kamerasıyla Test</span>
-              <span>🌿 Kimyasalsız</span>
-            </div>
-            <div class="feed-btn-row">
-              <a href="https://wa.me/905494095353?text=Merhaba,%20Powerbox%20Gerçek%2022kHz%20Haşere%20Kovucu%20hakkında%20fiyat%20ve%20sipariş%20bilgisi%20almak%20istiyorum." target="_blank" rel="noopener" class="btn btn-feed-wa">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
-                <span>WhatsApp Sipariş</span>
-              </a>
-              <a href="tel:+905494095353" class="btn btn-feed-call">
-                <span>📞 Ara</span>
-              </a>
-            </div>
-          </div>
-        </article>
-
-      </div>
+      <div class="search-results-list" id="searchResultsList"></div>
     </div>
-  </main>
+  </div>
 
-  <!-- QUICK VISUAL PROOF: ULTRASONİK KAMERA TESTİ (Çok Kısa & Net) -->
-  <section class="test-strip-section">
-    <div class="container">
-      <div class="test-strip-card">
-        <div class="test-strip-left">
-          <span class="strip-badge">🔬 İSPATLI TEKNOLOJİ</span>
-          <h3>Gerçek 22.000 Hz Frekansı Telefon Kameranızla Duyun!</h3>
-          <p>İnternetteki sahte LED'li cihazlardan bıkmadınız mı? Telefonunuzun video kaydını açıp cihaza yaklaştırın, gerçek ultrasonik sesi videoda kulaklarınızla duyun.</p>
-        </div>
-        <div class="test-strip-steps">
-          <div class="mini-step">
-            <span class="num">1</span>
-            <strong>Kamerayı Aç</strong>
+  <!-- PRODUCTS SECTION (ÜRÜN KATEGORİLERİMİZ - 8 Ürün Grubumuz) -->
+  <section class="products-section" id="urunler">
+    <div class="site-container">
+      
+      <!-- Section Header -->
+      <div class="section-title-wrap text-center">
+        <p class="section-badge">— ÜRÜN KATEGORİLERİMİZ —</p>
+        <h2 class="section-heading">8 Ürün Grubumuz</h2>
+        <p class="section-subtext">İhtiyacınıza en uygun ürünü seçin, elektronik cihazlarınızı güvence altına alın.</p>
+      </div>
+
+      <!-- Products Grid (4 Columns Desktop, Exactly Like Reference Mockup) -->
+      <div class="products-grid">
+
+        <!-- Ürün 1: PX1 -->
+        <article class="product-card" data-product-id="px1">
+          <div class="product-thumb-container">
+            <img src="assets/images/urun/px1.jpg" alt="Powerbox PX1 Yüksek Voltaj Koruma Modülü" class="product-thumb-img" loading="lazy">
           </div>
-          <div class="step-arrow">→</div>
-          <div class="mini-step">
-            <span class="num">2</span>
-            <strong>Cihaza Yaklaştır</strong>
+          <div class="product-card-body">
+            <h3 class="product-card-title">Yüksek Voltaj Koruma</h3>
+            <p class="product-card-desc">Ani voltaj yükselmelerine karşı elektronik cihazlarınızı korur.</p>
+            <button type="button" class="detail-link-btn" onclick="openProductModal('px1')">
+              <span>Detayları Gör</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </button>
           </div>
-          <div class="step-arrow">→</div>
-          <div class="mini-step">
-            <span class="num">3</span>
-            <strong>Kaydı Dinle</strong>
+        </article>
+
+        <!-- Ürün 2: AP1 Priz & Tasarruf -->
+        <article class="product-card" data-product-id="ap1">
+          <div class="product-thumb-container">
+            <img src="assets/images/urun/elektrik-tasarruf.jpg" alt="Powerbox AP1 Akım Korumalı Priz" class="product-thumb-img" loading="lazy">
           </div>
-        </div>
+          <div class="product-card-body">
+            <h3 class="product-card-title">Akım Korumalı Priz</h3>
+            <p class="product-card-desc">Darbeli akımlara karşı maksimum güvenlik sağlar.</p>
+            <button type="button" class="detail-link-btn" onclick="openProductModal('ap1')">
+              <span>Detayları Gör</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </button>
+          </div>
+        </article>
+
+        <!-- Ürün 3: GC1 Gaz Alarmı -->
+        <article class="product-card" data-product-id="gc1">
+          <div class="product-thumb-container">
+            <img src="assets/images/urun/gc1-gaz.jpg" alt="Powerbox GC1 Fişli Gaz Alarm Cihazı" class="product-thumb-img" loading="lazy">
+          </div>
+          <div class="product-card-body">
+            <h3 class="product-card-title">Gaz Alarm Cihazı</h3>
+            <p class="product-card-desc">Gaz kaçağını algılar, sizi ve sevdiklerinizi korur.</p>
+            <button type="button" class="detail-link-btn" onclick="openProductModal('gc1')">
+              <span>Detayları Gör</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </button>
+          </div>
+        </article>
+
+        <!-- Ürün 4: Ultrasonik Haşere Kovucu -->
+        <article class="product-card" data-product-id="hasere">
+          <div class="product-thumb-container">
+            <img src="assets/images/urun/hasere-kovucu.jpg" alt="Powerbox Ultrasonik Haşere Kovucu" class="product-thumb-img" loading="lazy">
+          </div>
+          <div class="product-card-body">
+            <h3 class="product-card-title">Ultrasonik Haşere Kovucu</h3>
+            <p class="product-card-desc">Böcek, sinek, fare gibi haşereleri ultrasonik sesle uzaklaştırır.</p>
+            <button type="button" class="detail-link-btn" onclick="openProductModal('hasere')">
+              <span>Detayları Gör</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </button>
+          </div>
+        </article>
+
+        <!-- Ürün 5: PX2 Pro -->
+        <article class="product-card" data-product-id="px2">
+          <div class="product-thumb-container">
+            <img src="assets/images/urun/px2.jpg" alt="Powerbox PX2 Voltaj Koruma Modülü" class="product-thumb-img" loading="lazy">
+          </div>
+          <div class="product-card-body">
+            <h3 class="product-card-title">Voltaj Koruma Modülü 2</h3>
+            <p class="product-card-desc">Gelişmiş koruma devresi ile tüm evi tek noktadan korur.</p>
+            <button type="button" class="detail-link-btn" onclick="openProductModal('px2')">
+              <span>Detayları Gör</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </button>
+          </div>
+        </article>
+
+        <!-- Ürün 6: PX3 Endüstriyel -->
+        <article class="product-card" data-product-id="px3">
+          <div class="product-thumb-container">
+            <img src="assets/images/urun/px3.jpg" alt="Powerbox PX3 Voltaj Koruma Modülü" class="product-thumb-img" loading="lazy">
+          </div>
+          <div class="product-card-body">
+            <h3 class="product-card-title">Voltaj Koruma Modülü 3</h3>
+            <p class="product-card-desc">Yüksek akım ve sanayi tipi hatlar için üst düzey koruma.</p>
+            <button type="button" class="detail-link-btn" onclick="openProductModal('px3')">
+              <span>Detayları Gör</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </button>
+          </div>
+        </article>
+
+        <!-- Ürün 7: GA Araç İçi Gaz Alarmı -->
+        <article class="product-card" data-product-id="ga">
+          <div class="product-thumb-container">
+            <img src="assets/images/urun/ga-arac.jpg" alt="Powerbox GA Araç İçi Gaz Alarm Cihazı" class="product-thumb-img" loading="lazy">
+          </div>
+          <div class="product-card-body">
+            <h3 class="product-card-title">Araç İçi Gaz Alarmı</h3>
+            <p class="product-card-desc">LPG'li araçlar için kablosuz ve 12V uyarı sistemi.</p>
+            <button type="button" class="detail-link-btn" onclick="openProductModal('ga')">
+              <span>Detayları Gör</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </button>
+          </div>
+        </article>
+
+        <!-- Ürün 8: KG Karavan & Tekne Gaz Alarmı -->
+        <article class="product-card" data-product-id="kg">
+          <div class="product-thumb-container">
+            <img src="assets/images/urun/kg-karavan.jpg" alt="Powerbox KG Pilli Karavan ve Tekne Gaz Alarmı" class="product-thumb-img" loading="lazy">
+          </div>
+          <div class="product-card-body">
+            <h3 class="product-card-title">Pilli Gaz Alarm Cihazı</h3>
+            <p class="product-card-desc">Karavan ve tekneler için pilli & 5V taşınabilir dedektör.</p>
+            <button type="button" class="detail-link-btn" onclick="openProductModal('kg')">
+              <span>Detayları Gör</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </button>
+          </div>
+        </article>
+
       </div>
     </div>
   </section>
 
-  <!-- WHOLESALE & DEALERSHIP (Toptan & Bayilik Alımı) -->
-  <section class="b2b-section" id="toptan-bilgi">
-    <div class="container">
-      <div class="b2b-box">
-        <div class="b2b-text">
-          <span class="b2b-badge">💼 TOPTAN & BAYİLİK ALIMI</span>
-          <h2>Elektrikçiler, Oto Gaz Servisleri & Karavancılar İçin Özel İskonto</h2>
-          <p>Doğrudan üretici fiyatlarıyla yüksek kâr marjı elde edin. Adetli alımlar ve bayilik şartları için yetkili hattımızı arayın.</p>
-          <div class="b2b-chips">
-            <span>✨ Fabrika Çıkış Fiyatı</span>
-            <span>⚡ Ek Montaj Geliri</span>
-            <span>🚗 Türkiye'de Tek LPG Alarmı</span>
+  <!-- VALUE PROPS / FEATURES BAR (5 Sütunlu Özellikler Çubuğu) -->
+  <section class="features-bar-section">
+    <div class="site-container">
+      <div class="features-bar-grid">
+        
+        <!-- Feature 1 -->
+        <div class="feature-bar-item">
+          <div class="feature-bar-icon">
+            <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#0284c7" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            </svg>
           </div>
+          <h4 class="feature-bar-title">Güvenilir Koruma</h4>
+          <p class="feature-bar-desc">Cihazlarınız her zaman güvende.</p>
         </div>
 
-        <div class="b2b-action-card">
-          <span class="card-hint">Müşteri & Bayi Temsilcisi</span>
-          <a href="tel:+905494095353" class="b2b-phone-num">0549 409 53 53</a>
-          <a href="https://wa.me/905494095353?text=Merhaba,%20Powerbox%20ürünleri%20için%20TOPTAN%20fiyat%20listesi%20ve%20bayilik%20şartlarını%20öğrenmek%20istiyorum." target="_blank" rel="noopener" class="btn btn-wa-b2b">
-            WhatsApp Toptan Teklif Al
-          </a>
-          <a href="tel:+905494095353" class="btn btn-call-b2b">
-            📞 Hemen Telefonla Ara
-          </a>
+        <!-- Feature 2 -->
+        <div class="feature-bar-item">
+          <div class="feature-bar-icon">
+            <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#0284c7" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="3"/>
+              <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/>
+            </svg>
+          </div>
+          <h4 class="feature-bar-title">Yerli Üretim</h4>
+          <p class="feature-bar-desc">Türkiye'de üretilen kaliteli ürünler.</p>
         </div>
+
+        <!-- Feature 3 -->
+        <div class="feature-bar-item">
+          <div class="feature-bar-icon">
+            <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#0284c7" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/>
+              <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/>
+            </svg>
+          </div>
+          <h4 class="feature-bar-title">Enerji Tasarrufu</h4>
+          <p class="feature-bar-desc">Daha verimli bir gelecek.</p>
+        </div>
+
+        <!-- Feature 4 -->
+        <div class="feature-bar-item">
+          <div class="feature-bar-icon">
+            <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#0284c7" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 18v-6a9 9 0 0 1 18 0v6"/>
+              <path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"/>
+            </svg>
+          </div>
+          <h4 class="feature-bar-title">Teknik Destek</h4>
+          <p class="feature-bar-desc">Her zaman yanınızdayız.</p>
+        </div>
+
+        <!-- Feature 5 -->
+        <div class="feature-bar-item">
+          <div class="feature-bar-icon">
+            <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#0284c7" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+            </svg>
+          </div>
+          <h4 class="feature-bar-title">Garantili Ürünler</h4>
+          <p class="feature-bar-desc">Kalite ve güvence bizimle.</p>
+        </div>
+
       </div>
     </div>
   </section>
 
-  <!-- MINIMAL FOOTER -->
-  <footer class="fast-footer">
-    <div class="container footer-content">
-      <div class="footer-left">
-        <img src="assets/images/logo.svg" alt="Powerbox" width="140" height="34">
-        <p>Türkiye'nin tescilli elektrik koruma modülleri ve gaz güvenlik sistemleri.</p>
-      </div>
-      <div class="footer-contacts">
-        <p><strong>Telefon / WhatsApp:</strong> <a href="tel:+905494095353">0549 409 53 53</a></p>
-        <p>Instagram siparişleri saat 16:00'a kadar aynı gün kargoya verilir.</p>
+  <!-- HAKKIMIZDA SECTION (Tıpkı Referans Görseldeki Tasarım) -->
+  <section class="about-section" id="hakkimizda">
+    <div class="site-container">
+      <div class="about-grid">
+        
+        <!-- Left Tech/Circuit Image -->
+        <div class="about-media-col">
+          <img src="assets/images/about-tech.jpg" alt="POWERBOX Ar-Ge ve Üretim Teknolojisi" class="about-tech-img" loading="lazy">
+        </div>
+
+        <!-- Right Content -->
+        <div class="about-content-col">
+          <p class="about-subheading">HAKKIMIZDA</p>
+          <h2 class="about-heading">POWER<span class="text-blue">BOX</span></h2>
+          <p class="about-text">
+            Elektronik ürünler alanında yenilikçi çözümler üreten <strong>POWERBOX</strong>, kaliteli ve güvenilir ürünleriyle hayatı kolaylaştırmayı hedefler. Ar-Ge ve üretim gücümüzle, elektronik cihazlarınız için akıllı ve sürdürülebilir çözümler sunuyoruz.
+          </p>
+          <div class="about-actions">
+            <a href="tel:+905494095353" class="btn btn-primary-pill">
+              <span>Daha Fazla</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+            <a href="https://wa.me/905494095353?text=Merhaba,%20Powerbox%20ürünleri%20ve%20bayilik%20hakkında%20bilgi%20almak%20istiyorum." target="_blank" rel="noopener" class="btn btn-outline-pill">
+              <span>Bayilik & Toptan</span>
+            </a>
+          </div>
+        </div>
+
       </div>
     </div>
-    <div class="footer-bottom-line">
-      <div class="container">
-        <p>&copy; 2026 Powerbox Teknoloji. Tüm hakları saklıdır.</p>
+  </section>
+
+  <!-- PRODUCT DETAIL POPUP MODAL -->
+  <div class="product-modal-backdrop" id="productModal" aria-hidden="true">
+    <div class="product-modal-container">
+      <button type="button" class="modal-close-btn" id="modalCloseBtn" aria-label="Kapat">✕</button>
+      
+      <div class="modal-body-grid">
+        <!-- Modal Left Photo -->
+        <div class="modal-photo-col">
+          <img src="" alt="" id="modalImg" class="modal-product-img">
+          <div class="modal-guarantee-badge">
+            <span>🛡️ 2 Yıl Birebir Değişim</span>
+            <span>⚡ Yerli Üretim</span>
+          </div>
+        </div>
+
+        <!-- Modal Right Specs -->
+        <div class="modal-info-col">
+          <span class="modal-category-tag" id="modalCategoryTag">AKILLI VOLTAJ KORUMA</span>
+          <h3 class="modal-product-title" id="modalTitle">Ürün Adı</h3>
+          <p class="modal-product-desc" id="modalDesc">Ürün açıklaması burada yer alır.</p>
+          
+          <div class="modal-features-list" id="modalFeatures">
+            <!-- Populated via JS -->
+          </div>
+
+          <!-- Conversion Buttons -->
+          <div class="modal-cta-group">
+            <a href="#" id="modalWaBtn" target="_blank" rel="noopener" class="btn btn-wa-order">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.888 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              <span>WhatsApp ile Sipariş Ver</span>
+            </a>
+
+            <a href="tel:+905494095353" class="btn btn-call-order">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              <span>0549 409 53 53 Hemen Ara</span>
+            </a>
+          </div>
+
+          <div class="modal-trust-row">
+            <span>⚡ Kapıda Ödeme & Kredi Kartı</span>
+            <span>📦 Aynı Gün Kargo</span>
+            <span>📞 7/24 Teknik Destek</span>
+          </div>
+        </div>
       </div>
+    </div>
+  </div>
+
+  <!-- VIDEO / DEMO MODAL -->
+  <div class="video-modal-backdrop" id="videoModal" aria-hidden="true">
+    <div class="video-modal-container">
+      <button type="button" class="video-modal-close" id="videoModalClose" aria-label="Kapat">✕</button>
+      <div class="video-modal-content">
+        <div class="video-placeholder">
+          <div class="video-placeholder-icon">⚡</div>
+          <h3>POWERBOX 1 Dakikada Kolay Kurulum</h3>
+          <p>Sigorta kutunuzun yanına delmeden kırmadan yapıştırın, evdeki tüm prizleri ve cihazlarınızı yüksek voltaja karşı koruyun.</p>
+          <div class="video-demo-steps">
+            <div class="demo-step"><strong>1. Adım:</strong> Sigorta kutusu yanındaki yüzeyi silin.</div>
+            <div class="demo-step"><strong>2. Adım:</strong> Güçlü yapışkan bandı açıp yapıştırın.</div>
+            <div class="demo-step"><strong>3. Adım:</strong> Faz ve nötr kablolarını takın. Tam koruma devrede!</div>
+          </div>
+          <a href="https://wa.me/905494095353?text=Merhaba,%20Powerbox%20kurulumu%20ve%20sipariş%20hakkında%20bilgi%20almak%20istiyorum." target="_blank" rel="noopener" class="btn btn-wa-order mt-4">
+            <span>💬 Kurulum Videosunu WhatsApp'tan İste</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER (Tıpkı Referans Görseldeki Tasarım) -->
+  <footer class="site-footer" id="iletisim">
+    <div class="site-container">
+      
+      <!-- Footer Main Row -->
+      <div class="footer-main-row">
+        
+        <!-- Left Logo -->
+        <div class="footer-col-logo">
+          <a href="#hero" class="footer-logo-link">
+            <img src="assets/images/logo-white.svg" alt="POWERBOX" width="190" height="42">
+          </a>
+          <p class="footer-slogan">
+            Elektronik Cihazlarınız İçin Güçlü Koruma Teknolojileri
+          </p>
+        </div>
+
+        <!-- Center Contacts -->
+        <div class="footer-col-contacts">
+          
+          <!-- Phone -->
+          <a href="tel:+905494095353" class="footer-contact-item">
+            <div class="footer-contact-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#38bdf8" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </div>
+            <div class="footer-contact-text">
+              <span class="contact-val">+90 549 409 53 53</span>
+              <span class="contact-lbl">Hafta İçi: 09.00 - 18.00</span>
+            </div>
+          </a>
+
+          <!-- Email -->
+          <a href="mailto:info@powerbox.com.tr" class="footer-contact-item">
+            <div class="footer-contact-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#38bdf8" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div class="footer-contact-text">
+              <span class="contact-val">info@powerbox.com.tr</span>
+              <span class="contact-lbl">Bize e-posta gönderin</span>
+            </div>
+          </a>
+
+          <!-- WhatsApp -->
+          <a href="https://wa.me/905494095353" target="_blank" rel="noopener" class="footer-contact-item">
+            <div class="footer-contact-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="#22c55e"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.888 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            </div>
+            <div class="footer-contact-text">
+              <span class="contact-val">WhatsApp</span>
+              <span class="contact-lbl">Hızlı İletişim</span>
+            </div>
+          </a>
+
+        </div>
+
+        <!-- Right Social Icons -->
+        <div class="footer-col-social">
+          <div class="social-links-row">
+            <a href="https://facebook.com" target="_blank" rel="noopener" class="social-round-btn" aria-label="Facebook">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+            <a href="https://instagram.com" target="_blank" rel="noopener" class="social-round-btn" aria-label="Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <a href="https://youtube.com" target="_blank" rel="noopener" class="social-round-btn" aria-label="YouTube">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" fill="#0b132b"/></svg>
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener" class="social-round-btn" aria-label="LinkedIn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Bottom Copyright -->
+      <div class="footer-bottom-row">
+        <p>© 2026 POWERBOX. Tüm hakları saklıdır.</p>
+      </div>
+
     </div>
   </footer>
 
-  <!-- FIXED BOTTOM STICKY BAR (Instagram & Mobile Conversion Machine) -->
-  <div class="sticky-mobile-dock" aria-label="Hızlı İşlem">
-    <a href="tel:+905494095353" class="dock-btn dock-call">
+  <!-- MOBILE FLOATING BOTTOM DOCK -->
+  <aside class="mobile-bottom-dock" aria-label="Hızlı Sipariş ve Arama Çubuğu">
+    <a href="tel:+905494095353" class="dock-btn dock-btn-call">
       <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
       <span>0549 409 53 53</span>
     </a>
-    <a href="https://wa.me/905494095353?text=Merhaba,%20Powerbox%20ürünleri%20hakkında%20sipariş%20ve%20fiyat%20bilgisi%20almak%20istiyorum." target="_blank" rel="noopener" class="dock-btn dock-wa">
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+    <a href="https://wa.me/905494095353?text=Merhaba,%20Powerbox%20ürünleri%20hakkında%20sipariş%20vermek%20istiyorum." target="_blank" rel="noopener" class="dock-btn dock-btn-wa">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.888 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
       <span>WhatsApp Sipariş</span>
     </a>
-  </div>
+  </aside>
 
   <script src="js/main.js"></script>
 </body>
