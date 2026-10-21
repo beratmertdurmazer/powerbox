@@ -123,11 +123,62 @@ const PRODUCTS_DATA = {
       "Türkiye'de ilk ve tek taşınabilir gaz güvenlik sistemi"
     ],
     waMsg: "Merhaba, Powerbox KG Karavan/Tekne Gaz Alarm Cihazı hakkında bilgi almak ve sipariş vermek istiyorum."
+  },
+  elektrosok: {
+    id: "elektrosok",
+    title: "Powerbox Yüksek Gerilim Elektro Şok Cihazı",
+    category: "YENİ ÜRÜN & KİŞİSEL GÜVENLİK",
+    image: "assets/images/urun/elektrosok.png",
+    desc: "Kişisel güvenlik ve caydırıcı koruma için özel olarak geliştirilmiş yüksek gerilimli, şarjlı ve emniyet kilitli kompakt elektro şok cihazı.",
+    features: [
+      "Yüksek gerilim ark deşarjı ile üstün caydırıcı ses ve kıvılcım etkisi",
+      "Taşınabilir kompakt ergonomik tasarım, cepte veya çantada kolay taşıma",
+      "Dahili şarj edilebilir batarya ve emniyet açma/kapama mandalı",
+      "Karanlık ortamlar için yüksek lümenli entegre LED el feneri",
+      "Kişisel savunma, esnaf ve güvenlik görevlileri için pratik caydırıcı çözüm"
+    ],
+    waMsg: "Merhaba, Powerbox Yüksek Gerilim Elektro Şok Cihazı hakkında bilgi almak ve sipariş vermek istiyorum."
   }
 };
 
 const PHONE_NUMBER = "0549 409 53 53";
 const WHATSAPP_INT_NUMBER = "905494095353";
+
+// ---------------- CATEGORY FILTER ("TIK TIK" SNAPPY NAVIGATION) ----------------
+function filterCategory(catKey) {
+  // Update Tab Buttons
+  const tabBtns = document.querySelectorAll("#categoryTabsBar .cat-tab-btn");
+  tabBtns.forEach(btn => {
+    if (btn.dataset.filter === catKey) {
+      btn.classList.add("active");
+    } else {
+      btn.classList.remove("active");
+    }
+  });
+
+  // Filter Product Cards
+  const cards = document.querySelectorAll("#productsGrid .product-card");
+  cards.forEach(card => {
+    const cardCat = card.dataset.category;
+    if (catKey === "all" || cardCat === catKey) {
+      card.style.display = "";
+      card.classList.remove("is-hidden");
+    } else {
+      card.style.display = "none";
+      card.classList.add("is-hidden");
+    }
+  });
+
+  // If clicked from categories section or not already in products view, smooth scroll to products
+  const productsSection = document.getElementById("urunler");
+  if (productsSection) {
+    const rect = productsSection.getBoundingClientRect();
+    if (rect.top < -50 || rect.top > 300) {
+      productsSection.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  }
+}
+window.filterCategory = filterCategory;
 
 // ---------------- PRODUCT DETAIL MODAL ----------------
 function openProductModal(productId) {
@@ -296,7 +347,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Active navigation highlight on scroll
   const navLinks = document.querySelectorAll(".nav-link");
-  const sections = ["hero", "urunler", "hakkimizda", "iletisim"].map(id => document.getElementById(id));
+  const sections = ["hero", "kategoriler", "ustalar-guveni", "urunler", "hakkimizda", "iletisim"].map(id => document.getElementById(id));
 
   window.addEventListener("scroll", () => {
     const scrollPos = window.scrollY + 120;
