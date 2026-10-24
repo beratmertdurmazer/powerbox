@@ -445,10 +445,15 @@ function renderCartUI() {
   const floatingBadge = document.getElementById("floatingCartBadge");
   const floatingTotal = document.getElementById("floatingCartTotal");
   const drawerCount = document.getElementById("drawerCartCount");
+  const dockBadge = document.getElementById("dockCartBadge");
 
   if (headerBadge) {
     headerBadge.textContent = count;
     headerBadge.style.display = count > 0 ? "inline-flex" : "none";
+  }
+  if (dockBadge) {
+    dockBadge.textContent = count;
+    dockBadge.style.display = count > 0 ? "inline-flex" : "none";
   }
   if (floatingBadge) {
     floatingBadge.textContent = count;
@@ -540,6 +545,12 @@ function animateCartButton() {
     void floatingBtn.offsetWidth; // trigger reflow
     floatingBtn.classList.add("cart-bounce");
   }
+  const dockBtn = document.querySelector(".dock-btn-cart");
+  if (dockBtn) {
+    dockBtn.classList.remove("cart-bounce");
+    void dockBtn.offsetWidth;
+    dockBtn.classList.add("cart-bounce");
+  }
 }
 
 // ---------------- WHATSAPP DIRECT BUY & CART CHECKOUT ----------------
@@ -609,6 +620,13 @@ function openCartDrawer() {
   if (drawer) {
     drawer.classList.add("is-active");
     document.body.style.overflow = "hidden";
+  }
+  // If story modal is open, close it cleanly so cart is front and center
+  if (typeof closeStoryModal === "function") {
+    const storyModal = document.getElementById("storyModal");
+    if (storyModal && storyModal.classList.contains("is-active")) {
+      closeStoryModal();
+    }
   }
 }
 window.openCartDrawer = openCartDrawer;
@@ -1063,6 +1081,21 @@ function addStoryToCart() {
   if (!story) return;
   const prod = PRODUCTS_DATA[story.productId];
   addToCart(story.productId);
+
+  // In-button feedback inside the story
+  const addBtn = document.getElementById("storyAddCartBtn");
+  if (addBtn) {
+    const origHtml = addBtn.innerHTML;
+    addBtn.innerHTML = `<span>✓ Eklendi!</span>`;
+    addBtn.style.background = "#16a34a";
+    addBtn.style.color = "#ffffff";
+    setTimeout(() => {
+      addBtn.innerHTML = origHtml;
+      addBtn.style.background = "";
+      addBtn.style.color = "";
+    }, 2200);
+  }
+
   showToast(`✓ ${prod ? prod.title : "Ürün"} sepete eklendi!`, true);
   
   // Pause story briefly to let the user see the addition
