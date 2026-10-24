@@ -6,48 +6,110 @@
 const PRODUCTS_DATA = {
   px1: {
     id: "px1",
-    title: "Powerbox PX1 Yüksek Voltaj Koruma",
-    category: "SİGORTA KUTUSU KORUMA MODÜLÜ",
+    title: "Powerbox PX1",
+    category: "YÜKSEK VOLTAJ KORUMA MODÜLÜ",
     image: "assets/images/urun/px1.png",
     desc: "Tek bir modül ile evdeki tüm prizleri akım korumalı prize dönüştürün. Voltaj dalgalanmalarına karşı tüm elektronik cihazlarınızı koruyun.",
     features: [
       "Elektrik çarpma riski olmadan 1 dakikada kolay bağlantı",
       "Yapışkan yüzeyi ile sigorta kutunuzun yanına kırmadan delmeden anında montaj",
-      "Şık tasarımı ve dijital gösterge ekranı",
+      "Ekranda anlık voltaj ve tüketim değerini görebilirsiniz",
       "Ekstra kapasitör devresi ile ani pik dalgalanmalarını filtreler",
       "2 Yıl Üretici Garantisi"
     ],
     waMsg: "Merhaba, Powerbox PX1 Yüksek Voltaj Koruma Modülü için toptan sipariş ve fiyat bilgisi almak istiyorum."
   },
-  ap1: {
-    id: "ap1",
-    title: "Powerbox AP1 Akım Korumalı Priz",
-    category: "16A GÜÇLÜ PRİZ & ENERJİ TASARRUFU",
-    image: "assets/images/urun/elektrik-tasarruf.png",
-    desc: "Rakipleri gibi sadece yüksek voltaja karşı korumaz; ekstra kapasitör haznesi sayesinde voltaj oynamalarını minimize ederek elektronik eşyalarınızın rahat çalışmasını sağlar ve ömrünü uzatır.",
+  px2: {
+    id: "px2",
+    title: "Powerbox PX2",
+    category: "YÜKSEK VOLTAJ KORUMA MODÜLÜ",
+    image: "assets/images/urun/px2.png",
+    desc: "Gelişmiş çift kademeli koruma devresi ve dijital göstergesi ile evinizdeki tüm prizleri tek noktadan güvenceye alır.",
     features: [
-      "16A Güçlü priz yapısı ile yüksek akım çeken cihazlara tam uyum",
-      "Ekstra kapasitör haznesi ile voltaj dalgalanmalarını minimize eder",
-      "Elektronik cihazların rahat çalışmasını sağlayarak enerji tasarrufuna yardımcı olur",
-      "Darbeli akımlara karşı maksimum güvenlik kalkanı",
-      "Prize doğrudan tak-çalıştır pratik kullanım"
+      "Elektrik çarpma riski olmadan 1 dakikada kolay bağlantı",
+      "Yapışkan yüzeyi ile sigorta kutunuzun yanına kırmadan delmeden anında montaj",
+      "Ekranda anlık voltaj değerini görebilirsiniz",
+      "Ekstra kapasitör devresi ile ani pik dalgalanmalarını filtreler",
+      "2 Yıl Üretici Garantisi"
     ],
-    waMsg: "Merhaba, Powerbox AP1 Akım Korumalı Priz için toptan sipariş ve fiyat bilgisi almak istiyorum."
+    waMsg: "Merhaba, Powerbox PX2 Yüksek Voltaj Koruma Modülü için toptan sipariş ve fiyat bilgisi almak istiyorum."
+  },
+  px3: {
+    id: "px3",
+    title: "Powerbox PX3",
+    category: "YÜKSEK VOLTAJ KORUMA MODÜLÜ",
+    image: "assets/images/urun/px3.png",
+    desc: "Yüksek akım ve sanayi tipi hatlar için üst düzey aşırı gerilim kalkanı ve pik filtreleme modülüdür.",
+    features: [
+      "Elektrik çarpma riski olmadan 1 dakikada kolay bağlantı",
+      "Yapışkan yüzeyi ile sigorta kutunuzun yanına kırmadan delmeden anında montaj",
+      "Ekstra kapasitör devresi ile ani pik dalgalanmalarını filtreler",
+      "2 Yıl Üretici Garantisi"
+    ],
+    waMsg: "Merhaba, Powerbox PX3 Yüksek Voltaj Koruma Modülü için toptan sipariş ve fiyat bilgisi almak istiyorum."
   },
   gc1: {
     id: "gc1",
-    title: "Powerbox GC1 Fişli Gaz Alarm Cihazı",
+    title: "Powerbox G-C Fişli Gaz Alarm Cihazı",
     category: "220V PRİZE TAKILAN KABLOSUZ ALARM",
     image: "assets/images/urun/gc1-gaz.png",
     desc: "Kurulum ve kablo çekme derdi olmadan doğrudan prize takılarak kullanılan yüksek güvenlikli gaz kaçak uyarı sistemidir.",
     features: [
       "Dış sensör yapısı ile doğalgaz kaçağını anında algılar",
       "Gaz kaçağı anında 100 dB güçlü sesli uyarı ile hemen ikaz eder",
-      "Sıfır kablo çekme, doğrudan prize takılan kompakt tasarım",
       "Mutfak, kombi yanı ve doğalgaz boruları yakınında güvenle kullanım",
-      "Can ve mal güvenliğini 7/24 garantiye alır"
+      "Talebe göre alev algılama ve gaz çeşitlerine göre üretim yapılır",
+      "Bazen küçük detaylar hayat kurtarır..!"
     ],
-    waMsg: "Merhaba, Powerbox GC1 Fişli Gaz Alarm Cihazı için toptan sipariş ve fiyat bilgisi almak istiyorum."
+    waMsg: "Merhaba, Powerbox G-C Fişli Gaz Alarm Cihazı için toptan sipariş ve fiyat bilgisi almak istiyorum."
+  },
+  ga: {
+    id: "ga",
+    title: "Powerbox G-A Araç İçi Gaz Alarmı",
+    category: "TÜRKİYE'DE İLK VE TEK ARAÇ LPG ALARMI",
+    image: "assets/images/urun/ga-arac.png",
+    desc: "LPG'li araçlar için üretilen bu ürün bagajda uygun yere koyularak sadece 12V besleme verilerek sabit veya pil kullanarak gaz kokusu endişesinde dedektör olarak kullanılabilir.",
+    features: [
+      "İster 3 adet kalem pil ile seyyar, ister 12V besleme soketine aküden voltaj vererek kullanım",
+      "Dış sensör yapısı ile gaz kaçağını milisaniyeler içinde algılar",
+      "Gaz kaçağı anında 100 dB güçlü sesli siren ile sürücüyü ikaz eder",
+      "Torpido, bagaj veya LPG tankı yakınına anında yapıştırılır",
+      "Talebe göre alev algılama ve gaz çeşitlerine göre üretim yapılır",
+      "Bazen küçük detaylar hayat kurtarır..!"
+    ],
+    waMsg: "Merhaba, Powerbox G-A Araç İçi Gaz Alarmı için toptan sipariş ve fiyat bilgisi almak istiyorum."
+  },
+  kg: {
+    id: "kg",
+    title: "Powerbox K-G Karavan Gaz Alarmı",
+    category: "KARAVAN VE TEKNELERE ÖZEL ALARM",
+    image: "assets/images/urun/kg-karavan.png",
+    desc: "Karavan ve tekne sahiplerine özel olarak tasarlanan bu kompakt ürün montaj ve kablo çekme derdi olmadan seyyar veya yapışkanlı yüzeyi ile montaj sorunu olmadan kolayca kullanılır.",
+    features: [
+      "İster pil ile seyyar, dilerseniz 5V adaptör ile eviniz dahil dilediğiniz yerde kullanım",
+      "Dış sensör yapısı ile gaz kaçağını anında algılar",
+      "Gaz kaçağını algıladığı anda 100 dB güçlü siren ile uyarı verir",
+      "Uykuda karbonmonoksit ve gaz sızıntılarına karşı hayat kurtaran erken uyarı",
+      "Türkiye'de ilk ve tek taşınabilir gaz alarm cihazı",
+      "Talebe göre alev algılama ve gaz çeşitlerine göre üretim yapılır",
+      "Bazen küçük detaylar hayat kurtarır..!"
+    ],
+    waMsg: "Merhaba, Powerbox K-G Karavan Gaz Alarmı için toptan sipariş ve fiyat bilgisi almak istiyorum."
+  },
+  ap1: {
+    id: "ap1",
+    title: "Powerbox AP1 Akım Korumalı Priz",
+    category: "16A GÜÇLÜ AKIM KORUMALI PRİZ",
+    image: "assets/images/urun/elektrik-tasarruf.png",
+    desc: "Rakipleri gibi sadece yüksek voltaja karşı korumaz; ekstra kapasitör haznesi sayesinde voltaj oynamalarını minimize ederek elektronik eşyalarınızın rahat çalışmasını sağlar ve ömrünü uzatır.",
+    features: [
+      "16A Güçlü priz yapısı ile yüksek akım çeken cihazlara tam uyum",
+      "Ekstra kapasitör haznesi ile voltaj dalgalanmalarını minimize eder",
+      "Elektronik cihazların rahat çalışmasını sağlayarak enerji tasarrufuna yardımcı olur",
+      "Prize doğrudan tak-çalıştır pratik kullanım",
+      "2 Yıl Üretici Garantisi"
+    ],
+    waMsg: "Merhaba, Powerbox AP1 Akım Korumalı Priz için toptan sipariş ve fiyat bilgisi almak istiyorum."
   },
   hasere: {
     id: "hasere",
@@ -56,88 +118,26 @@ const PRODUCTS_DATA = {
     image: "assets/images/urun/hasere-kovucu.png",
     desc: "220V prize takılarak kullanılan Powerbox haşere kovucu, yaydığı 19-22 kHz ultrasonik ses dalgaları ile sinek, sivrisinek, fare dahil tüm haşeratı ortamdan uzaklaştırır.",
     features: [
-      "Gerçek 19-22 kHz ultrasonik ses çıkışı (İnsan kulağı duymaz, haşerat terk eder)",
-      "Kamera Testiyle İspatlanabilir: Cep telefonu kamerasını yaklaştırıp video kaydederek gerçek ses çıkışı hemen test edilebilir",
-      "Piyasadaki sadece ışığı yanıp ses çıkarmayan sahte cihazlardan tamamen farklıdır",
+      "Gerçek 19-22 kHz ultrasonik ses çıkışı haşeratı uzaklaştırır, ortamda barınmalarına izin vermez",
+      "Cep telefonu kamerasını yaklaştırıp video kaydederek gerçek ses çıkışı hemen test edilebilir",
       "Kimyasal, tablet veya zehir içermez, çevre ve evcil hayvan dostudur",
       "Tak-çalıştır 7/24 kesintisiz koruma sağlar"
     ],
-    waMsg: "Merhaba, Powerbox 22 kHz Ultrasonik Haşere Kovucu için toptan sipariş ve fiyat bilgisi almak istiyorum."
-  },
-  px2: {
-    id: "px2",
-    title: "Powerbox PX2 Voltaj Koruma Modülü",
-    category: "PRO SERİSİ VOLTAJ KORUMA",
-    image: "assets/images/urun/px2.png",
-    desc: "Türkiye'de ilk ve tek. Çift kademeli koruma devresi ve anlık voltaj göstergesi ile evinizdeki tüm prizleri tek noktadan güvenceye alır.",
-    features: [
-      "Türkiye'de ilk ve tek parafudr destekli akıllı koruma modülü",
-      "Kırmadan delmeden yapışkan yüzeyi ile sigorta panosu yanına kolay montaj",
-      "Anlık voltaj takip göstergesi",
-      "Kombi, buzdolabı, çamaşır makinesi ve TV kartlarını yüksek voltajdan korur",
-      "2 Yıl Üretici Garantisi"
-    ],
-    waMsg: "Merhaba, Powerbox PX2 Voltaj Koruma Modülü için toptan sipariş ve fiyat bilgisi almak istiyorum."
-  },
-  px3: {
-    id: "px3",
-    title: "Powerbox PX3 Voltaj Koruma Modülü",
-    category: "AĞIR HİZMET & ENDÜSTRİYEL KORUMA",
-    image: "assets/images/urun/px3.png",
-    desc: "Yüksek akım ve sanayi tipi hatlar için üst düzey aşırı gerilim ve parafudr koruma modülüdür.",
-    features: [
-      "Ağır hizmet tipi aşırı voltaj koruma rölesi",
-      "Yıldırım ve şebeke trafo arızalarına karşı tam donanımlı kalkan",
-      "Trifaze ve monofaze panolara uygun kompakt yapı",
-      "Fabrika, atölye, ofis ve geniş villalar için ideal koruma",
-      "Türkiye'de üretilen yerli teknoloji"
-    ],
-    waMsg: "Merhaba, Powerbox PX3 Voltaj Koruma Modülü için toptan sipariş ve fiyat bilgisi almak istiyorum."
-  },
-  ga: {
-    id: "ga",
-    title: "Powerbox GA Araç İçi Gaz Alarmı",
-    category: "TÜRKİYE'DE İLK VE TEK ARAÇ LPG ALARMI",
-    image: "assets/images/urun/ga-arac.png",
-    desc: "LPG'li araçlar için üretilen bu kompakt ürün montaj ve kablo çekme derdi olmadan ister seyyar ister yapışkanlı yüzeyi ile istenilen yere takılarak kullanılır.",
-    features: [
-      "İster 3 adet kalem pil ile seyyar, ister 12V besleme soketine aküden voltaj vererek kullanım",
-      "Dış sensör yapısı ile gaz kaçağını milisaniyeler içinde algılar",
-      "Gaz kaçağı anında 100 dB güçlü sesli siren ile sürücüyü ikaz eder",
-      "Torpido, bagaj veya lpg tankı yakınına anında yapıştırılır",
-      "Can ve yangın güvenliğini garantiye alır"
-    ],
-    waMsg: "Merhaba, Powerbox GA Araç İçi Gaz Alarm Cihazı için toptan sipariş ve fiyat bilgisi almak istiyorum."
-  },
-  kg: {
-    id: "kg",
-    title: "Powerbox KG Karavan & Tekne Gaz Alarmı",
-    category: "KARAVAN VE TEKNELERE ÖZEL MOBİL ALARM",
-    image: "assets/images/urun/kg-karavan.png",
-    desc: "Karavan ve tekne sahiplerine özel olarak tasarlanan bu kompakt ürün montaj ve kablo çekme derdi olmadan seyyar veya yapışkanlı yüzeyi ile her yerde güvenle kullanılır.",
-    features: [
-      "İster 3 adet kalem pil ile seyyar, dilerseniz 5V adaptör ile eviniz dahil dilediğiniz yerde kullanım",
-      "Dış sensör yapısı ile gaz kaçağını anında algılar",
-      "Gaz kaçağını algıladığı anda 100 dB güçlü siren ile uyarı verir",
-      "Uykuda karbonmonoksit ve gaz sızıntılarına karşı hayat kurtaran erken uyarı",
-      "Türkiye'de ilk ve tek taşınabilir gaz güvenlik sistemi"
-    ],
-    waMsg: "Merhaba, Powerbox KG Karavan/Tekne Gaz Alarm Cihazı için toptan sipariş ve fiyat bilgisi almak istiyorum."
+    waMsg: "Merhaba, Powerbox Gerçek 22 kHz Haşere Kovucu için toptan sipariş ve fiyat bilgisi almak istiyorum."
   },
   elektrosok: {
     id: "elektrosok",
-    title: "Powerbox Yüksek Gerilim Elektro Şok Cihazı",
-    category: "YENİ ÜRÜN & KİŞİSEL GÜVENLİK",
+    title: "Powerbox 400 kV Elektro Şok Cihazı",
+    category: "YÜKSEK GERİLİM & KİŞİSEL GÜVENLİK",
     image: "assets/images/urun/elektrosok.png",
-    desc: "Kişisel güvenlik ve caydırıcı koruma için özel olarak geliştirilmiş yüksek gerilimli, şarjlı ve emniyet kilitli kompakt elektro şok cihazı.",
+    desc: "Kişisel güvenlik ve caydırıcı koruma için özel olarak geliştirilmiş yüksek gerilimli kompakt elektro şok cihazı.",
     features: [
-      "Yüksek gerilim ark deşarjı ile üstün caydırıcı ses ve kıvılcım etkisi",
-      "Taşınabilir kompakt ergonomik tasarım, cepte veya çantada kolay taşıma",
-      "Dahili şarj edilebilir batarya ve emniyet açma/kapama mandalı",
-      "Karanlık ortamlar için yüksek lümenli entegre LED el feneri",
-      "Kişisel savunma, esnaf ve güvenlik görevlileri için pratik caydırıcı çözüm"
+      "400 kva Yüksek gerilim ark deşarjı ile üstün caydırıcı ses ve kıvılcım etkisi",
+      "Taşınabilir kompakt ergonomik tasarım, kolay taşıma",
+      "Kişisel savunma, esnaf ve güvenlik görevlileri için pratik caydırıcı çözüm",
+      "Dahili şarj edilebilir batarya ve emniyet kilit mekanizması"
     ],
-    waMsg: "Merhaba, Powerbox Yüksek Gerilim Elektro Şok Cihazı için toptan sipariş ve fiyat bilgisi almak istiyorum."
+    waMsg: "Merhaba, Powerbox 400 kV Elektro Şok Cihazı için toptan sipariş ve fiyat bilgisi almak istiyorum."
   }
 };
 
@@ -146,90 +146,90 @@ const STORIES_DATA = [
   {
     id: "px1",
     productId: "px1",
-    tag: "ÇOK SATAN • SİGORTA KUTUSU",
-    title: "Powerbox PX1 Voltaj Koruma",
-    desc: "Evinizdeki tüm prizleri tek noktadan akım korumalıya dönüştürün. Ani voltaj darbelerine karşı kombi ve beyaz eşyaları tam korur.",
+    tag: "YÜKSEK VOLTAJ KORUMA",
+    title: "Powerbox PX1",
+    desc: "Tek bir modül ile evdeki tüm prizleri akım korumalıya dönüştürün. Anlık voltaj ve tüketim ekranlı.",
     image: "assets/images/urun/px1.png",
     waMsg: "Merhaba, Powerbox PX1 Yüksek Voltaj Koruma Modülü için toptan sipariş ve fiyat bilgisi almak istiyorum."
   },
   {
     id: "px2",
     productId: "px2",
-    tag: "PRO SERİSİ • DİJİTAL GÖSTERGE",
-    title: "Powerbox PX2 Pro Koruma",
-    desc: "Çift kademeli parafudr devresi ve anlık dijital voltaj göstergesi ile ev ve işletmeler için profesyonel gerilim kalkanı.",
+    tag: "YÜKSEK VOLTAJ KORUMA",
+    title: "Powerbox PX2",
+    desc: "Çift kademeli koruma devresi ve anlık dijital voltaj göstergesi ile evinizdeki tüm prizleri tek noktadan korur.",
     image: "assets/images/urun/px2.png",
-    waMsg: "Merhaba, Powerbox PX2 Voltaj Koruma Modülü için toptan sipariş ve fiyat bilgisi almak istiyorum."
+    waMsg: "Merhaba, Powerbox PX2 Yüksek Voltaj Koruma Modülü için toptan sipariş ve fiyat bilgisi almak istiyorum."
   },
   {
     id: "px3",
     productId: "px3",
-    tag: "AĞIR HİZMET • SANAYİ VE PANO",
-    title: "Powerbox PX3 Endüstriyel",
-    desc: "Yüksek akım ve sanayi tipi hatlar için üst düzey aşırı gerilim kalkanı. Trifaze ve monofaze panolara tam uyum.",
+    tag: "YÜKSEK VOLTAJ KORUMA",
+    title: "Powerbox PX3",
+    desc: "Yüksek akım ve sanayi tipi hatlar için ekstra kapasitörlü aşırı gerilim kalkanı ve pik filtreleme modülüdür.",
     image: "assets/images/urun/px3.png",
-    waMsg: "Merhaba, Powerbox PX3 Voltaj Koruma Modülü için toptan sipariş ve fiyat bilgisi almak istiyorum."
-  },
-  {
-    id: "ap1",
-    productId: "ap1",
-    tag: "16A GÜÇLÜ PRİZ & ENERJİ TASARRUFU",
-    title: "Powerbox AP1 Akım Korumalı Priz",
-    desc: "Ekstra kapasitör haznesi sayesinde voltaj oynamalarını minimize ederek elektronik cihazların rahat çalışmasını sağlar.",
-    image: "assets/images/urun/elektrik-tasarruf.png",
-    waMsg: "Merhaba, Powerbox AP1 Akım Korumalı Priz için toptan sipariş ve fiyat bilgisi almak istiyorum."
+    waMsg: "Merhaba, Powerbox PX3 Yüksek Voltaj Koruma Modülü için toptan sipariş ve fiyat bilgisi almak istiyorum."
   },
   {
     id: "gc1",
     productId: "gc1",
-    tag: "220V PRİZE TAK-ÇALIŞTIR",
-    title: "Powerbox GC1 Fişli Gaz Alarmı",
-    desc: "Sıfır kablo çekme derdi olmadan doğrudan prize takılır. Dış sensörlü yapısıyla kaçak anında 100 dB güçlü sirenle uyarır.",
+    tag: "220V KABLOSUZ ALARM",
+    title: "Powerbox G-C Fişli Gaz Alarmı",
+    desc: "Dış sensör yapısıyla doğalgaz kaçağını anında algılar, 100 dB güçlü sirenle ikaz eder. Bazen küçük detaylar hayat kurtarır!",
     image: "assets/images/urun/gc1-gaz.png",
-    waMsg: "Merhaba, Powerbox GC1 Fişli Gaz Alarm Cihazı için toptan sipariş ve fiyat bilgisi almak istiyorum."
+    waMsg: "Merhaba, Powerbox G-C Fişli Gaz Alarm Cihazı için toptan sipariş ve fiyat bilgisi almak istiyorum."
   },
   {
     id: "ga",
     productId: "ga",
-    tag: "TÜRKİYE'DE İLK VE TEK ARAÇ LPG",
-    title: "Powerbox GA Araç İçi Gaz Alarmı",
-    desc: "LPG'li araçlar için montajsız, 3 kalem pil veya 12V akü soketi ile çalışan ilk ve tek taşınabilir gaz kaçak dedektörü.",
+    tag: "TÜRKİYE'DE İLK VE TEK",
+    title: "Powerbox G-A Araç Gaz Alarmı",
+    desc: "LPG'li araçlar için 3 kalem pil veya 12V akü beslemeli milisaniyelik gaz kaçak erken uyarı dedektörü.",
     image: "assets/images/urun/ga-arac.png",
-    waMsg: "Merhaba, Powerbox GA Araç İçi Gaz Alarm Cihazı için toptan sipariş ve fiyat bilgisi almak istiyorum."
+    waMsg: "Merhaba, Powerbox G-A Araç İçi Gaz Alarmı için toptan sipariş ve fiyat bilgisi almak istiyorum."
   },
   {
     id: "kg",
     productId: "kg",
     tag: "KARAVAN VE TEKNELERE ÖZEL",
-    title: "Powerbox KG Portatif Gaz Alarmı",
-    desc: "Karavan, çadır ve tekneler için pilli veya 5V adaptörle çalışan hayat kurtarıcı mobil gaz ve karbonmonoksit alarmı.",
+    title: "Powerbox K-G Karavan Alarmı",
+    desc: "Karavan ve tekneler için pilli veya 5V adaptörle mobil taşınabilir gaz ve CO erken ikaz sistemi.",
     image: "assets/images/urun/kg-karavan.png",
-    waMsg: "Merhaba, Powerbox KG Karavan/Tekne Gaz Alarm Cihazı için toptan sipariş ve fiyat bilgisi almak istiyorum."
+    waMsg: "Merhaba, Powerbox K-G Karavan Gaz Alarmı için toptan sipariş ve fiyat bilgisi almak istiyorum."
+  },
+  {
+    id: "ap1",
+    productId: "ap1",
+    tag: "16A GÜÇLÜ PRİZ",
+    title: "Powerbox AP1 Akım Korumalı Priz",
+    desc: "Ekstra kapasitör haznesiyle voltaj oynamalarını filtreler, cihazların rahat çalışmasını sağlayarak ömrünü uzatır.",
+    image: "assets/images/urun/elektrik-tasarruf.png",
+    waMsg: "Merhaba, Powerbox AP1 Akım Korumalı Priz için toptan sipariş ve fiyat bilgisi almak istiyorum."
   },
   {
     id: "hasere",
     productId: "hasere",
-    tag: "GERÇEK 22 kHz ULTRASONİK",
-    title: "Powerbox 22 kHz Haşere Kovucu",
-    desc: "Gerçek 19-22 kHz frekansla sinek, fare ve haşeratı uzaklaştırır. Telefon kamerasıyla gerçek ses çıkışı hemen test edilebilir!",
+    tag: "GERÇEK 19-22 kHz",
+    title: "Powerbox Haşere Kovucu",
+    desc: "Gerçek 19-22 kHz ultrasonik sesle sinek, sivrisinek ve fareleri uzaklaştırır. Telefon kamerasıyla test edilebilir!",
     image: "assets/images/urun/hasere-kovucu.png",
-    waMsg: "Merhaba, Powerbox 22 kHz Ultrasonik Haşere Kovucu için toptan sipariş ve fiyat bilgisi almak istiyorum."
+    waMsg: "Merhaba, Powerbox Gerçek 22 kHz Haşere Kovucu için toptan sipariş ve fiyat bilgisi almak istiyorum."
   },
   {
     id: "elektrosok",
     productId: "elektrosok",
-    tag: "YENİ ÜRÜN • KİŞİSEL SAVUNMA",
-    title: "Powerbox Elektro Şok Cihazı",
-    desc: "Yüksek gerilim ark deşarjı, dahili güçlü LED el feneri, şarjlı bataryası ve emniyet kilidi ile caydırıcı koruma.",
+    tag: "400 kV YÜKSEK GERİLİM",
+    title: "Powerbox 400 kV Elektro Şok",
+    desc: "400 kV ark deşarjı, caydırıcı ses ve kıvılcım, dahili güçlü LED el feneri ve emniyet kilidi ile caydırıcı koruma.",
     image: "assets/images/urun/elektrosok.png",
-    waMsg: "Merhaba, Powerbox Yüksek Gerilim Elektro Şok Cihazı için toptan sipariş ve fiyat bilgisi almak istiyorum."
+    waMsg: "Merhaba, Powerbox 400 kV Elektro Şok Cihazı için toptan sipariş ve fiyat bilgisi almak istiyorum."
   },
   {
     id: "demonte",
     productId: "demonte",
     tag: "GENÇ ÜRETİCİLER & AR-GE",
     title: "Demonte Kit & Boş Plastik Kutular",
-    desc: "Yetenekli gençlerimiz ve geliştiriciler üretsin diye demonte devre kitleri ve boş plastik cihaz kutuları çok uygun fiyatlarla!",
+    desc: "Yetenekli gençlerimiz ve geliştiriciler üretsin diye demonte devre kitleri ve boş plastik cihaz kutuları toptan fiyatlarla!",
     image: "assets/images/kategori/yeniurunler.png",
     waMsg: "Merhaba, Powerbox demonte kit paketleri ve boş plastik kutular hakkında toptan bilgi ve fiyat almak istiyorum."
   }
@@ -237,6 +237,22 @@ const STORIES_DATA = [
 
 const PHONE_NUMBER = "0549 409 53 53";
 const WHATSAPP_INT_NUMBER = "905494095353";
+
+// ---------------- SCROLL TO DEDICATED TASARRUF SECTION ----------------
+function scrollToTasarrufSection() {
+  const sec = document.getElementById("elektrik-tasarruf");
+  if (sec) {
+    sec.scrollIntoView({ behavior: "smooth", block: "start" });
+    const card = sec.querySelector(".tasarruf-card-box");
+    if (card) {
+      card.style.boxShadow = "0 0 0 3px #38bdf8, 0 24px 60px rgba(56, 189, 248, 0.35)";
+      setTimeout(() => {
+        card.style.boxShadow = "";
+      }, 1500);
+    }
+  }
+}
+window.scrollToTasarrufSection = scrollToTasarrufSection;
 
 // ---------------- CATEGORY FILTER ("TIK TIK" SNAPPY NAVIGATION) ----------------
 function filterCategory(catKey) {
@@ -573,7 +589,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Active navigation highlight on scroll
   const navLinks = document.querySelectorAll(".nav-link");
-  const sections = ["hero", "kategoriler", "demonte-kit", "ustalar-guveni", "urunler", "hakkimizda", "iletisim"].map(id => document.getElementById(id));
+  const sections = ["hero", "kategoriler", "demonte-kit", "elektrik-tasarruf", "urunler", "hakkimizda", "iletisim"].map(id => document.getElementById(id));
 
   window.addEventListener("scroll", () => {
     const scrollPos = window.scrollY + 120;

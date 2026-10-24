@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>POWERBOX | Elektronik Cihazlarınız İçin Güçlü Koruma</title>
-  <meta name="description" content="POWERBOX Teknoloji - Yüksek voltaj koruma modülleri, akım korumalı prizler, araç ve ev gaz alarm sistemleri, 22kHz ultrasonik haşere kovucu ve elektroşok cihazı. Perakende ve toptan satış.">
+  <meta name="description" content="POWERBOX Teknoloji - Yüksek voltaj koruma modülleri, gaz alarmları, elektrik tasarruf sistemleri, akım korumalı priz ve özel çözümler. Sadece toptan satış ve özel proje imalatı.">
   <meta name="theme-color" content="#0284c7">
 
   <!-- Google Fonts -->
@@ -48,8 +48,8 @@
         <a href="#hero" class="nav-link active">Ana Sayfa</a>
         <a href="#kategoriler" class="nav-link">Kategoriler</a>
         <a href="#demonte-kit" class="nav-link">Demonte & Kutu</a>
+        <a href="#elektrik-tasarruf" class="nav-link">Elektrik Tasarruf</a>
         <a href="#urunler" class="nav-link">Toptan Ürünler</a>
-        <a href="#ustalar-guveni" class="nav-link">Ustaların Tercihi</a>
         <a href="#hakkimizda" class="nav-link">Hakkımızda</a>
         <a href="#iletisim" class="nav-link">İletişim</a>
       </nav>
@@ -357,14 +357,12 @@
     </div>
   </div>
 
-  <!-- 4 ANA KATEGORİ BÖLÜMÜ (3'lü Grup Görselleriyle Hızlı Seçim) -->
+  <!-- 4 ANA KATEGORİ BÖLÜMÜ (POWERBOX AİLESİ) -->
   <section class="categories-section" id="kategoriler">
     <div class="site-container">
       
       <div class="section-title-wrap text-center">
-        <p class="section-badge">— 4 ANA KATEGORİ —</p>
-        <h2 class="section-heading">İhtiyacınıza Uygun Koruma Kategorisini Seçin</h2>
-        <p class="section-subtext">Ana sayfada kalabalık yok; kategorinizi seçin, ilgili ürün grubuna tek tıkla hızla ulaşın.</p>
+        <h2 class="section-heading">POWERBOX AİLESİ</h2>
       </div>
 
       <div class="categories-grid">
@@ -375,9 +373,8 @@
             <img src="assets/images/kategori/voltajkorumamodulleri.png" alt="Voltaj Koruma Modülleri Grubu" class="category-thumb-img" loading="lazy">
           </div>
           <div class="category-card-content">
-            <span class="category-badge-tag">3 MODEL • SİGORTA KUTUSU TİPİ</span>
             <h3 class="category-title">Voltaj Koruma Modülleri</h3>
-            <p class="category-desc">Sigorta kutusuna 1 dakikada yapıştırın; evdeki tüm prizleri, kombiyi ve beyaz eşyaları ani voltaj yükselmelerine karşı koruyun.</p>
+            <p class="category-desc">Yüksek voltaja karşı koruma, anlık voltaj değerini görme ve cihazlarınızın tüketimini ölçme hepsi bir arada.</p>
             <div class="category-action-link">
               <span>Ürünleri İncele (PX1, PX2, PX3)</span>
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
@@ -391,43 +388,40 @@
             <img src="assets/images/kategori/gazalarmcihazları.png" alt="Gaz Alarm Cihazları Grubu" class="category-thumb-img" loading="lazy">
           </div>
           <div class="category-card-content">
-            <span class="category-badge-tag">3 MODEL • EV, ARAÇ VE KARAVAN</span>
-            <h3 class="category-title">Gaz & Kaçak Alarm Sistemleri</h3>
-            <p class="category-desc">Doğalgaz, LPG ve karavan tüp kaçaklarına karşı dış sensörlü, sıfır kablo çekme derdi olmadan 100 dB güçlü erken sesli ikaz.</p>
+            <h3 class="category-title">Gaz Alarm Cihazları</h3>
+            <p class="category-desc">Evde, arabada, karavanda; ister fişe tak kullan ister pilli model ile gaz olan her yere götür, dilerseniz seyyar gaz kaçak dedektörü olarak kullanabilirsiniz.</p>
             <div class="category-action-link">
-              <span>Ürünleri İncele (Fişli, Araç LPG, Karavan)</span>
+              <span>Ürünleri İncele (G-C, G-A, K-G)</span>
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
             </div>
           </div>
         </div>
 
         <!-- Kategori 3: Elektrik Tasarruf Cihazları -->
-        <div class="category-card" onclick="filterCategory('tasarruf')">
+        <div class="category-card" onclick="scrollToTasarrufSection()">
           <div class="category-card-thumb">
             <img src="assets/images/kategori/elektriktasarrufcihazları.png" alt="Elektrik Tasarruf Cihazları Grubu" class="category-thumb-img" loading="lazy">
           </div>
           <div class="category-card-content">
-            <span class="category-badge-tag">16A GÜÇLÜ PRİZ • KAPASİTÖR DEVRESİ</span>
-            <h3 class="category-title">Elektrik Tasarruf & Akım Koruma</h3>
-            <p class="category-desc">Ekstra kapasitör haznesi sayesinde voltaj oynamalarını minimize eder, cihazların rahat çalışmasını sağlayarak ömrünü uzatır.</p>
+            <h3 class="category-title">Elektrik Tasarruf Cihazları</h3>
+            <p class="category-desc">Ev ve iş yerlerine uygun monofaze ve trifaze modeller, her kW değerine göre taleplere uygun özel sipariş, %25'e varan tasarruf.</p>
             <div class="category-action-link">
-              <span>Ürünü İncele (AP1 16A Priz)</span>
+              <span>Detayları İncele (Monofaze & Trifaze)</span>
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
             </div>
           </div>
         </div>
 
-        <!-- Kategori 4: Yeni Ürünler -->
+        <!-- Kategori 4: Yeni Ürünler & Özel Çözümler -->
         <div class="category-card" onclick="filterCategory('yeni')">
           <div class="category-card-thumb">
             <img src="assets/images/kategori/yeniurunler.png" alt="Yeni Nesil Çözümler Grubu" class="category-thumb-img" loading="lazy">
           </div>
           <div class="category-card-content">
-            <span class="category-badge-tag">2 MODEL • YENİ TEKNOLOJİ</span>
             <h3 class="category-title">Yeni Ürünler & Özel Çözümler</h3>
-            <p class="category-desc">Gerçek 22 kHz ultrasonik frekanslı haşere kovucu ve caydırıcı kişisel güvenlik için yeni yüksek gerilim elektroşok cihazı.</p>
+            <p class="category-desc">16A güçlü priziyle en güçlü akım korumalı priz, 19-22 kHz ses çıkışıyla gerçek ultrasonik haşere kovucu ve 400 kV gücünde ultra caydırıcı elektroşok aleti.</p>
             <div class="category-action-link">
-              <span>Ürünleri İncele (Haşere Kovucu & Elektroşok)</span>
+              <span>Ürünleri İncele (AP1, Haşere, Şok)</span>
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
             </div>
           </div>
@@ -503,70 +497,78 @@
     </div>
   </section>
 
-  <!-- SOSYAL KANIT & İNSAN / ELEKTRİK USTALARI BÖLÜMÜ -->
-  <section class="expert-trust-section" id="ustalar-guveni">
+  <!-- DEDICATED ELEKTRİK TASARRUF CİHAZLARI SECTION (ÖZEL İMALAT & MONOFAZE / TRİFAZE) -->
+  <section class="tasarruf-section" id="elektrik-tasarruf">
     <div class="site-container">
-      <div class="expert-trust-grid">
+      <div class="tasarruf-card-box">
         
-        <!-- Left: 2 Electricians Photos -->
-        <div class="expert-photos-pair">
-          
-          <div class="expert-photo-card card-pro-1">
-            <img src="assets/images/people/usta-voltaj.jpg" alt="Powerbox Voltaj Koruma Montaj Ustası" class="expert-img" loading="lazy">
-            <div class="expert-badge-overlay">
-              <span class="badge-icon">⚡</span>
-              <span>1 Dakikada Kırmadan Delmeden Montaj</span>
+        <!-- Left: Image Showcase -->
+        <div class="tasarruf-img-col">
+          <div class="tasarruf-img-frame">
+            <span class="tasarruf-badge-top">%25'E VARAN TASARRUF</span>
+            <img src="assets/images/kategori/elektriktasarrufcihazları.png" alt="Powerbox Elektrik Tasarruf Cihazları" class="tasarruf-hero-img" loading="lazy">
+            <div class="tasarruf-specs-pill">
+              <span>⚡ Monofaze & Trifaze</span>
+              <span>•</span>
+              <span>Mini Kompanzasyon</span>
             </div>
           </div>
-
-          <div class="expert-photo-card card-pro-2">
-            <img src="assets/images/people/usta-gaz.jpg" alt="Powerbox Gaz Alarm Montaj Uzmanı" class="expert-img" loading="lazy">
-            <div class="expert-badge-overlay">
-              <span class="badge-icon">🚨</span>
-              <span>100 dB Hassas Erken Gaz Uyarısı</span>
-            </div>
-          </div>
-
         </div>
 
-        <!-- Right: Content & Direct Wholesale Call -->
-        <div class="expert-trust-content">
-          <span class="badge-trust-highlight">5.000+ USTA VE SERVİSİN TERCİHİ</span>
-          <h2 class="expert-heading">Türkiye'nin Dört Bir Yanındaki Elektrik Ustaları Güvenle Monte Ediyor</h2>
-          <p class="expert-lead">
-            Powerbox modülleri, sigorta kutusunun yanına güçlü yapışkan yüzeyi ile 1 dakikada bağlanır. Kablo çekme ve tadilat derdi olmadan evdeki tüm cihazları korumaya alır.
+        <!-- Right: Technical Details & B2B Order Call -->
+        <div class="tasarruf-content-col">
+          <div class="tasarruf-badge-kicker">SANAYİ, İŞ YERİ & EV TİPİ ÇÖZÜMLER</div>
+          <h2 class="tasarruf-main-title">Powerbox <span class="text-blue">ELEKTRİK TASARRUF CİHAZLARI</span></h2>
+          <p class="tasarruf-lead-desc">
+            Ev ve iş yerlerine uygun monofaze ve trifaze modeller. Her kW değerine uygun özel yapım cihazlar ile hatları rahatlatın, reaktif kayıp enerjiyi filtreleyin.
           </p>
 
-          <ul class="expert-checklist">
-            <li>
-              <span class="check-icon">✓</span>
+          <div class="tasarruf-features-list">
+            <div class="tasarruf-feature-item">
+              <span class="point-icon">⚡</span>
               <div>
-                <strong>Sıfır Tadilat & Kırmadan Delmeden:</strong> Sigorta kutusunun yanına saniyeler içinde güçlü yapışkan bantla anında montaj.
+                <strong>Monofaze ve Trifaze Modeller:</strong>
+                <span>Evlerden küçük atölyelere, fabrikalardan ticari işletmelere her şebeke tipine uygun üretim.</span>
               </div>
-            </li>
-            <li>
-              <span class="check-icon">✓</span>
-              <div>
-                <strong>Çift Kademeli Parafudr & LED Voltaj Takibi:</strong> Trafo patlaması, şebeke aşırı gerilimi ve yıldırım dalgalanmalarına tam kalkan.
-              </div>
-            </li>
-            <li>
-              <span class="check-icon">✓</span>
-              <div>
-                <strong>Elektrikçilere & Bayilere Özel Toptan Fabrika Fiyatları:</strong> Doğrudan üreticiden aracısız, yüksek kar marjlı toptan tedarik imkanı.
-              </div>
-            </li>
-          </ul>
+            </div>
 
-          <div class="expert-cta-buttons">
-            <a href="tel:+905494095353" class="btn btn-call-primary">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-              <span>Usta & Bayi Fiyatı Al: 0549 409 53 53</span>
+            <div class="tasarruf-feature-item">
+              <span class="point-icon">⚙️</span>
+              <div>
+                <strong>Her kW Değerine Uygun Özel Yapım:</strong>
+                <span>İşletmenizin ve makinelerinizin çektiği güç talebine göre birebir mühendislik hesabı ile özel imalat.</span>
+              </div>
+            </div>
+
+            <div class="tasarruf-feature-item">
+              <span class="point-icon">🛡️</span>
+              <div>
+                <strong>Kayıp Enerjiyi Absorbe Eder, Hatları Rahatlatır:</strong>
+                <span>Bobinli ve motorlu devrelerde oluşan ısınmadan ve zorlanmadan kaynaklı kayıp enerjiyi absorbe eder.</span>
+              </div>
+            </div>
+
+            <div class="tasarruf-feature-item">
+              <span class="point-icon">📈</span>
+              <div>
+                <strong>Mini Kompanzasyon Görevi Görür:</strong>
+                <span>Reaktif yükü filtreleyerek enerji verimliliğini artırır, elektrik tüketiminde %25'e varan tasarruf sağlar.</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="tasarruf-actions-row">
+            <a href="https://wa.me/905494095353?text=Merhaba,%20Powerbox%20Elektrik%20Tasarruf%20Cihazı%20(Monofaze/Trifaze)%20için%20kW%20değerimize%20uygun%20özel%20sipariş%20ve%20toptan%20fiyat%20teklifi%20almak%20istiyorum." target="_blank" rel="noopener" class="btn btn-tasarruf-wa">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.888 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              <span>Özel Tasarruf Teklifi Al (WhatsApp)</span>
             </a>
-            <a href="https://wa.me/905494095353?text=Merhaba,%20Elektrikçiyim/Bayiyim,%20Powerbox%20ürünleri%20için%20toptan%20fiyat%20listesi%20almak%20istiyorum." target="_blank" rel="noopener" class="btn btn-wa-secondary">
-              <span>💬 WhatsApp Toptan Hattı</span>
+
+            <a href="tel:+905494095353" class="btn btn-tasarruf-call">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              <span>0549 409 53 53 Mühendislik Hattı</span>
             </a>
           </div>
+
         </div>
 
       </div>
@@ -595,26 +597,27 @@
         <button type="button" class="cat-tab-btn" data-filter="gaz" onclick="filterCategory('gaz')">
           <span>🚨 Gaz Alarmları (3)</span>
         </button>
-        <button type="button" class="cat-tab-btn" data-filter="tasarruf" onclick="filterCategory('tasarruf')">
-          <span>🔋 Elektrik Tasarruf (1)</span>
-        </button>
         <button type="button" class="cat-tab-btn" data-filter="yeni" onclick="filterCategory('yeni')">
-          <span>🛡️ Yeni Ürünler (2)</span>
+          <span>🛡️ Yeni Ürünler & Özel Çözümler (3)</span>
+        </button>
+        <button type="button" class="cat-tab-btn cat-tab-special" onclick="scrollToTasarrufSection()">
+          <span>🔋 Elektrik Tasarruf (Monofaze/Trifaze)</span>
         </button>
       </div>
 
-      <!-- Products Grid (4 Columns Desktop, Snappy Filter Animation) -->
+      <!-- Products Grid (Centered Flex Layout) -->
       <div class="products-grid" id="productsGrid">
 
         <!-- Ürün 1: PX1 (Voltaj) -->
         <article class="product-card" data-category="voltaj" data-product-id="px1">
           <div class="product-thumb-container">
-            <span class="product-badge-pill badge-hot">Çok Satan</span>
+            <span class="product-badge-pill badge-hot">Sadece Toptan</span>
             <img src="assets/images/urun/px1.png" alt="Powerbox PX1 Yüksek Voltaj Koruma Modülü" class="product-thumb-img" loading="lazy">
           </div>
           <div class="product-card-body">
-            <h3 class="product-card-title">Yüksek Voltaj Koruma (PX1)</h3>
-            <p class="product-card-desc">Ani voltaj yükselmelerine karşı evdeki tüm prizleri tek noktadan korur.</p>
+            <div class="product-meta-sub">YÜKSEK VOLTAJ KORUMA</div>
+            <h3 class="product-card-title">Powerbox PX1</h3>
+            <p class="product-card-desc">Tüm prizleri akım korumalıya dönüştürür. Dijital voltaj ve tüketim ekranlı.</p>
             <button type="button" class="detail-link-btn" onclick="openProductModal('px1')">
               <span>Detayları Gör</span>
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
@@ -622,63 +625,16 @@
           </div>
         </article>
 
-        <!-- Ürün 2: AP1 Priz & Tasarruf (Tasarruf) -->
-        <article class="product-card" data-category="tasarruf" data-product-id="ap1">
-          <div class="product-thumb-container">
-            <span class="product-badge-pill badge-green">16A Güçlü</span>
-            <img src="assets/images/urun/elektrik-tasarruf.png" alt="Powerbox AP1 Akım Korumalı Priz" class="product-thumb-img" loading="lazy">
-          </div>
-          <div class="product-card-body">
-            <h3 class="product-card-title">Akım Korumalı Priz (AP1)</h3>
-            <p class="product-card-desc">Darbeli akımlara karşı maksimum güvenlik ve voltaj dengeleme sağlar.</p>
-            <button type="button" class="detail-link-btn" onclick="openProductModal('ap1')">
-              <span>Detayları Gör</span>
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-            </button>
-          </div>
-        </article>
-
-        <!-- Ürün 3: GC1 Gaz Alarmı (Gaz) -->
-        <article class="product-card" data-category="gaz" data-product-id="gc1">
-          <div class="product-thumb-container">
-            <span class="product-badge-pill badge-blue">Fişli Model</span>
-            <img src="assets/images/urun/gc1-gaz.png" alt="Powerbox GC1 Fişli Gaz Alarm Cihazı" class="product-thumb-img" loading="lazy">
-          </div>
-          <div class="product-card-body">
-            <h3 class="product-card-title">Fişli Gaz Alarmı (GC1)</h3>
-            <p class="product-card-desc">Doğalgaz kaçağını anında algılar, 100 dB güçlü siren ile uyarır.</p>
-            <button type="button" class="detail-link-btn" onclick="openProductModal('gc1')">
-              <span>Detayları Gör</span>
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-            </button>
-          </div>
-        </article>
-
-        <!-- Ürün 4: Ultrasonik Haşere Kovucu (Yeni) -->
-        <article class="product-card" data-category="yeni" data-product-id="hasere">
-          <div class="product-thumb-container">
-            <span class="product-badge-pill badge-purple">Gerçek 22 kHz</span>
-            <img src="assets/images/urun/hasere-kovucu.png" alt="Powerbox Ultrasonik Haşere Kovucu" class="product-thumb-img" loading="lazy">
-          </div>
-          <div class="product-card-body">
-            <h3 class="product-card-title">Ultrasonik Haşere Kovucu</h3>
-            <p class="product-card-desc">Gerçek 19-22 kHz ses dalgasıyla sinek, fare ve haşeratı kaçırır.</p>
-            <button type="button" class="detail-link-btn" onclick="openProductModal('hasere')">
-              <span>Detayları Gör</span>
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-            </button>
-          </div>
-        </article>
-
-        <!-- Ürün 5: PX2 Pro (Voltaj) -->
+        <!-- Ürün 2: PX2 (Voltaj) -->
         <article class="product-card" data-category="voltaj" data-product-id="px2">
           <div class="product-thumb-container">
-            <span class="product-badge-pill badge-pro">Pro Serisi</span>
+            <span class="product-badge-pill badge-pro">Sadece Toptan</span>
             <img src="assets/images/urun/px2.png" alt="Powerbox PX2 Voltaj Koruma Modülü" class="product-thumb-img" loading="lazy">
           </div>
           <div class="product-card-body">
-            <h3 class="product-card-title">Voltaj Koruma Modülü 2</h3>
-            <p class="product-card-desc">Gelişmiş çift kademeli koruma devresi ile tüm evi tek noktadan korur.</p>
+            <div class="product-meta-sub">YÜKSEK VOLTAJ KORUMA</div>
+            <h3 class="product-card-title">Powerbox PX2</h3>
+            <p class="product-card-desc">Çift kademeli koruma devresi ve anlık dijital voltaj göstergesi ile evinizi korur.</p>
             <button type="button" class="detail-link-btn" onclick="openProductModal('px2')">
               <span>Detayları Gör</span>
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
@@ -686,15 +642,16 @@
           </div>
         </article>
 
-        <!-- Ürün 6: PX3 Endüstriyel (Voltaj) -->
+        <!-- Ürün 3: PX3 (Voltaj) -->
         <article class="product-card" data-category="voltaj" data-product-id="px3">
           <div class="product-thumb-container">
-            <span class="product-badge-pill badge-dark">Ağır Hizmet</span>
+            <span class="product-badge-pill badge-dark">Sadece Toptan</span>
             <img src="assets/images/urun/px3.png" alt="Powerbox PX3 Voltaj Koruma Modülü" class="product-thumb-img" loading="lazy">
           </div>
           <div class="product-card-body">
-            <h3 class="product-card-title">Voltaj Koruma Modülü 3</h3>
-            <p class="product-card-desc">Yüksek akım ve sanayi tipi hatlar için üst düzey aşırı gerilim kalkanı.</p>
+            <div class="product-meta-sub">YÜKSEK VOLTAJ KORUMA</div>
+            <h3 class="product-card-title">Powerbox PX3</h3>
+            <p class="product-card-desc">Yüksek akım ve sanayi tipi hatlar için ekstra kapasitörlü aşırı gerilim filtresi.</p>
             <button type="button" class="detail-link-btn" onclick="openProductModal('px3')">
               <span>Detayları Gör</span>
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
@@ -702,15 +659,33 @@
           </div>
         </article>
 
-        <!-- Ürün 7: GA Araç İçi Gaz Alarmı (Gaz) -->
-        <article class="product-card" data-category="gaz" data-product-id="ga">
+        <!-- Ürün 4: G-C Fişli Gaz Alarmı (Gaz) -->
+        <article class="product-card" data-category="gaz" data-product-id="gc1">
           <div class="product-thumb-container">
-            <span class="product-badge-pill badge-blue">Pilli & 12V</span>
-            <img src="assets/images/urun/ga-arac.png" alt="Powerbox GA Araç İçi Gaz Alarm Cihazı" class="product-thumb-img" loading="lazy">
+            <span class="product-badge-pill badge-blue">Sadece Toptan</span>
+            <img src="assets/images/urun/gc1-gaz.png" alt="Powerbox G-C Fişli Gaz Alarm Cihazı" class="product-thumb-img" loading="lazy">
           </div>
           <div class="product-card-body">
-            <h3 class="product-card-title">Araç İçi Gaz Alarmı (GA)</h3>
-            <p class="product-card-desc">LPG'li araçlar için kablosuz ve 12V akü beslemeli erken uyarı sistemi.</p>
+            <div class="product-meta-sub">220V KABLOSUZ ALARM</div>
+            <h3 class="product-card-title">Powerbox G-C Fişli Gaz Alarmı</h3>
+            <p class="product-card-desc">Dış sensörlü yapısıyla doğalgaz kaçağını anında algılar, 100 dB güçlü sirenle uyarır.</p>
+            <button type="button" class="detail-link-btn" onclick="openProductModal('gc1')">
+              <span>Detayları Gör</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </button>
+          </div>
+        </article>
+
+        <!-- Ürün 5: G-A Araç İçi Gaz Alarmı (Gaz) -->
+        <article class="product-card" data-category="gaz" data-product-id="ga">
+          <div class="product-thumb-container">
+            <span class="product-badge-pill badge-blue">Sadece Toptan</span>
+            <img src="assets/images/urun/ga-arac.png" alt="Powerbox G-A Araç İçi Gaz Alarmı" class="product-thumb-img" loading="lazy">
+          </div>
+          <div class="product-card-body">
+            <div class="product-meta-sub">TÜRKİYE'DE İLK & TEK</div>
+            <h3 class="product-card-title">Powerbox G-A Araç Gaz Alarmı</h3>
+            <p class="product-card-desc">LPG'li araçlar için 3 kalem pilli veya 12V akü beslemeli milisaniyelik erken uyarı.</p>
             <button type="button" class="detail-link-btn" onclick="openProductModal('ga')">
               <span>Detayları Gör</span>
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
@@ -718,15 +693,16 @@
           </div>
         </article>
 
-        <!-- Ürün 8: KG Karavan & Tekne Gaz Alarmı (Gaz) -->
+        <!-- Ürün 6: K-G Karavan Gaz Alarmı (Gaz) -->
         <article class="product-card" data-category="gaz" data-product-id="kg">
           <div class="product-thumb-container">
-            <span class="product-badge-pill badge-green">Pilli & 5V Mobil</span>
-            <img src="assets/images/urun/kg-karavan.png" alt="Powerbox KG Pilli Karavan ve Tekne Gaz Alarmı" class="product-thumb-img" loading="lazy">
+            <span class="product-badge-pill badge-green">Sadece Toptan</span>
+            <img src="assets/images/urun/kg-karavan.png" alt="Powerbox K-G Karavan Gaz Alarmı" class="product-thumb-img" loading="lazy">
           </div>
           <div class="product-card-body">
-            <h3 class="product-card-title">Karavan Gaz Alarmı (KG)</h3>
-            <p class="product-card-desc">Karavan ve tekneler için pilli & 5V Type-C taşınabilir gaz dedektörü.</p>
+            <div class="product-meta-sub">KARAVAN & TEKNE ÖZEL</div>
+            <h3 class="product-card-title">Powerbox K-G Karavan Alarmı</h3>
+            <p class="product-card-desc">Karavan ve tekneler için pilli veya 5V mobil taşınabilir gaz ve CO sızıntı alarmı.</p>
             <button type="button" class="detail-link-btn" onclick="openProductModal('kg')">
               <span>Detayları Gör</span>
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
@@ -734,75 +710,56 @@
           </div>
         </article>
 
-        <!-- Ürün 9: Elektroşok Cihazı (Yeni - NEW!) -->
-        <article class="product-card" data-category="yeni" data-product-id="elektrosok">
+        <!-- Ürün 7: AP1 Akım Korumalı Priz (Yeni) -->
+        <article class="product-card" data-category="yeni" data-product-id="ap1">
           <div class="product-thumb-container">
-            <span class="product-badge-pill badge-new">Yeni Ürün</span>
-            <img src="assets/images/urun/elektrosok.png" alt="Powerbox Yüksek Gerilim Elektro Şok Cihazı" class="product-thumb-img" loading="lazy">
+            <span class="product-badge-pill badge-green">Sadece Toptan</span>
+            <img src="assets/images/urun/elektrik-tasarruf.png" alt="Powerbox AP1 Akım Korumalı Priz" class="product-thumb-img" loading="lazy">
           </div>
           <div class="product-card-body">
-            <h3 class="product-card-title">Elektro Şok Cihazı</h3>
-            <p class="product-card-desc">Kişisel güvenlik ve caydırıcı koruma için yüksek gerilimli şok aleti.</p>
-            <button type="button" class="detail-link-btn" onclick="openProductModal('elektrosok')">
+            <div class="product-meta-sub">16A GÜÇLÜ PRİZ</div>
+            <h3 class="product-card-title">Powerbox AP1 Akım Korumalı Priz</h3>
+            <p class="product-card-desc">Ekstra kapasitör haznesiyle voltaj oynamalarını minimize eder, cihaz ömrünü uzatır.</p>
+            <button type="button" class="detail-link-btn" onclick="openProductModal('ap1')">
               <span>Detayları Gör</span>
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
             </button>
           </div>
         </article>
 
-      </div>
-    </div>
-  </section>
-
-  <!-- SOSYAL KANIT 2: MUTLU EV KULLANICISI (Müşteri Memnuniyeti) -->
-  <section class="home-trust-section">
-    <div class="site-container">
-      <div class="home-trust-card">
-        
-        <div class="home-trust-text">
-          <span class="badge-trust-highlight">100.000+ EVDE GÜVENLE KULLANILIYOR</span>
-          <h2 class="home-trust-heading">Kombiniz, Beyaz Eşyalarınız ve Sevdikleriniz 7/24 Kesintisiz Güvende</h2>
-          <p class="home-trust-desc">
-            Voltaj dalgalanmalarından kaynaklanan kombi kartı arızalarına, yanan buzdolaplarına ve görünmez gaz kaçaklarına Powerbox ile son verin. Tek modülle tüm evinizi akım korumalı yapın.
-          </p>
-
-          <div class="trust-stats-row">
-            <div class="stat-box">
-              <span class="stat-number">100.000+</span>
-              <span class="stat-label">Korunan Ev & İş Yeri</span>
-            </div>
-            <div class="stat-box">
-              <span class="stat-number">1 Dk</span>
-              <span class="stat-label">Kolay Montaj</span>
-            </div>
-            <div class="stat-box">
-              <span class="stat-number">%100</span>
-              <span class="stat-label">Yerli Üretim</span>
-            </div>
+        <!-- Ürün 8: Ultrasonik Haşere Kovucu (Yeni) -->
+        <article class="product-card" data-category="yeni" data-product-id="hasere">
+          <div class="product-thumb-container">
+            <span class="product-badge-pill badge-purple">Sadece Toptan</span>
+            <img src="assets/images/urun/hasere-kovucu.png" alt="Powerbox Gerçek 22 kHz Haşere Kovucu" class="product-thumb-img" loading="lazy">
           </div>
-
-          <div class="home-trust-actions">
-            <a href="https://wa.me/905494095353?text=Merhaba,%20Evim%20için%20Powerbox%20ürünleri%20hakkında%20sipariş%20vermek%20istiyorum." target="_blank" rel="noopener" class="btn btn-wa-order">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.888 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-              <span>WhatsApp ile Sipariş Ver</span>
-            </a>
-            <a href="tel:+905494095353" class="btn btn-call-order">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-              <span>0549 409 53 53 Hemen Ara</span>
-            </a>
+          <div class="product-card-body">
+            <div class="product-meta-sub">GERÇEK 19-22 kHz</div>
+            <h3 class="product-card-title">Powerbox Haşere Kovucu</h3>
+            <p class="product-card-desc">Gerçek 19-22 kHz ultrasonik sesle sinek ve fareleri kovar. Telefon kamerasıyla test edilir.</p>
+            <button type="button" class="detail-link-btn" onclick="openProductModal('hasere')">
+              <span>Detayları Gör</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </button>
           </div>
-        </div>
+        </article>
 
-        <div class="home-trust-photo-col">
-          <div class="user-photo-wrap">
-            <img src="assets/images/people/kullanici-kadin.jpg" alt="Mutlu Powerbox Ev Kullanıcısı" class="user-photo-img" loading="lazy">
-            <div class="user-quote-bubble">
-              <div class="quote-stars">★★★★★</div>
-              <p>"Kombimiz voltajdan yanmıştı. Powerbox taktık, kurulumu 1 dakika sürdü. Artık içimiz çok rahat!"</p>
-              <span class="quote-author">— Merve K., Ev Sahibi</span>
-            </div>
+        <!-- Ürün 9: Elektro Şok Cihazı (Yeni) -->
+        <article class="product-card" data-category="yeni" data-product-id="elektrosok">
+          <div class="product-thumb-container">
+            <span class="product-badge-pill badge-new">Sadece Toptan</span>
+            <img src="assets/images/urun/elektrosok.png" alt="Powerbox 400 kV Elektro Şok Cihazı" class="product-thumb-img" loading="lazy">
           </div>
-        </div>
+          <div class="product-card-body">
+            <div class="product-meta-sub">400 kV YÜKSEK GERİLİM</div>
+            <h3 class="product-card-title">Powerbox Elektro Şok Cihazı</h3>
+            <p class="product-card-desc">400 kV ark deşarjı, dahili LED fener ve şarjlı bataryasıyla üstün caydırıcı koruma.</p>
+            <button type="button" class="detail-link-btn" onclick="openProductModal('elektrosok')">
+              <span>Detayları Gör</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </button>
+          </div>
+        </article>
 
       </div>
     </div>
@@ -897,8 +854,8 @@
               <span>Hemen Ara: 0549 409 53 53</span>
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
             </a>
-            <a href="https://wa.me/905494095353?text=Merhaba,%20Powerbox%20ürünleri%20ve%20bayilik%20hakkında%20bilgi%20almak%20istiyorum." target="_blank" rel="noopener" class="btn btn-outline-pill">
-              <span>Bayilik & Toptan Bilgi</span>
+            <a href="https://wa.me/905494095353?text=Merhaba,%20Powerbox%20ürünleri%20ve%20toptan%20sipariş%20hakkında%20bilgi%20almak%20istiyorum." target="_blank" rel="noopener" class="btn btn-outline-pill">
+              <span>Toptan Sipariş</span>
             </a>
           </div>
         </div>

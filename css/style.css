@@ -111,6 +111,10 @@ button {
   color: var(--primary);
 }
 
+section[id] {
+  scroll-margin-top: 85px;
+}
+
 /* ---------------- TOP ANNOUNCEMENT BAR ---------------- */
 .top-announcement {
   background: #0f172a;
@@ -2753,3 +2757,252 @@ button {
   background: rgba(255, 255, 255, 0.22);
   transform: translateY(-2px);
 }
+
+/* ---------------- DEDICATED ELEKTRİK TASARRUF CİHAZLARI SECTION ---------------- */
+.tasarruf-section {
+  padding: 40px 0 60px;
+}
+
+.tasarruf-card-box {
+  background: linear-gradient(135deg, #091222 0%, #0d1b30 60%, #071224 100%);
+  border-radius: 28px;
+  border: 1.5px solid rgba(56, 189, 248, 0.28);
+  box-shadow: 0 24px 60px rgba(2, 132, 199, 0.16), 0 4px 20px rgba(0, 0, 0, 0.4);
+  padding: 48px;
+  display: grid;
+  grid-template-columns: 1fr 1.35fr;
+  gap: 44px;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  transition: box-shadow 0.4s ease, border-color 0.4s ease;
+}
+
+.tasarruf-card-box::before {
+  content: "";
+  position: absolute;
+  top: -120px;
+  right: -120px;
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(56, 189, 248, 0.15) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.tasarruf-img-col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tasarruf-img-frame {
+  position: relative;
+  width: 100%;
+  max-width: 440px;
+  border-radius: 22px;
+  background: radial-gradient(circle at center, rgba(30, 58, 95, 0.5) 0%, rgba(15, 23, 42, 0.9) 100%);
+  border: 1px solid rgba(56, 189, 248, 0.3);
+  padding: 24px;
+  text-align: center;
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.35);
+}
+
+.tasarruf-badge-top {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  color: #ffffff;
+  font-size: 11.5px;
+  font-weight: 800;
+  letter-spacing: 0.8px;
+  padding: 5px 12px;
+  border-radius: var(--radius-pill);
+  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.4);
+}
+
+.tasarruf-hero-img {
+  width: 100%;
+  max-height: 280px;
+  object-fit: contain;
+  filter: drop-shadow(0 14px 24px rgba(0, 0, 0, 0.6));
+  transition: transform 0.35s ease;
+}
+
+.tasarruf-card-box:hover .tasarruf-hero-img {
+  transform: scale(1.03);
+}
+
+.tasarruf-specs-pill {
+  margin-top: 16px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(15, 23, 42, 0.7);
+  border: 1px solid rgba(56, 189, 248, 0.3);
+  padding: 6px 14px;
+  border-radius: var(--radius-pill);
+  font-size: 12px;
+  font-weight: 700;
+  color: #7dd3fc;
+}
+
+.tasarruf-content-col {
+  color: #ffffff;
+}
+
+.tasarruf-badge-kicker {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1.2px;
+  color: #38bdf8;
+  background: rgba(56, 189, 248, 0.12);
+  border: 1px solid rgba(56, 189, 248, 0.3);
+  padding: 4px 14px;
+  border-radius: var(--radius-pill);
+  margin-bottom: 12px;
+  text-transform: uppercase;
+}
+
+.tasarruf-main-title {
+  font-size: 30px;
+  font-weight: 900;
+  color: #ffffff;
+  line-height: 1.25;
+  letter-spacing: -0.4px;
+  margin-bottom: 12px;
+}
+
+.tasarruf-lead-desc {
+  font-size: 15px;
+  color: #94a3b8;
+  line-height: 1.55;
+  margin-bottom: 22px;
+}
+
+.tasarruf-features-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 26px;
+}
+
+.tasarruf-feature-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  background: rgba(15, 23, 42, 0.55);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  padding: 12px 14px;
+  transition: border-color 0.2s ease, background 0.2s ease;
+}
+
+.tasarruf-feature-item:hover {
+  background: rgba(15, 23, 42, 0.85);
+  border-color: rgba(56, 189, 248, 0.35);
+}
+
+.tasarruf-feature-item .point-icon {
+  font-size: 18px;
+  line-height: 1.2;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+.tasarruf-feature-item strong {
+  display: block;
+  font-size: 13.5px;
+  color: #f8fafc;
+  margin-bottom: 2px;
+}
+
+.tasarruf-feature-item span {
+  font-size: 12.5px;
+  color: #94a3b8;
+  line-height: 1.45;
+}
+
+.tasarruf-actions-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.btn-tasarruf-wa {
+  background: #10b981;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 800;
+  padding: 13px 22px;
+  border-radius: 12px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+  box-shadow: 0 4px 18px rgba(16, 185, 129, 0.35);
+}
+
+.btn-tasarruf-wa:hover {
+  background: #059669;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(16, 185, 129, 0.5);
+  color: #ffffff;
+}
+
+.btn-tasarruf-call {
+  background: rgba(56, 189, 248, 0.15);
+  color: #38bdf8;
+  border: 1.5px solid rgba(56, 189, 248, 0.45);
+  font-size: 14px;
+  font-weight: 700;
+  padding: 12px 20px;
+  border-radius: 12px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.2s ease;
+}
+
+.btn-tasarruf-call:hover {
+  background: rgba(56, 189, 248, 0.25);
+  border-color: #38bdf8;
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+.cat-tab-special {
+  background: #f0fdf4 !important;
+  border-color: #86efac !important;
+  color: #166534 !important;
+}
+
+.cat-tab-special:hover {
+  background: #dcfce7 !important;
+  border-color: #22c55e !important;
+  color: #14532d !important;
+}
+
+.product-meta-sub {
+  font-size: 10.5px;
+  font-weight: 800;
+  letter-spacing: 0.8px;
+  color: #0284c7;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+
+@media (max-width: 900px) {
+  .tasarruf-card-box {
+    grid-template-columns: 1fr;
+    padding: 28px 20px;
+    gap: 28px;
+  }
+  .tasarruf-main-title {
+    font-size: 24px;
+  }
+}
+
