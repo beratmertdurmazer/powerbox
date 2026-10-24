@@ -2916,90 +2916,106 @@ section[id] {
   color: #38bdf8;
 }
 
-/* 2'li Poster Vitrini (En Boy Oranını Tam Koruyan ve Asla Kesilmeyen Tasarım) */
+/* 2'li Poster Vitrini (Eşit Boyutlu, En-Boy Oranını %100 Koruyan ve Asla Kesilmeyen Tasarım) */
 .demonte-posters-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 24px;
-  align-items: start;
+  align-items: stretch;
   margin-bottom: 28px;
 }
 
 .demonte-poster-card {
   background: #081225;
-  border: 1.5px solid rgba(56, 189, 248, 0.3);
+  border: 1.5px solid rgba(56, 189, 248, 0.35);
   border-radius: 20px;
   overflow: hidden;
   cursor: pointer;
-  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.28s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.28s ease, box-shadow 0.28s ease;
   display: flex;
   flex-direction: column;
+  height: 100%;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.35);
 }
 
 .demonte-poster-card:hover {
-  transform: translateY(-4px);
+  transform: translateY(-5px);
   border-color: #38bdf8;
-  box-shadow: 0 16px 40px rgba(2, 132, 199, 0.35);
+  box-shadow: 0 20px 45px rgba(2, 132, 199, 0.38);
 }
 
 .poster-img-wrap {
   position: relative;
   width: 100%;
-  background: #081225;
+  aspect-ratio: 4 / 3;
+  background: #060d1d;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 16px;
   overflow: hidden;
 }
 
 .poster-img {
-  width: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
   height: auto;
-  display: block;
   object-fit: contain;
-  transition: transform 0.35s ease;
+  display: block;
+  border-radius: 6px;
+  transition: filter 0.25s ease;
 }
 
 .demonte-poster-card:hover .poster-img {
-  transform: scale(1.02);
-}
-  transform: scale(1.03);
+  filter: brightness(1.05);
 }
 
-.poster-zoom-overlay {
+.poster-zoom-badge {
   position: absolute;
-  inset: 0;
-  background: rgba(15, 23, 42, 0.45);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  opacity: 0;
-  transition: opacity 0.25s ease;
-  backdrop-filter: blur(2px);
-}
-
-.demonte-poster-card:hover .poster-zoom-overlay {
-  opacity: 1;
-}
-
-.zoom-pill {
-  background: rgba(15, 23, 42, 0.9);
-  color: #ffffff;
-  border: 1px solid rgba(56, 189, 248, 0.5);
-  font-size: 13px;
+  bottom: 12px;
+  right: 12px;
+  background: rgba(15, 23, 42, 0.88);
+  border: 1px solid rgba(56, 189, 248, 0.45);
+  color: #e2e8f0;
+  font-size: 11.5px;
   font-weight: 700;
-  padding: 8px 18px;
-  border-radius: var(--radius-pill);
+  padding: 5px 12px;
+  border-radius: 20px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  pointer-events: none;
+  transition: all 0.25s ease;
+}
+
+.demonte-poster-card:hover .poster-zoom-badge {
+  background: #0284c7;
+  color: #ffffff;
+  border-color: #38bdf8;
+  transform: translateY(-2px);
 }
 
 .poster-caption-bar {
   padding: 14px 18px;
-  background: rgba(15, 23, 42, 0.85);
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(15, 23, 42, 0.95);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: auto;
+}
+
+.poster-caption-text {
+  flex: 1;
 }
 
 .poster-tag {
-  font-size: 10.5px;
+  font-size: 10px;
   font-weight: 800;
   letter-spacing: 0.8px;
   color: #38bdf8;
@@ -3008,34 +3024,51 @@ section[id] {
 }
 
 .poster-title {
-  font-size: 15.5px;
+  font-size: 15px;
   font-weight: 700;
   color: #ffffff;
   margin: 0;
   line-height: 1.35;
 }
 
+.poster-btn-mini {
+  background: rgba(56, 189, 248, 0.12);
+  color: #7dd3fc;
+  border: 1px solid rgba(56, 189, 248, 0.3);
+  font-size: 11.5px;
+  font-weight: 700;
+  padding: 5px 10px;
+  border-radius: 8px;
+  white-space: nowrap;
+  transition: all 0.2s ease;
+}
+
+.demonte-poster-card:hover .poster-btn-mini {
+  background: #0284c7;
+  color: #ffffff;
+  border-color: #38bdf8;
+}
+
 @media (max-width: 768px) {
   .demonte-banner-card {
-    padding: 28px 20px;
+    padding: 28px 18px;
   }
   .demonte-heading {
     font-size: 22px;
   }
   .demonte-posters-grid {
     grid-template-columns: 1fr;
-    gap: 16px;
+    gap: 18px;
   }
-  .poster-zoom-overlay {
-    opacity: 1;
-    background: transparent;
-    pointer-events: none;
-    align-items: flex-end;
-    padding: 10px;
+  .poster-img-wrap {
+    aspect-ratio: 4 / 3;
+    padding: 12px;
   }
-  .zoom-pill {
+  .poster-zoom-badge {
     font-size: 11px;
-    padding: 4px 12px;
+    padding: 4px 10px;
+    bottom: 10px;
+    right: 10px;
   }
 }
 
@@ -3863,7 +3896,7 @@ body:has(#cartDrawer.is-active) #cartDrawerBackdrop {
   background: #0f172a;
   border: 1.5px solid rgba(56, 189, 248, 0.4);
   border-radius: 20px;
-  max-width: 880px;
+  max-width: 960px;
   width: 100%;
   max-height: 92vh;
   display: flex;
