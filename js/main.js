@@ -17,7 +17,7 @@ const PRODUCTS_DATA = {
       "Ekstra kapasitör devresi ile ani pik dalgalanmalarını filtreler",
       "2 Yıl Üretici Garantisi"
     ],
-    waMsg: "Merhaba, Powerbox PX1 Yüksek Voltaj Koruma Modülü hakkında bilgi almak ve sipariş vermek istiyorum."
+    waMsg: "Merhaba, Powerbox PX1 Yüksek Voltaj Koruma Modülü için toptan sipariş ve fiyat bilgisi almak istiyorum."
   },
   ap1: {
     id: "ap1",
@@ -32,7 +32,7 @@ const PRODUCTS_DATA = {
       "Darbeli akımlara karşı maksimum güvenlik kalkanı",
       "Prize doğrudan tak-çalıştır pratik kullanım"
     ],
-    waMsg: "Merhaba, Powerbox AP1 Akım Korumalı Priz hakkında bilgi almak ve sipariş vermek istiyorum."
+    waMsg: "Merhaba, Powerbox AP1 Akım Korumalı Priz için toptan sipariş ve fiyat bilgisi almak istiyorum."
   },
   gc1: {
     id: "gc1",
@@ -47,7 +47,7 @@ const PRODUCTS_DATA = {
       "Mutfak, kombi yanı ve doğalgaz boruları yakınında güvenle kullanım",
       "Can ve mal güvenliğini 7/24 garantiye alır"
     ],
-    waMsg: "Merhaba, Powerbox GC1 Fişli Gaz Alarm Cihazı hakkında bilgi almak ve sipariş vermek istiyorum."
+    waMsg: "Merhaba, Powerbox GC1 Fişli Gaz Alarm Cihazı için toptan sipariş ve fiyat bilgisi almak istiyorum."
   },
   hasere: {
     id: "hasere",
@@ -62,7 +62,7 @@ const PRODUCTS_DATA = {
       "Kimyasal, tablet veya zehir içermez, çevre ve evcil hayvan dostudur",
       "Tak-çalıştır 7/24 kesintisiz koruma sağlar"
     ],
-    waMsg: "Merhaba, Powerbox 22 kHz Ultrasonik Haşere Kovucu hakkında bilgi almak ve sipariş vermek istiyorum."
+    waMsg: "Merhaba, Powerbox 22 kHz Ultrasonik Haşere Kovucu için toptan sipariş ve fiyat bilgisi almak istiyorum."
   },
   px2: {
     id: "px2",
@@ -77,7 +77,7 @@ const PRODUCTS_DATA = {
       "Kombi, buzdolabı, çamaşır makinesi ve TV kartlarını yüksek voltajdan korur",
       "2 Yıl Üretici Garantisi"
     ],
-    waMsg: "Merhaba, Powerbox PX2 Voltaj Koruma Modülü hakkında bilgi almak ve sipariş vermek istiyorum."
+    waMsg: "Merhaba, Powerbox PX2 Voltaj Koruma Modülü için toptan sipariş ve fiyat bilgisi almak istiyorum."
   },
   px3: {
     id: "px3",
@@ -92,7 +92,7 @@ const PRODUCTS_DATA = {
       "Fabrika, atölye, ofis ve geniş villalar için ideal koruma",
       "Türkiye'de üretilen yerli teknoloji"
     ],
-    waMsg: "Merhaba, Powerbox PX3 Voltaj Koruma Modülü hakkında bilgi almak ve sipariş vermek istiyorum."
+    waMsg: "Merhaba, Powerbox PX3 Voltaj Koruma Modülü için toptan sipariş ve fiyat bilgisi almak istiyorum."
   },
   ga: {
     id: "ga",
@@ -107,7 +107,7 @@ const PRODUCTS_DATA = {
       "Torpido, bagaj veya lpg tankı yakınına anında yapıştırılır",
       "Can ve yangın güvenliğini garantiye alır"
     ],
-    waMsg: "Merhaba, Powerbox GA Araç İçi Gaz Alarm Cihazı hakkında bilgi almak ve sipariş vermek istiyorum."
+    waMsg: "Merhaba, Powerbox GA Araç İçi Gaz Alarm Cihazı için toptan sipariş ve fiyat bilgisi almak istiyorum."
   },
   kg: {
     id: "kg",
@@ -122,7 +122,7 @@ const PRODUCTS_DATA = {
       "Uykuda karbonmonoksit ve gaz sızıntılarına karşı hayat kurtaran erken uyarı",
       "Türkiye'de ilk ve tek taşınabilir gaz güvenlik sistemi"
     ],
-    waMsg: "Merhaba, Powerbox KG Karavan/Tekne Gaz Alarm Cihazı hakkında bilgi almak ve sipariş vermek istiyorum."
+    waMsg: "Merhaba, Powerbox KG Karavan/Tekne Gaz Alarm Cihazı için toptan sipariş ve fiyat bilgisi almak istiyorum."
   },
   elektrosok: {
     id: "elektrosok",
@@ -137,9 +137,103 @@ const PRODUCTS_DATA = {
       "Karanlık ortamlar için yüksek lümenli entegre LED el feneri",
       "Kişisel savunma, esnaf ve güvenlik görevlileri için pratik caydırıcı çözüm"
     ],
-    waMsg: "Merhaba, Powerbox Yüksek Gerilim Elektro Şok Cihazı hakkında bilgi almak ve sipariş vermek istiyorum."
+    waMsg: "Merhaba, Powerbox Yüksek Gerilim Elektro Şok Cihazı için toptan sipariş ve fiyat bilgisi almak istiyorum."
   }
 };
+
+// ---------------- INSTAGRAM STORIES DATA ----------------
+const STORIES_DATA = [
+  {
+    id: "px1",
+    productId: "px1",
+    tag: "ÇOK SATAN • SİGORTA KUTUSU",
+    title: "Powerbox PX1 Voltaj Koruma",
+    desc: "Evinizdeki tüm prizleri tek noktadan akım korumalıya dönüştürün. Ani voltaj darbelerine karşı kombi ve beyaz eşyaları tam korur.",
+    image: "assets/images/urun/px1.png",
+    waMsg: "Merhaba, Powerbox PX1 Yüksek Voltaj Koruma Modülü için toptan sipariş ve fiyat bilgisi almak istiyorum."
+  },
+  {
+    id: "px2",
+    productId: "px2",
+    tag: "PRO SERİSİ • DİJİTAL GÖSTERGE",
+    title: "Powerbox PX2 Pro Koruma",
+    desc: "Çift kademeli parafudr devresi ve anlık dijital voltaj göstergesi ile ev ve işletmeler için profesyonel gerilim kalkanı.",
+    image: "assets/images/urun/px2.png",
+    waMsg: "Merhaba, Powerbox PX2 Voltaj Koruma Modülü için toptan sipariş ve fiyat bilgisi almak istiyorum."
+  },
+  {
+    id: "px3",
+    productId: "px3",
+    tag: "AĞIR HİZMET • SANAYİ VE PANO",
+    title: "Powerbox PX3 Endüstriyel",
+    desc: "Yüksek akım ve sanayi tipi hatlar için üst düzey aşırı gerilim kalkanı. Trifaze ve monofaze panolara tam uyum.",
+    image: "assets/images/urun/px3.png",
+    waMsg: "Merhaba, Powerbox PX3 Voltaj Koruma Modülü için toptan sipariş ve fiyat bilgisi almak istiyorum."
+  },
+  {
+    id: "ap1",
+    productId: "ap1",
+    tag: "16A GÜÇLÜ PRİZ & ENERJİ TASARRUFU",
+    title: "Powerbox AP1 Akım Korumalı Priz",
+    desc: "Ekstra kapasitör haznesi sayesinde voltaj oynamalarını minimize ederek elektronik cihazların rahat çalışmasını sağlar.",
+    image: "assets/images/urun/elektrik-tasarruf.png",
+    waMsg: "Merhaba, Powerbox AP1 Akım Korumalı Priz için toptan sipariş ve fiyat bilgisi almak istiyorum."
+  },
+  {
+    id: "gc1",
+    productId: "gc1",
+    tag: "220V PRİZE TAK-ÇALIŞTIR",
+    title: "Powerbox GC1 Fişli Gaz Alarmı",
+    desc: "Sıfır kablo çekme derdi olmadan doğrudan prize takılır. Dış sensörlü yapısıyla kaçak anında 100 dB güçlü sirenle uyarır.",
+    image: "assets/images/urun/gc1-gaz.png",
+    waMsg: "Merhaba, Powerbox GC1 Fişli Gaz Alarm Cihazı için toptan sipariş ve fiyat bilgisi almak istiyorum."
+  },
+  {
+    id: "ga",
+    productId: "ga",
+    tag: "TÜRKİYE'DE İLK VE TEK ARAÇ LPG",
+    title: "Powerbox GA Araç İçi Gaz Alarmı",
+    desc: "LPG'li araçlar için montajsız, 3 kalem pil veya 12V akü soketi ile çalışan ilk ve tek taşınabilir gaz kaçak dedektörü.",
+    image: "assets/images/urun/ga-arac.png",
+    waMsg: "Merhaba, Powerbox GA Araç İçi Gaz Alarm Cihazı için toptan sipariş ve fiyat bilgisi almak istiyorum."
+  },
+  {
+    id: "kg",
+    productId: "kg",
+    tag: "KARAVAN VE TEKNELERE ÖZEL",
+    title: "Powerbox KG Portatif Gaz Alarmı",
+    desc: "Karavan, çadır ve tekneler için pilli veya 5V adaptörle çalışan hayat kurtarıcı mobil gaz ve karbonmonoksit alarmı.",
+    image: "assets/images/urun/kg-karavan.png",
+    waMsg: "Merhaba, Powerbox KG Karavan/Tekne Gaz Alarm Cihazı için toptan sipariş ve fiyat bilgisi almak istiyorum."
+  },
+  {
+    id: "hasere",
+    productId: "hasere",
+    tag: "GERÇEK 22 kHz ULTRASONİK",
+    title: "Powerbox 22 kHz Haşere Kovucu",
+    desc: "Gerçek 19-22 kHz frekansla sinek, fare ve haşeratı uzaklaştırır. Telefon kamerasıyla gerçek ses çıkışı hemen test edilebilir!",
+    image: "assets/images/urun/hasere-kovucu.png",
+    waMsg: "Merhaba, Powerbox 22 kHz Ultrasonik Haşere Kovucu için toptan sipariş ve fiyat bilgisi almak istiyorum."
+  },
+  {
+    id: "elektrosok",
+    productId: "elektrosok",
+    tag: "YENİ ÜRÜN • KİŞİSEL SAVUNMA",
+    title: "Powerbox Elektro Şok Cihazı",
+    desc: "Yüksek gerilim ark deşarjı, dahili güçlü LED el feneri, şarjlı bataryası ve emniyet kilidi ile caydırıcı koruma.",
+    image: "assets/images/urun/elektrosok.png",
+    waMsg: "Merhaba, Powerbox Yüksek Gerilim Elektro Şok Cihazı için toptan sipariş ve fiyat bilgisi almak istiyorum."
+  },
+  {
+    id: "demonte",
+    productId: "demonte",
+    tag: "GENÇ ÜRETİCİLER & AR-GE",
+    title: "Demonte Kit & Boş Plastik Kutular",
+    desc: "Yetenekli gençlerimiz ve geliştiriciler üretsin diye demonte devre kitleri ve boş plastik cihaz kutuları çok uygun fiyatlarla!",
+    image: "assets/images/kategori/yeniurunler.png",
+    waMsg: "Merhaba, Powerbox demonte kit paketleri ve boş plastik kutular hakkında toptan bilgi ve fiyat almak istiyorum."
+  }
+];
 
 const PHONE_NUMBER = "0549 409 53 53";
 const WHATSAPP_INT_NUMBER = "905494095353";
@@ -296,6 +390,119 @@ function setupSearch() {
   window.closeSearch = closeSearch;
 }
 
+// ---------------- INSTAGRAM STORY VIEWER LOGIC ----------------
+let currentStoryIndex = 0;
+let storyTimer = null;
+const STORY_DURATION = 5000; // 5 seconds per story
+
+function renderStoryProgress() {
+  const container = document.getElementById("storyProgressBar");
+  if (!container) return;
+  container.innerHTML = STORIES_DATA.map((_, i) => `
+    <div class="story-progress-segment ${i < currentStoryIndex ? 'is-viewed' : ''} ${i === currentStoryIndex ? 'is-active' : ''}">
+      <div class="story-progress-fill"></div>
+    </div>
+  `).join("");
+}
+
+function openStory(index) {
+  currentStoryIndex = Math.max(0, Math.min(index, STORIES_DATA.length - 1));
+  const story = STORIES_DATA[currentStoryIndex];
+  if (!story) return;
+
+  const modal = document.getElementById("storyModal");
+  const slideImg = document.getElementById("storySlideImg");
+  const tagPill = document.getElementById("storyTagPill");
+  const captionTitle = document.getElementById("storyCaptionTitle");
+  const captionDesc = document.getElementById("storyCaptionDesc");
+  const waBtn = document.getElementById("storyWaBtn");
+
+  slideImg.src = story.image;
+  slideImg.alt = story.title;
+  tagPill.textContent = story.tag;
+  captionTitle.textContent = story.title;
+  captionDesc.textContent = story.desc;
+
+  const encodedMsg = encodeURIComponent(story.waMsg);
+  waBtn.href = `https://wa.me/${WHATSAPP_INT_NUMBER}?text=${encodedMsg}`;
+
+  renderStoryProgress();
+  modal.classList.add("is-active");
+  document.body.style.overflow = "hidden";
+
+  startStoryTimer();
+}
+
+function startStoryTimer() {
+  clearTimeout(storyTimer);
+  storyTimer = setTimeout(() => {
+    if (currentStoryIndex < STORIES_DATA.length - 1) {
+      nextStory();
+    } else {
+      closeStory();
+    }
+  }, STORY_DURATION);
+}
+
+function closeStory() {
+  clearTimeout(storyTimer);
+  const modal = document.getElementById("storyModal");
+  if (modal) modal.classList.remove("is-active");
+  document.body.style.overflow = "";
+}
+
+function nextStory() {
+  if (currentStoryIndex < STORIES_DATA.length - 1) {
+    openStory(currentStoryIndex + 1);
+  } else {
+    closeStory();
+  }
+}
+
+function prevStory() {
+  if (currentStoryIndex > 0) {
+    openStory(currentStoryIndex - 1);
+  } else {
+    openStory(0);
+  }
+}
+
+function jumpFromStoryToProduct() {
+  const story = STORIES_DATA[currentStoryIndex];
+  closeStory();
+  if (!story) return;
+
+  if (story.productId === "demonte") {
+    const demonteSec = document.getElementById("demonte-kit");
+    if (demonteSec) demonteSec.scrollIntoView({ behavior: "smooth", block: "start" });
+    return;
+  }
+
+  // Filter category if needed and highlight card
+  const card = document.querySelector(`.product-card[data-product-id="${story.productId}"]`);
+  if (card) {
+    const cat = card.dataset.category;
+    if (cat && window.filterCategory) {
+      filterCategory(cat);
+    }
+    setTimeout(() => {
+      card.scrollIntoView({ behavior: "smooth", block: "center" });
+      card.style.transform = "scale(1.05)";
+      card.style.borderColor = "#0284c7";
+      setTimeout(() => {
+        card.style.transform = "";
+        card.style.borderColor = "";
+      }, 1200);
+    }, 250);
+  }
+}
+
+window.openStory = openStory;
+window.closeStory = closeStory;
+window.nextStory = nextStory;
+window.prevStory = prevStory;
+window.jumpFromStoryToProduct = jumpFromStoryToProduct;
+
 // ---------------- DOM CONTENT LOADED ----------------
 document.addEventListener("DOMContentLoaded", () => {
   // Modal close buttons
@@ -305,6 +512,14 @@ document.addEventListener("DOMContentLoaded", () => {
   if (productModal) {
     productModal.addEventListener("click", (e) => {
       if (e.target === productModal) closeProductModal();
+    });
+  }
+
+  // Story modal backdrop click
+  const storyModal = document.getElementById("storyModal");
+  if (storyModal) {
+    storyModal.addEventListener("click", (e) => {
+      if (e.target === storyModal) closeStory();
     });
   }
 
@@ -320,12 +535,23 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // Keyboard Escape
+  // Keyboard navigation
   document.addEventListener("keydown", (e) => {
     if (e.key === "Escape") {
       closeProductModal();
       closeVideoModal();
+      closeStory();
       if (window.closeSearch) window.closeSearch();
+    } else if (e.key === "ArrowRight") {
+      const sModal = document.getElementById("storyModal");
+      if (sModal && sModal.classList.contains("is-active")) {
+        nextStory();
+      }
+    } else if (e.key === "ArrowLeft") {
+      const sModal = document.getElementById("storyModal");
+      if (sModal && sModal.classList.contains("is-active")) {
+        prevStory();
+      }
     }
   });
 
@@ -347,7 +573,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Active navigation highlight on scroll
   const navLinks = document.querySelectorAll(".nav-link");
-  const sections = ["hero", "kategoriler", "ustalar-guveni", "urunler", "hakkimizda", "iletisim"].map(id => document.getElementById(id));
+  const sections = ["hero", "kategoriler", "demonte-kit", "ustalar-guveni", "urunler", "hakkimizda", "iletisim"].map(id => document.getElementById(id));
 
   window.addEventListener("scroll", () => {
     const scrollPos = window.scrollY + 120;
