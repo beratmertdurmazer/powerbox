@@ -227,6 +227,27 @@ const PRODUCTS_DATA = {
     ],
     waMsg: "Merhaba Powerbox, kampanya kapsamında 1 adet Powerbox 400 kV Elektro Şok Cihazı (590 TL) sipariş etmek istiyorum. Teslimat ve ödeme detaylarını alabilir miyim?",
     wholesaleMsg: "Merhaba Powerbox, Powerbox Elektro Şok Cihazı için toptan koli siparişi ve fiyat teklifi almak istiyorum."
+  },
+  demonte: {
+    id: "demonte",
+    title: "Demonte Kit & Boş Kutular",
+    fullName: "Demonte Devre Kiti & Boş Plastik Kutular",
+    category: "GENÇ ÜRETİCİLER & AR-GE",
+    image: "assets/images/demonte-kutu-poster.jpg",
+    oldPrice: 350,
+    price: 190,
+    discount: "Özel Fiyat",
+    badge: "Genç Üretici",
+    wholesaleTip: "Toplu okul ve proje alımlarında ekstra destek",
+    desc: "Yetenekli gençlerimiz üretim yapsın, projelerini hayata geçirsin diye demonte devre kitleri ve boş plastik kutular uygun fiyatlarla!",
+    features: [
+      "Yetenekli gençlerimiz ve öğrenciler için özel uygun fiyat",
+      "Kendi devrenizi kutulamak için yüksek kaliteli plastik kutular",
+      "Demonte devre kartı ve bileşen paketleri",
+      "Powerbox ailesine siz de katılın..!"
+    ],
+    waMsg: "Merhaba Powerbox, demonte kit paketleri ve boş plastik kutular hakkında sipariş ve bilgi almak istiyorum.",
+    wholesaleMsg: "Merhaba Powerbox, demonte kit paketleri ve boş plastik kutular için toplu alım ve proje desteği hakkında görüşmek istiyorum."
   }
 };
 
@@ -886,9 +907,7 @@ function escapeHtml(str) {
 // ---------------- INSTAGRAM STORY VIEWER ----------------
 let currentStoryIndex = 0;
 let storyTimer = null;
-let storyProgressInterval = null;
-let storyProgress = 0;
-const STORY_DURATION = 6500; // ms
+const STORY_DURATION = 7500; // ms
 
 function openStory(index) {
   currentStoryIndex = index;
@@ -900,6 +919,7 @@ function openStory(index) {
 
   setupStoryProgressBars();
   showCurrentStory();
+  setupStoryPauseHandlers();
 }
 window.openStory = openStory;
 
@@ -911,7 +931,6 @@ function closeStory() {
   document.body.style.overflow = "";
 
   clearTimeout(storyTimer);
-  clearInterval(storyProgressInterval);
 }
 window.closeStory = closeStory;
 
@@ -928,31 +947,63 @@ function setupStoryProgressBars() {
 
 function showCurrentStory() {
   clearTimeout(storyTimer);
-  clearInterval(storyProgressInterval);
 
   const story = STORIES_DATA[currentStoryIndex];
   if (!story) return;
+  const prod = PRODUCTS_DATA[story.productId];
 
   const tagEl = document.getElementById("storyTag");
   const titleEl = document.getElementById("storyTitle");
   const descEl = document.getElementById("storyDesc");
   const imgEl = document.getElementById("storyImg");
-  const waBtn = document.getElementById("storyWaBtn");
+  const oldPriceEl = document.getElementById("storyOldPrice");
+  const priceNowEl = document.getElementById("storyPriceNow");
+  const discountTagEl = document.getElementById("storyDiscountTag");
+  const wholesaleTipEl = document.getElementById("storyWholesaleTip");
+  const bulletsEl = document.getElementById("storyBullets");
   const jumpBtn = document.getElementById("storyJumpBtn");
 
-  if (tagEl) tagEl.textContent = story.tag;
-  if (titleEl) titleEl.textContent = story.title;
-  if (descEl) descEl.textContent = story.desc;
+  if (tagEl) tagEl.textContent = story.tag || (prod ? prod.category : "GÜVENLİK TEKNOLOJİSİ");
+  if (titleEl) titleEl.textContent = prod?.fullName || story.title;
+  if (descEl) descEl.textContent = story.desc || prod?.desc || "";
+  
   if (imgEl) {
-    imgEl.src = story.image;
+    imgEl.src = story.image || prod?.image;
     imgEl.alt = story.title;
   }
 
-  if (waBtn) {
-    const encodedMsg = encodeURIComponent(story.waMsg);
-    waBtn.href = `https://wa.me/${WHATSAPP_INT_NUMBER}?text=${encodedMsg}`;
+  // Pricing Elements
+  if (oldPriceEl) {
+    oldPriceEl.textContent = prod ? `${prod.oldPrice.toLocaleString("tr-TR")} TL` : "";
+  }
+  if (priceNowEl) {
+    priceNowEl.textContent = prod ? `${prod.price.toLocaleString("tr-TR")} TL` : "";
+  }
+  if (discountTagEl) {
+    discountTagEl.textContent = prod?.discount || "Lansman İndirimi";
+  }
+  if (wholesaleTipEl) {
+    wholesaleTipEl.textContent = prod?.wholesaleTip 
+      ? `💼 ${prod.wholesaleTip}` 
+      : "💼 Toptan alımlarda koli bazlı özel iskonto uygulanır";
   }
 
+  // Key Highlights / Bullet Points
+  if (bulletsEl) {
+    if (prod && prod.features && prod.features.length > 0) {
+      const topBullets = prod.features.slice(0, 2);
+      bulletsEl.innerHTML = topBullets.map(f => `
+        <div class="story-bullet-item">
+          <span class="story-bullet-check">✓</span>
+          <span class="story-bullet-text">${escapeHtml(f)}</span>
+        </div>
+      `).join("");
+    } else {
+      bulletsEl.innerHTML = "";
+    }
+  }
+
+  // Jump button to full details
   if (jumpBtn) {
     jumpBtn.onclick = () => {
       closeStory();
@@ -965,7 +1016,7 @@ function showCurrentStory() {
     };
   }
 
-  // Update progress bars
+  // Update Progress Bars UI
   const segments = document.querySelectorAll("#storyProgressBar .progress-segment");
   segments.forEach((seg, i) => {
     const fill = seg.querySelector(".progress-fill");
@@ -983,7 +1034,7 @@ function showCurrentStory() {
     }
   });
 
-  // Animate current fill
+  // Start Fill Animation
   requestAnimationFrame(() => {
     const currentSeg = segments[currentStoryIndex];
     if (currentSeg) {
@@ -998,6 +1049,48 @@ function showCurrentStory() {
   storyTimer = setTimeout(() => {
     nextStory();
   }, STORY_DURATION);
+}
+
+function buyStoryNow() {
+  const story = STORIES_DATA[currentStoryIndex];
+  if (!story) return;
+  buyProductNow(story.productId);
+}
+window.buyStoryNow = buyStoryNow;
+
+function addStoryToCart() {
+  const story = STORIES_DATA[currentStoryIndex];
+  if (!story) return;
+  const prod = PRODUCTS_DATA[story.productId];
+  addToCart(story.productId);
+  showToast(`✓ ${prod ? prod.title : "Ürün"} sepete eklendi!`, true);
+  
+  // Pause story briefly to let the user see the addition
+  clearTimeout(storyTimer);
+  storyTimer = setTimeout(() => {
+    nextStory();
+  }, 4000);
+}
+window.addStoryToCart = addStoryToCart;
+
+function setupStoryPauseHandlers() {
+  const container = document.getElementById("storyContainer");
+  if (!container || container._hasPauseHandlers) return;
+  container._hasPauseHandlers = true;
+
+  container.addEventListener("mouseenter", () => {
+    clearTimeout(storyTimer);
+    const curFill = document.querySelector(`#storyProgressBar .progress-segment[data-index="${currentStoryIndex}"] .progress-fill`);
+    if (curFill) {
+      const computedWidth = window.getComputedStyle(curFill).width;
+      curFill.style.transition = "none";
+      curFill.style.width = computedWidth;
+    }
+  });
+
+  container.addEventListener("mouseleave", () => {
+    showCurrentStory();
+  });
 }
 
 function nextStory() {
