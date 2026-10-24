@@ -96,6 +96,21 @@ const PRODUCTS_DATA = {
     ],
     waMsg: "Merhaba, Powerbox K-G Karavan Gaz Alarmı için toptan sipariş ve fiyat bilgisi almak istiyorum."
   },
+  tasarruf: {
+    id: "tasarruf",
+    title: "Powerbox Elektrik Tasarruf Cihazı",
+    category: "MONOFAZE & TRİFAZE ÖZEL ÜRETİM",
+    image: "assets/images/kategori/elektriktasarrufcihazları.png",
+    desc: "Ev ve iş yerlerine uygun monofaze ve trifaze modeller. Her kW değerine göre taleplere uygun özel yapım imalat.",
+    features: [
+      "Ev ve iş yerlerine uygun monofaze ve trifaze modeller",
+      "Her kW değerine uygun özel mühendislik imalatı",
+      "Bobinli devrelerde oluşan ısınmadan ve zorlanmadan kaynaklı kayıp enerjiyi absorbe eder, hatları rahatlatır",
+      "Mini kompanzasyon görevi görür, %25'e varan tasarruf sağlar",
+      "2 Yıl Üretici Garantisi"
+    ],
+    waMsg: "Merhaba, Powerbox Elektrik Tasarruf Cihazı (Monofaze/Trifaze) için kW değerimize uygun özel sipariş ve toptan teklif almak istiyorum."
+  },
   ap1: {
     id: "ap1",
     title: "Powerbox AP1 Akım Korumalı Priz",
@@ -589,7 +604,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Active navigation highlight on scroll
   const navLinks = document.querySelectorAll(".nav-link");
-  const sections = ["hero", "kategoriler", "demonte-kit", "elektrik-tasarruf", "urunler", "hakkimizda", "iletisim"].map(id => document.getElementById(id));
+  const sections = ["hero", "kategoriler", "demonte-kit", "urunler", "hakkimizda", "iletisim"].map(id => document.getElementById(id));
 
   window.addEventListener("scroll", () => {
     const scrollPos = window.scrollY + 120;
