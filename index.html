@@ -3,16 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>POWERBOX | Elektronik Cihazlarınız İçin Güçlü Koruma</title>
-  <meta name="description" content="POWERBOX Teknoloji - Yüksek voltaj koruma modülleri, gaz alarmları, elektrik tasarruf sistemleri, akım korumalı priz ve özel çözümler. Sadece toptan satış ve özel proje imalatı.">
-  <meta name="theme-color" content="#0284c7">
-
-  <!-- Google Fonts -->
+  <title>Powerbox Teknoloji | Akıllı Voltaj & Gaz Koruma Cihazları | Perakende & Toptan</title>
+  <meta name="description" content="Powerbox: Yüksek voltaj koruma modülleri, doğalgaz ve LPG dedektörleri, elektrik tasarruf cihazları, demonte kitler ve boş plastik kutular. Perakende lansman indirimleri ve toptan avantajlı fiyatlar.">
+  <meta name="keywords" content="powerbox, voltaj koruma, akım korumalı priz, gaz alarm cihazı, araç lpg alarmı, karavan gaz alarmı, elektrik tasarruf cihazı, haşere kovucu, elektroşok, demonte kit, plastik kutu">
+  
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="css/style.css?v=3.0">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Main Stylesheet (v4.1 Cache Buster) -->
+  <link rel="stylesheet" href="css/style.css?v=4.1">
 </head>
 <body>
 
@@ -22,15 +23,15 @@
       <div class="announcement-left">
         <span>⚡ Türkiye'nin Akıllı Koruma Teknolojisi</span>
         <span class="sep">•</span>
-        <span class="ann-wholesale-tag">SADECE TOPTAN SATIŞ</span>
+        <span class="ann-wholesale-tag">PERAKENDE & TOPTAN SATIŞ</span>
         <span class="sep">•</span>
-        <span>Perakende Satışımız Yoktur</span>
+        <span>Lansmana Özel Perakende İndirimleri</span>
         <span class="sep">•</span>
-        <span>Özel Proje & Toptan Sipariş</span>
+        <span>💼 Toptan Alımlarda Özel İskonto</span>
       </div>
       <div class="announcement-right">
         <a href="tel:+905494095353" class="ann-phone">📞 0549 409 53 53</a>
-        <a href="https://wa.me/905494095353?text=Merhaba,%20Powerbox%20ürünleri%20için%20toptan%20sipariş%20ve%20özel%20proje%20talebi%20hakkında%20bilgi%20almak%20istiyorum." target="_blank" rel="noopener" class="ann-wa">💬 WhatsApp Toptan Hattı</a>
+        <a href="https://wa.me/905494095353?text=Merhaba,%20Powerbox%20ürünleri%20hakkında%20bilgi%20ve%20sipariş%20almak%20istiyorum." target="_blank" rel="noopener" class="ann-wa">💬 WhatsApp Sipariş Hattı</a>
       </div>
     </div>
   </div>
@@ -55,6 +56,17 @@
 
       <!-- Right Header Actions -->
       <div class="header-actions">
+        <!-- Cart Trigger Button in Header -->
+        <button type="button" class="header-cart-btn" id="headerCartBtn" aria-label="Alışveriş Sepeti">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+            <circle cx="9" cy="21" r="1"></circle>
+            <circle cx="20" cy="21" r="1"></circle>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+          </svg>
+          <span class="header-cart-badge" id="headerCartBadge">0</span>
+        </button>
+
+        <!-- Search Trigger -->
         <button type="button" class="search-trigger-btn" id="searchTriggerBtn" aria-label="Ürün Ara">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
             <circle cx="11" cy="11" r="8"></circle>
@@ -62,6 +74,7 @@
           </svg>
         </button>
 
+        <!-- Phone Button -->
         <a href="tel:+905494095353" class="header-phone-btn">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
           <span>0549 409 53 53</span>
@@ -100,73 +113,82 @@
                 <img src="assets/images/urun/px2.png" alt="PX2 Pro" class="story-img" loading="eager">
               </div>
             </div>
-            <span class="story-label">PX2 Pro</span>
+            <span class="story-label">Voltaj PX2</span>
           </button>
 
-          <!-- Story 3: Voltaj PX3 Sanayi -->
-          <button type="button" class="story-item-btn" onclick="openStory(2)" aria-label="Ağır Hizmet PX3 Hikayesi">
-            <div class="story-ring ring-dark">
-              <div class="story-avatar">
-                <img src="assets/images/urun/px3.png" alt="PX3 Sanayi" class="story-img" loading="eager">
-              </div>
-            </div>
-            <span class="story-label">PX3 Sanayi</span>
-          </button>
-
-          <!-- Story 4: Akım Priz AP1 -->
-          <button type="button" class="story-item-btn" onclick="openStory(3)" aria-label="Akım Priz AP1 Hikayesi">
-            <div class="story-ring ring-green">
-              <div class="story-avatar">
-                <img src="assets/images/urun/elektrik-tasarruf.png" alt="AP1 16A Priz" class="story-img" loading="eager">
-              </div>
-            </div>
-            <span class="story-label">16A Priz</span>
-          </button>
-
-          <!-- Story 5: Fişli Gaz GC1 -->
-          <button type="button" class="story-item-btn" onclick="openStory(4)" aria-label="Fişli Gaz Alarmı Hikayesi">
+          <!-- Story 3: Voltaj PX3 -->
+          <button type="button" class="story-item-btn" onclick="openStory(2)" aria-label="Voltaj PX3 Hikayesi">
             <div class="story-ring ring-cyan">
               <div class="story-avatar">
-                <img src="assets/images/urun/gc1-gaz.png" alt="GC1 Fişli Gaz Alarmı" class="story-img" loading="eager">
+                <img src="assets/images/urun/px3.png" alt="PX3 Voltaj" class="story-img" loading="eager">
+              </div>
+            </div>
+            <span class="story-label">Voltaj PX3</span>
+          </button>
+
+          <!-- Story 4: G-C Fişli Gaz -->
+          <button type="button" class="story-item-btn" onclick="openStory(3)" aria-label="Fişli Gaz Alarmı Hikayesi">
+            <div class="story-ring ring-orange">
+              <div class="story-avatar">
+                <img src="assets/images/urun/gc1-gaz.png" alt="G-C Gaz Alarmı" class="story-img" loading="eager">
               </div>
             </div>
             <span class="story-label">Fişli Gaz</span>
           </button>
 
-          <!-- Story 6: Araç Gaz GA -->
-          <button type="button" class="story-item-btn" onclick="openStory(5)" aria-label="Araç LPG Gaz Alarmı Hikayesi">
-            <div class="story-ring ring-cyan">
+          <!-- Story 5: G-A Araç Gaz -->
+          <button type="button" class="story-item-btn" onclick="openStory(4)" aria-label="Araç Gaz Alarmı Hikayesi">
+            <div class="story-ring ring-red">
               <div class="story-avatar">
-                <img src="assets/images/urun/ga-arac.png" alt="GA Araç İçi Gaz Alarmı" class="story-img" loading="eager">
+                <img src="assets/images/urun/ga-arac.png" alt="G-A Araç Gaz" class="story-img" loading="eager">
               </div>
             </div>
             <span class="story-label">Araç LPG</span>
           </button>
 
-          <!-- Story 7: Karavan Gaz KG -->
-          <button type="button" class="story-item-btn" onclick="openStory(6)" aria-label="Karavan Gaz Alarmı Hikayesi">
+          <!-- Story 6: K-G Karavan -->
+          <button type="button" class="story-item-btn" onclick="openStory(5)" aria-label="Karavan Gaz Alarmı Hikayesi">
             <div class="story-ring ring-green">
               <div class="story-avatar">
-                <img src="assets/images/urun/kg-karavan.png" alt="KG Karavan Gaz Alarmı" class="story-img" loading="eager">
+                <img src="assets/images/urun/kg-karavan.png" alt="Karavan Gaz Alarmı" class="story-img" loading="eager">
               </div>
             </div>
             <span class="story-label">Karavan Gaz</span>
           </button>
 
-          <!-- Story 8: 22 kHz Haşere -->
-          <button type="button" class="story-item-btn" onclick="openStory(7)" aria-label="22 kHz Haşere Kovucu Hikayesi">
+          <!-- Story 7: Elektrik Tasarruf -->
+          <button type="button" class="story-item-btn" onclick="openStory(6)" aria-label="Elektrik Tasarruf Hikayesi">
+            <div class="story-ring ring-green">
+              <div class="story-avatar">
+                <img src="assets/images/kategori/elektriktasarrufcihazları.png" alt="Elektrik Tasarruf Cihazı" class="story-img" loading="eager">
+              </div>
+            </div>
+            <span class="story-label">Tasarruf</span>
+          </button>
+
+          <!-- Story 8: AP1 Akım Korumalı Priz -->
+          <button type="button" class="story-item-btn" onclick="openStory(7)" aria-label="AP1 Akım Korumalı Priz Hikayesi">
+            <div class="story-ring ring-blue">
+              <div class="story-avatar">
+                <img src="assets/images/urun/elektrik-tasarruf.png" alt="AP1 Priz" class="story-img" loading="eager">
+              </div>
+            </div>
+            <span class="story-label">16A Priz</span>
+          </button>
+
+          <!-- Story 9: Haşere Kovucu -->
+          <button type="button" class="story-item-btn" onclick="openStory(8)" aria-label="Haşere Kovucu Hikayesi">
             <div class="story-ring ring-purple">
               <div class="story-avatar">
-                <img src="assets/images/urun/hasere-kovucu.png" alt="22 kHz Haşere Kovucu" class="story-img" loading="eager">
+                <img src="assets/images/urun/hasere-kovucu.png" alt="Ultrasonik Haşere Kovucu" class="story-img" loading="eager">
               </div>
             </div>
             <span class="story-label">Haşere Kovucu</span>
           </button>
 
-          <!-- Story 9: Elektro Şok (Yeni) -->
-          <button type="button" class="story-item-btn" onclick="openStory(8)" aria-label="Elektro Şok Cihazı Hikayesi">
-            <div class="story-ring ring-red">
-              <span class="story-mini-badge">YENİ</span>
+          <!-- Story 10: Elektro Şok -->
+          <button type="button" class="story-item-btn" onclick="openStory(9)" aria-label="Elektro Şok Cihazı Hikayesi">
+            <div class="story-ring ring-dark">
               <div class="story-avatar">
                 <img src="assets/images/urun/elektrosok.png" alt="Elektro Şok Cihazı" class="story-img" loading="eager">
               </div>
@@ -174,15 +196,14 @@
             <span class="story-label">Elektro Şok</span>
           </button>
 
-          <!-- Story 10: Demonte Kit & Kutular -->
-          <button type="button" class="story-item-btn" onclick="openStory(9)" aria-label="Demonte Kit ve Kutular Hikayesi">
-            <div class="story-ring ring-gold">
-              <span class="story-mini-badge badge-kit">KİT</span>
+          <!-- Story 11: Demonte Devre Kiti -->
+          <button type="button" class="story-item-btn" onclick="openStory(10)" aria-label="Demonte Devre Kiti Hikayesi">
+            <div class="story-ring ring-cyan">
               <div class="story-avatar">
-                <img src="assets/images/kategori/yeniurunler.png" alt="Demonte Kit ve Boş Kutular" class="story-img" loading="eager">
+                <img src="assets/images/demonte-kutu-poster.jpg" alt="Demonte Kit" class="story-img" loading="eager">
               </div>
             </div>
-            <span class="story-label">Demonte & Kutu</span>
+            <span class="story-label">Demonte Kit</span>
           </button>
 
         </div>
@@ -190,13 +211,15 @@
     </div>
   </section>
 
-  <!-- HERO SECTION (4K Yüksek Çözünürlüklü & Sade Vektörel HTML/CSS Hero) -->
+  <!-- HERO SECTION (PERAKENDE & TOPTAN SATIŞ - DOĞRUDAN ÜRÜN ODAKLI) -->
   <section class="hero-section" id="hero">
     <div class="site-container">
+      
+      <!-- Big Hero Banner Card -->
       <div class="hero-banner-card">
         
-        <!-- Background 4K Interior Image with Gradient Shading -->
-        <div class="hero-bg-layer">
+        <!-- Background Interior Image -->
+        <div class="hero-bg-container">
           <img src="assets/images/hero-modern-interior.jpg" alt="Modern Ev Teknolojisi" class="hero-bg-img" width="1920" height="1080">
           <div class="hero-gradient-overlay"></div>
         </div>
@@ -207,7 +230,7 @@
           <!-- Left Text Column: Powerbox Logosu & Motto -->
           <div class="hero-text-col">
             
-            <!-- Powerbox Logosu (PERAKENDE & TOPTAN SATIŞ MERKEZİ Yerine) -->
+            <!-- Powerbox Logosu -->
             <div class="hero-brand-badge">
               <img src="assets/images/logo-white.svg" alt="POWERBOX" class="hero-logo-white" width="200" height="44">
             </div>
@@ -218,10 +241,10 @@
               <span class="hero-highlight">Pratik Çözümler</span>
             </h1>
 
-            <!-- Doğrudan Ürün Odaklı & SADECE TOPTAN Vurgusu (Fazla Yazı Yok) -->
+            <!-- PERAKENDE & TOPTAN Vurgusu -->
             <div class="hero-wholesale-banner">
-              <span class="wholesale-tag">SADECE TOPTAN SATIŞ</span>
-              <p class="wholesale-desc">Perakende satışımız yoktur. Toptan sipariş ve özel proje talepleriniz için bize ulaşın.</p>
+              <span class="wholesale-tag">PERAKENDE & TOPTAN SATIŞ</span>
+              <p class="wholesale-desc">Lansmana özel indirimli fiyatlarla hemen sipariş verin; toptan ve koli alımlarınızda ekstra iskontolu fiyat teklifi alın.</p>
             </div>
 
             <div class="hero-actions-row">
@@ -230,9 +253,9 @@
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
               </a>
 
-              <a href="https://wa.me/905494095353?text=Merhaba,%20Powerbox%20ürünleri%20için%20toptan%20sipariş%20ve%20özel%20proje%20talebi%20hakkında%20bilgi%20almak%20istiyorum." target="_blank" rel="noopener" class="btn btn-hero-wa">
+              <a href="https://wa.me/905494095353?text=Merhaba,%20Powerbox%20ürünleri%20hakkında%20bilgi%20ve%20sipariş%20almak%20istiyorum." target="_blank" rel="noopener" class="btn btn-hero-wa">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.888 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-                <span>WhatsApp Toptan Hattı</span>
+                <span>WhatsApp Sipariş Hattı</span>
               </a>
             </div>
           </div>
@@ -258,8 +281,8 @@
 
               <div class="shield-card-body">
                 <span class="shield-tag">DOĞRUDAN ÜRETİCİDEN</span>
-                <h3 class="shield-title">SADECE TOPTAN SATIŞ</h3>
-                <p class="shield-desc">Perakende satışımız yoktur. Toptan sipariş ve özel proje talepleriniz için bize ulaşın.</p>
+                <h3 class="shield-title">PERAKENDE & TOPTAN SATIŞ</h3>
+                <p class="shield-desc">Lansmana özel indirimli fiyatlarla hemen sipariş verin. Toptan ve koli bazlı alımlarda ekstra iskonto için bize ulaşın.</p>
 
                 <a href="tel:+905494095353" class="shield-call-btn">
                   <div class="shield-call-icon">
@@ -267,16 +290,16 @@
                   </div>
                   <div class="shield-call-info">
                     <span class="call-number">0549 409 53 53</span>
-                    <span class="call-sub">Toptan Sipariş & Özel Proje Hattı</span>
+                    <span class="call-sub">Hızlı Sipariş & Toptan Teklif Hattı</span>
                   </div>
                 </a>
               </div>
 
-              <!-- Mini Feature Row: Yerli - Kaliteli - Garantili (1dk muhabbeti kaldırıldı) -->
+              <!-- Mini Feature Row: Yerli - Kaliteli - Garantili -->
               <div class="shield-features-strip">
                 <span>🇹🇷 Yerli</span>
                 <span>⚡ Kaliteli</span>
-                <span>🛡️ Garantili</span>
+                <span>🛡️ 2 Yıl Garanti</span>
               </div>
 
             </div>
@@ -293,50 +316,45 @@
     <div class="story-modal-container">
       
       <!-- Top Progress Bars -->
-      <div class="story-progress-bar" id="storyProgressBar">
-        <!-- Generated by JS -->
-      </div>
+      <div class="story-progress-bar" id="storyProgressBar"></div>
 
       <!-- Story Modal Header -->
       <div class="story-modal-header">
-        <div class="story-user-info">
-          <img src="assets/images/logo.svg" alt="Powerbox" class="story-header-logo">
-          <div>
-            <h4 class="story-header-title" id="storyHeaderTitle">Powerbox Teknoloji</h4>
-            <span class="story-header-badge">SADECE TOPTAN SATIŞ</span>
+        <div class="story-author-info">
+          <img src="assets/images/logo.svg" alt="Powerbox" class="story-author-logo">
+          <div class="story-author-text">
+            <span class="story-author-name">POWERBOX TEKNOLOJİ</span>
+            <span class="story-author-badge">Doğrudan Üreticiden</span>
           </div>
         </div>
-        <button type="button" class="story-close-btn" id="storyCloseBtn" onclick="closeStory()" aria-label="Hikayeyi Kapat">✕</button>
+        <button type="button" class="story-close-btn" id="storyCloseBtn" aria-label="Hikayeyi Kapat">✕</button>
       </div>
 
-      <!-- Touch Zones for Next / Prev Navigation -->
-      <div class="story-touch-nav">
-        <div class="story-touch-prev" onclick="prevStory()" aria-label="Önceki Hikaye"></div>
-        <div class="story-touch-next" onclick="nextStory()" aria-label="Sonraki Hikaye"></div>
-      </div>
+      <!-- Story Visual Content Frame -->
+      <div class="story-content-frame">
+        <div class="story-nav-tap tap-left" onclick="prevStory()"></div>
+        <div class="story-nav-tap tap-right" onclick="nextStory()"></div>
 
-      <!-- Story Body Slide Content -->
-      <div class="story-slide-body">
-        <div class="story-image-wrap">
-          <img src="" alt="" id="storySlideImg" class="story-slide-img">
+        <!-- Product Image Showcase -->
+        <div class="story-image-showcase">
+          <img src="" alt="" id="storyImg" class="story-main-img">
         </div>
+
+        <!-- Story Caption Overlay -->
         <div class="story-caption-card">
-          <span class="story-tag-pill" id="storyTagPill">KATEGORİ</span>
-          <h3 class="story-caption-title" id="storyCaptionTitle">Ürün Adı</h3>
-          <p class="story-caption-desc" id="storyCaptionDesc">Ürün açıklaması burada yer alır.</p>
-          <div class="story-highlight-pill">
-            <span>🛡️ Toptan Sipariş & Proje Talepleri İçin Bize Ulaşın</span>
-          </div>
+          <span class="story-category-pill" id="storyTag">KORUMA TEKNOLOJİSİ</span>
+          <h3 class="story-caption-title" id="storyTitle">Ürün Adı</h3>
+          <p class="story-caption-desc" id="storyDesc">Ürün açıklaması burada yer alır.</p>
         </div>
       </div>
 
       <!-- Story Footer Actions -->
-      <div class="story-footer-actions">
+      <div class="story-footer-bar">
         <a href="#" id="storyWaBtn" target="_blank" rel="noopener" class="btn btn-story-wa">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.888 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-          <span>Toptan Fiyat & Bilgi Al</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.888 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          <span>WhatsApp Sipariş</span>
         </a>
-        <button type="button" class="btn btn-story-jump" id="storyJumpBtn" onclick="jumpFromStoryToProduct()">
+        <button type="button" id="storyJumpBtn" class="btn-story-jump">
           <span>Ürüne Git ↓</span>
         </button>
       </div>
@@ -375,7 +393,7 @@
             <h3 class="category-title">Voltaj Koruma Modülleri</h3>
             <p class="category-desc">Yüksek voltaja karşı koruma, anlık voltaj değerini görme ve cihazlarınızın tüketimini ölçme hepsi bir arada.</p>
             <div class="category-action-link">
-              <span>Ürünleri İncele (PX1, PX2, PX3)</span>
+              <span>Ürünleri İncele</span>
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
             </div>
           </div>
@@ -390,7 +408,7 @@
             <h3 class="category-title">Gaz Alarm Cihazları</h3>
             <p class="category-desc">Evde, arabada, karavanda; ister fişe tak kullan ister pilli model ile gaz olan her yere götür, dilerseniz seyyar gaz kaçak dedektörü olarak kullanabilirsiniz.</p>
             <div class="category-action-link">
-              <span>Ürünleri İncele (G-C, G-A, K-G)</span>
+              <span>Ürünleri İncele</span>
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
             </div>
           </div>
@@ -405,7 +423,7 @@
             <h3 class="category-title">Elektrik Tasarruf Cihazları</h3>
             <p class="category-desc">Ev ve iş yerlerine uygun monofaze ve trifaze modeller, her kW değerine göre taleplere uygun özel sipariş, %25'e varan tasarruf.</p>
             <div class="category-action-link">
-              <span>Ürünü İncele (Monofaze & Trifaze)</span>
+              <span>Ürünü İncele</span>
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
             </div>
           </div>
@@ -420,7 +438,7 @@
             <h3 class="category-title">Yeni Ürünler & Özel Çözümler</h3>
             <p class="category-desc">16A güçlü priziyle en güçlü akım korumalı priz, 19-22 kHz ses çıkışıyla gerçek ultrasonik haşere kovucu ve 400 kV gücünde ultra caydırıcı elektroşok aleti.</p>
             <div class="category-action-link">
-              <span>Ürünleri İncele (AP1, Haşere, Şok)</span>
+              <span>Ürünleri İncele</span>
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
             </div>
           </div>
@@ -431,79 +449,82 @@
     </div>
   </section>
 
-  <!-- DEMONTE KİT & BOŞ PLASTİK KUTULAR (GENÇ ÜRETİCİLER & AR-GE PROJELERİ) -->
+  <!-- DEMONTE KİT & BOŞ PLASTİK KUTULAR (GENÇ ÜRETİCİLER & AR-GE PROJELERİ - POSTERLİ & MOBİL ODAKLI) -->
   <section class="demonte-section" id="demonte-kit">
     <div class="site-container">
       <div class="demonte-banner-card">
-        <div class="demonte-inner-grid">
+        
+        <!-- Header: Kısa & Öz Metin -->
+        <div class="demonte-header-compact text-center">
+          <div class="demonte-badge-pill">
+            <span class="badge-icon">🚀</span>
+            <span>GENÇ ÜRETİCİLER & ELEKTRONİK PROJELERİ</span>
+          </div>
+          <h2 class="demonte-heading">Ürünlerimizin Sadece Satışını Yapmıyoruz!</h2>
+          <p class="demonte-lead-compact">
+            Kendi ürününü tasarlamak ve üretmek isteyen gençlerimiz için <strong>demonte devre kitleri</strong> ve <strong>boş plastik kutularımız</strong> avantajlı fiyatlarla!
+          </p>
+        </div>
+
+        <!-- 2'li Görsel Tanıtım Posterleri (Mobilde Az Yer Kaplayan & Büyütülebilir Vitrin) -->
+        <div class="demonte-posters-grid">
           
-          <div class="demonte-content-col">
-            <div class="demonte-badge-pill">
-              <span class="badge-icon">🚀</span>
-              <span>GENÇ ÜRETİCİLER & ELEKTRONİK PROJELERİ</span>
-            </div>
-
-            <h2 class="demonte-heading">
-              Ürünlerimizin Sadece Satışını Yapmıyoruz!
-            </h2>
-
-            <p class="demonte-lead-text">
-              Yetenekli gençlerimiz üretim yapsın, projelerini hayata geçirsin diye çok uygun fiyatlarla <strong>demonte kit paketleri</strong> ve <strong>boş plastik kutularımızı</strong> satışa sunuyoruz! Detaylı bilgi için bize ulaşın, Powerbox ailesine siz de katılın!
-            </p>
-
-            <div class="demonte-features-grid">
-              <div class="demonte-feat-card">
-                <div class="feat-icon-box">🛠️</div>
-                <div class="feat-info">
-                  <h4>Demonte Devre Kitleri</h4>
-                  <p>Kendi kartını lehimlemek ve üretmek isteyen meraklılar için demonte kit paketleri.</p>
-                </div>
-              </div>
-
-              <div class="demonte-feat-card">
-                <div class="feat-icon-box">📦</div>
-                <div class="feat-info">
-                  <h4>Boş Plastik Cihaz Kutuları</h4>
-                  <p>Projelerinizi profesyonel bir son ürüne dönüştürecek dayanıklı ve şık plastik modül kasaları.</p>
-                </div>
-              </div>
-
-              <div class="demonte-feat-card">
-                <div class="feat-icon-box">🤝</div>
-                <div class="feat-info">
-                  <h4>Powerbox Ailesine Katılın</h4>
-                  <p>Genç girişimcilere, atölyelere ve üniversite kulüplerine özel toptan fiyatlar ve teknik rehberlik.</p>
-                </div>
+          <!-- Poster 1: Tek Kutu Hayal Gücün Kadar Ürün -->
+          <div class="demonte-poster-card" onclick="openPosterModal('assets/images/demonte-kutu-poster.jpg', 'Demonte Devre Kiti & Renkli Breadboard Hediye')">
+            <div class="poster-img-wrap">
+              <img src="assets/images/demonte-kutu-poster.jpg" alt="Demonte Devre Kiti ve Malzemeleri - Breadboard Hediyeli" class="poster-img" loading="lazy">
+              <div class="poster-zoom-overlay">
+                <span class="zoom-pill">🔍 Yakından İncele</span>
               </div>
             </div>
+            <div class="poster-caption-bar">
+              <span class="poster-tag">KUTU İÇERİĞİ & ŞEMA</span>
+              <h4 class="poster-title">Demonte Devre Kiti + Renkli Breadboard</h4>
+            </div>
+          </div>
 
-            <div class="demonte-actions-row">
-              <a href="https://wa.me/905494095353?text=Merhaba,%20Powerbox%20demonte%20kit%20paketleri%20ve%20boş%20plastik%20kutular%20hakkında%20detaylı%20bilgi%20ve%20toptan%20fiyat%20almak%20istiyorum." target="_blank" rel="noopener" class="btn btn-demonte-wa">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.888 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-                <span>Kit & Kutu Talebi Gönder (WhatsApp)</span>
-              </a>
-
-              <a href="tel:+905494095353" class="btn btn-demonte-call">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-                <span>0549 409 53 53 Detaylı Bilgi Al</span>
-              </a>
+          <!-- Poster 2: Hayal Et, Tasarla, Üret -->
+          <div class="demonte-poster-card" onclick="openPosterModal('assets/images/demonte-moduller-poster.jpg', 'Kendi Cihazını Üret: 5 Farklı Modül Projesi')">
+            <div class="poster-img-wrap">
+              <img src="assets/images/demonte-moduller-poster.jpg" alt="5 Farklı Modül Projesi - Hayal Et Tasarla Üret" class="poster-img" loading="lazy">
+              <div class="poster-zoom-overlay">
+                <span class="zoom-pill">🔍 Yakından İncele</span>
+              </div>
+            </div>
+            <div class="poster-caption-bar">
+              <span class="poster-tag">SINIRSIZ PROJE İMKANI</span>
+              <h4 class="poster-title">Kendi Cihazını Tasarla & Üret (5 Farklı Proje)</h4>
             </div>
           </div>
 
         </div>
+
+        <!-- Aksiyon Butonları -->
+        <div class="demonte-actions-row justify-center">
+          <a href="https://wa.me/905494095353?text=Merhaba%20Powerbox,%20demonte%20kit%20paketleri%20ve%20boş%20plastik%20kutular%20hakkında%20fiyat%20ve%20sipariş%20bilgisi%20almak%20istiyorum." target="_blank" rel="noopener" class="btn btn-demonte-wa">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.888 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            <span>Kit & Kutu Siparişi Ver (WhatsApp)</span>
+          </a>
+
+          <a href="tel:+905494095353" class="btn btn-demonte-call">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <span>0549 409 53 53 Detaylı Bilgi</span>
+          </a>
+        </div>
+
       </div>
     </div>
   </section>
 
-  <!-- PRODUCTS SECTION (TÜM ÜRÜNLER - Kategori Filtreli 'Tık Tık' Gezinti) -->
+  <!-- PRODUCTS SECTION (TÜM ÜRÜNLER - Perakende Fiyatlar & Sepet / WhatsApp Satın Al) -->
   <section class="products-section" id="urunler">
     <div class="site-container">
       
       <!-- Section Header -->
       <div class="section-title-wrap text-center">
-        <p class="section-badge">— ÜRÜN LİSTEMİZ —</p>
+        <p class="section-badge">— KAMPANYALI FİYATLAR & HIZLI SİPARİŞ —</p>
         <h2 class="section-heading">Tüm Powerbox Ürünleri</h2>
-        <p class="section-subtext">Aşağıdaki filtrelerden kategorinizi seçin; ürünleri tek dokunuşla hızlıca filtreleyin ve inceleyin.</p>
+        <p class="section-subtext">Lansmana özel perakende fiyatlarla hemen sipariş verin veya sepetinize ekleyin. Toptan alımlarınızda ekstra iskonto fırsatından yararlanın.</p>
       </div>
 
       <!-- Snappy Category Filter Pills ("Tık Tık" Hızlı Filtre) -->
@@ -531,16 +552,42 @@
         <!-- Ürün 1: PX1 (Voltaj) -->
         <article class="product-card" data-category="voltaj" data-product-id="px1">
           <div class="product-thumb-container">
-            <span class="product-badge-pill badge-hot">Sadece Toptan</span>
+            <span class="product-badge-pill badge-hot">%27 İndirim</span>
             <img src="assets/images/urun/px1.png" alt="Powerbox PX1 Yüksek Voltaj Koruma Modülü" class="product-thumb-img" loading="lazy">
           </div>
           <div class="product-card-body">
             <div class="product-meta-sub">YÜKSEK VOLTAJ KORUMA</div>
             <h3 class="product-card-title">Powerbox PX1</h3>
             <p class="product-card-desc">Tüm prizleri akım korumalıya dönüştürür. Dijital voltaj ve tüketim ekranlı.</p>
+
+            <!-- Perakende Fiyat Alanı -->
+            <div class="product-pricing-wrap">
+              <div class="pricing-row">
+                <span class="price-old">950 TL</span>
+                <span class="price-current">690 <small>TL</small></span>
+                <span class="discount-pill">%27 İndirim</span>
+              </div>
+              <div class="wholesale-hint">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 7h-4V4c0-1.1-.9-2-2-2h-4c-1.1 0-2 .9-2 2v3H4c-1.1 0-2 .9-2 2v11c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V9c0-1.1-.9-2-2-2z"/></svg>
+                <span>Toptan alımlarda özel iskonto için ulaşın</span>
+              </div>
+            </div>
+
+            <!-- Eylemler: Hemen Al + Sepete Ekle -->
+            <div class="product-actions-grid">
+              <button type="button" class="btn-product-buy" onclick="buyProductNow('px1')">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.888 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                <span>Hemen Al</span>
+              </button>
+              <button type="button" class="btn-product-add-cart" onclick="addToCart('px1')">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+                <span>Sepete Ekle</span>
+              </button>
+            </div>
+
             <button type="button" class="detail-link-btn" onclick="openProductModal('px1')">
-              <span>Detayları Gör</span>
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              <span>Özellikleri İncele</span>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
             </button>
           </div>
         </article>
@@ -548,16 +595,42 @@
         <!-- Ürün 2: PX2 (Voltaj) -->
         <article class="product-card" data-category="voltaj" data-product-id="px2">
           <div class="product-thumb-container">
-            <span class="product-badge-pill badge-pro">Sadece Toptan</span>
+            <span class="product-badge-pill badge-pro">%31 İndirim</span>
             <img src="assets/images/urun/px2.png" alt="Powerbox PX2 Voltaj Koruma Modülü" class="product-thumb-img" loading="lazy">
           </div>
           <div class="product-card-body">
             <div class="product-meta-sub">YÜKSEK VOLTAJ KORUMA</div>
             <h3 class="product-card-title">Powerbox PX2</h3>
             <p class="product-card-desc">Çift kademeli koruma devresi ve anlık dijital voltaj göstergesi ile evinizi korur.</p>
+
+            <!-- Perakende Fiyat Alanı -->
+            <div class="product-pricing-wrap">
+              <div class="pricing-row">
+                <span class="price-old">850 TL</span>
+                <span class="price-current">590 <small>TL</small></span>
+                <span class="discount-pill">%31 İndirim</span>
+              </div>
+              <div class="wholesale-hint">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 7h-4V4c0-1.1-.9-2-2-2h-4c-1.1 0-2 .9-2 2v3H4c-1.1 0-2 .9-2 2v11c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V9c0-1.1-.9-2-2-2z"/></svg>
+                <span>Toptan alımlarda özel iskonto için ulaşın</span>
+              </div>
+            </div>
+
+            <!-- Eylemler: Hemen Al + Sepete Ekle -->
+            <div class="product-actions-grid">
+              <button type="button" class="btn-product-buy" onclick="buyProductNow('px2')">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.888 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                <span>Hemen Al</span>
+              </button>
+              <button type="button" class="btn-product-add-cart" onclick="addToCart('px2')">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+                <span>Sepete Ekle</span>
+              </button>
+            </div>
+
             <button type="button" class="detail-link-btn" onclick="openProductModal('px2')">
-              <span>Detayları Gör</span>
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              <span>Özellikleri İncele</span>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
             </button>
           </div>
         </article>
@@ -565,16 +638,42 @@
         <!-- Ürün 3: PX3 (Voltaj) -->
         <article class="product-card" data-category="voltaj" data-product-id="px3">
           <div class="product-thumb-container">
-            <span class="product-badge-pill badge-dark">Sadece Toptan</span>
+            <span class="product-badge-pill badge-dark">%31 İndirim</span>
             <img src="assets/images/urun/px3.png" alt="Powerbox PX3 Voltaj Koruma Modülü" class="product-thumb-img" loading="lazy">
           </div>
           <div class="product-card-body">
             <div class="product-meta-sub">YÜKSEK VOLTAJ KORUMA</div>
             <h3 class="product-card-title">Powerbox PX3</h3>
             <p class="product-card-desc">Yüksek akım ve sanayi tipi hatlar için ekstra kapasitörlü aşırı gerilim filtresi.</p>
+
+            <!-- Perakende Fiyat Alanı -->
+            <div class="product-pricing-wrap">
+              <div class="pricing-row">
+                <span class="price-old">650 TL</span>
+                <span class="price-current">450 <small>TL</small></span>
+                <span class="discount-pill">%31 İndirim</span>
+              </div>
+              <div class="wholesale-hint">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 7h-4V4c0-1.1-.9-2-2-2h-4c-1.1 0-2 .9-2 2v3H4c-1.1 0-2 .9-2 2v11c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V9c0-1.1-.9-2-2-2z"/></svg>
+                <span>Toptan alımlarda özel iskonto için ulaşın</span>
+              </div>
+            </div>
+
+            <!-- Eylemler: Hemen Al + Sepete Ekle -->
+            <div class="product-actions-grid">
+              <button type="button" class="btn-product-buy" onclick="buyProductNow('px3')">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.888 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                <span>Hemen Al</span>
+              </button>
+              <button type="button" class="btn-product-add-cart" onclick="addToCart('px3')">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+                <span>Sepete Ekle</span>
+              </button>
+            </div>
+
             <button type="button" class="detail-link-btn" onclick="openProductModal('px3')">
-              <span>Detayları Gör</span>
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              <span>Özellikleri İncele</span>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
             </button>
           </div>
         </article>
@@ -582,16 +681,42 @@
         <!-- Ürün 4: G-C Fişli Gaz Alarmı (Gaz) -->
         <article class="product-card" data-category="gaz" data-product-id="gc1">
           <div class="product-thumb-container">
-            <span class="product-badge-pill badge-blue">Sadece Toptan</span>
+            <span class="product-badge-pill badge-blue">%35 İndirim</span>
             <img src="assets/images/urun/gc1-gaz.png" alt="Powerbox G-C Fişli Gaz Alarm Cihazı" class="product-thumb-img" loading="lazy">
           </div>
           <div class="product-card-body">
             <div class="product-meta-sub">220V KABLOSUZ ALARM</div>
             <h3 class="product-card-title">Powerbox G-C Fişli Gaz Alarmı</h3>
             <p class="product-card-desc">Dış sensörlü yapısıyla doğalgaz kaçağını anında algılar, 100 dB güçlü sirenle uyarır.</p>
+
+            <!-- Perakende Fiyat Alanı -->
+            <div class="product-pricing-wrap">
+              <div class="pricing-row">
+                <span class="price-old">750 TL</span>
+                <span class="price-current">490 <small>TL</small></span>
+                <span class="discount-pill">%35 İndirim</span>
+              </div>
+              <div class="wholesale-hint">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 7h-4V4c0-1.1-.9-2-2-2h-4c-1.1 0-2 .9-2 2v3H4c-1.1 0-2 .9-2 2v11c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V9c0-1.1-.9-2-2-2z"/></svg>
+                <span>Toptan alımlarda özel iskonto için ulaşın</span>
+              </div>
+            </div>
+
+            <!-- Eylemler: Hemen Al + Sepete Ekle -->
+            <div class="product-actions-grid">
+              <button type="button" class="btn-product-buy" onclick="buyProductNow('gc1')">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.888 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                <span>Hemen Al</span>
+              </button>
+              <button type="button" class="btn-product-add-cart" onclick="addToCart('gc1')">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+                <span>Sepete Ekle</span>
+              </button>
+            </div>
+
             <button type="button" class="detail-link-btn" onclick="openProductModal('gc1')">
-              <span>Detayları Gör</span>
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              <span>Özellikleri İncele</span>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
             </button>
           </div>
         </article>
@@ -599,16 +724,42 @@
         <!-- Ürün 5: G-A Araç İçi Gaz Alarmı (Gaz) -->
         <article class="product-card" data-category="gaz" data-product-id="ga">
           <div class="product-thumb-container">
-            <span class="product-badge-pill badge-blue">Sadece Toptan</span>
+            <span class="product-badge-pill badge-blue">%28 İndirim</span>
             <img src="assets/images/urun/ga-arac.png" alt="Powerbox G-A Araç İçi Gaz Alarmı" class="product-thumb-img" loading="lazy">
           </div>
           <div class="product-card-body">
             <div class="product-meta-sub">TÜRKİYE'DE İLK & TEK</div>
             <h3 class="product-card-title">Powerbox G-A Araç Gaz Alarmı</h3>
             <p class="product-card-desc">LPG'li araçlar için 3 kalem pilli veya 12V akü beslemeli milisaniyelik erken uyarı.</p>
+
+            <!-- Perakende Fiyat Alanı -->
+            <div class="product-pricing-wrap">
+              <div class="pricing-row">
+                <span class="price-old">900 TL</span>
+                <span class="price-current">650 <small>TL</small></span>
+                <span class="discount-pill">%28 İndirim</span>
+              </div>
+              <div class="wholesale-hint">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 7h-4V4c0-1.1-.9-2-2-2h-4c-1.1 0-2 .9-2 2v3H4c-1.1 0-2 .9-2 2v11c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V9c0-1.1-.9-2-2-2z"/></svg>
+                <span>Toptan alımlarda özel iskonto için ulaşın</span>
+              </div>
+            </div>
+
+            <!-- Eylemler: Hemen Al + Sepete Ekle -->
+            <div class="product-actions-grid">
+              <button type="button" class="btn-product-buy" onclick="buyProductNow('ga')">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.888 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                <span>Hemen Al</span>
+              </button>
+              <button type="button" class="btn-product-add-cart" onclick="addToCart('ga')">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+                <span>Sepete Ekle</span>
+              </button>
+            </div>
+
             <button type="button" class="detail-link-btn" onclick="openProductModal('ga')">
-              <span>Detayları Gör</span>
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              <span>Özellikleri İncele</span>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
             </button>
           </div>
         </article>
@@ -616,16 +767,42 @@
         <!-- Ürün 6: K-G Karavan Gaz Alarmı (Gaz) -->
         <article class="product-card" data-category="gaz" data-product-id="kg">
           <div class="product-thumb-container">
-            <span class="product-badge-pill badge-green">Sadece Toptan</span>
+            <span class="product-badge-pill badge-green">%30 İndirim</span>
             <img src="assets/images/urun/kg-karavan.png" alt="Powerbox K-G Karavan Gaz Alarmı" class="product-thumb-img" loading="lazy">
           </div>
           <div class="product-card-body">
             <div class="product-meta-sub">KARAVAN & TEKNE ÖZEL</div>
             <h3 class="product-card-title">Powerbox K-G Karavan Alarmı</h3>
             <p class="product-card-desc">Karavan ve tekneler için pilli veya 5V mobil taşınabilir gaz ve CO sızıntı alarmı.</p>
+
+            <!-- Perakende Fiyat Alanı -->
+            <div class="product-pricing-wrap">
+              <div class="pricing-row">
+                <span class="price-old">980 TL</span>
+                <span class="price-current">690 <small>TL</small></span>
+                <span class="discount-pill">%30 İndirim</span>
+              </div>
+              <div class="wholesale-hint">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 7h-4V4c0-1.1-.9-2-2-2h-4c-1.1 0-2 .9-2 2v3H4c-1.1 0-2 .9-2 2v11c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V9c0-1.1-.9-2-2-2z"/></svg>
+                <span>Toptan alımlarda özel iskonto için ulaşın</span>
+              </div>
+            </div>
+
+            <!-- Eylemler: Hemen Al + Sepete Ekle -->
+            <div class="product-actions-grid">
+              <button type="button" class="btn-product-buy" onclick="buyProductNow('kg')">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.888 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                <span>Hemen Al</span>
+              </button>
+              <button type="button" class="btn-product-add-cart" onclick="addToCart('kg')">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+                <span>Sepete Ekle</span>
+              </button>
+            </div>
+
             <button type="button" class="detail-link-btn" onclick="openProductModal('kg')">
-              <span>Detayları Gör</span>
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              <span>Özellikleri İncele</span>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
             </button>
           </div>
         </article>
@@ -640,60 +817,164 @@
             <div class="product-meta-sub">MONOFAZE & TRİFAZE</div>
             <h3 class="product-card-title">Elektrik Tasarruf Cihazı</h3>
             <p class="product-card-desc">Ev ve iş yerlerine uygun kW değerine göre özel imalat, %25'e varan tasarruf.</p>
+
+            <!-- Perakende Fiyat Alanı -->
+            <div class="product-pricing-wrap">
+              <div class="pricing-row">
+                <span class="price-old">1.450 TL</span>
+                <span class="price-current">990 <small>TL</small></span>
+                <span class="discount-pill">%32 İndirim</span>
+              </div>
+              <div class="wholesale-hint">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 7h-4V4c0-1.1-.9-2-2-2h-4c-1.1 0-2 .9-2 2v3H4c-1.1 0-2 .9-2 2v11c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V9c0-1.1-.9-2-2-2z"/></svg>
+                <span>İşletme kW değerinize özel toptan teklif</span>
+              </div>
+            </div>
+
+            <!-- Eylemler: Hemen Al + Sepete Ekle -->
+            <div class="product-actions-grid">
+              <button type="button" class="btn-product-buy" onclick="buyProductNow('tasarruf')">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.888 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                <span>Hemen Al</span>
+              </button>
+              <button type="button" class="btn-product-add-cart" onclick="addToCart('tasarruf')">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+                <span>Sepete Ekle</span>
+              </button>
+            </div>
+
             <button type="button" class="detail-link-btn" onclick="openProductModal('tasarruf')">
-              <span>Detayları Gör</span>
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              <span>Özellikleri İncele</span>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
             </button>
           </div>
         </article>
 
-        <!-- Ürün 7: AP1 Akım Korumalı Priz (Yeni) -->
+        <!-- Ürün 8: AP1 Akım Korumalı Priz (Yeni) -->
         <article class="product-card" data-category="yeni" data-product-id="ap1">
           <div class="product-thumb-container">
-            <span class="product-badge-pill badge-green">Sadece Toptan</span>
+            <span class="product-badge-pill badge-green">%33 İndirim</span>
             <img src="assets/images/urun/elektrik-tasarruf.png" alt="Powerbox AP1 Akım Korumalı Priz" class="product-thumb-img" loading="lazy">
           </div>
           <div class="product-card-body">
             <div class="product-meta-sub">16A GÜÇLÜ PRİZ</div>
             <h3 class="product-card-title">Powerbox AP1 Akım Korumalı Priz</h3>
             <p class="product-card-desc">Ekstra kapasitör haznesiyle voltaj oynamalarını minimize eder, cihaz ömrünü uzatır.</p>
+
+            <!-- Perakende Fiyat Alanı -->
+            <div class="product-pricing-wrap">
+              <div class="pricing-row">
+                <span class="price-old">550 TL</span>
+                <span class="price-current">370 <small>TL</small></span>
+                <span class="discount-pill">%33 İndirim</span>
+              </div>
+              <div class="wholesale-hint">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 7h-4V4c0-1.1-.9-2-2-2h-4c-1.1 0-2 .9-2 2v3H4c-1.1 0-2 .9-2 2v11c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V9c0-1.1-.9-2-2-2z"/></svg>
+                <span>Toptan alımlarda özel iskonto için ulaşın</span>
+              </div>
+            </div>
+
+            <!-- Eylemler: Hemen Al + Sepete Ekle -->
+            <div class="product-actions-grid">
+              <button type="button" class="btn-product-buy" onclick="buyProductNow('ap1')">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.888 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                <span>Hemen Al</span>
+              </button>
+              <button type="button" class="btn-product-add-cart" onclick="addToCart('ap1')">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+                <span>Sepete Ekle</span>
+              </button>
+            </div>
+
             <button type="button" class="detail-link-btn" onclick="openProductModal('ap1')">
-              <span>Detayları Gör</span>
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              <span>Özellikleri İncele</span>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
             </button>
           </div>
         </article>
 
-        <!-- Ürün 8: Ultrasonik Haşere Kovucu (Yeni) -->
+        <!-- Ürün 9: Ultrasonik Haşere Kovucu (Yeni) -->
         <article class="product-card" data-category="yeni" data-product-id="hasere">
           <div class="product-thumb-container">
-            <span class="product-badge-pill badge-purple">Sadece Toptan</span>
+            <span class="product-badge-pill badge-purple">%32 İndirim</span>
             <img src="assets/images/urun/hasere-kovucu.png" alt="Powerbox Gerçek 22 kHz Haşere Kovucu" class="product-thumb-img" loading="lazy">
           </div>
           <div class="product-card-body">
             <div class="product-meta-sub">GERÇEK 19-22 kHz</div>
             <h3 class="product-card-title">Powerbox Haşere Kovucu</h3>
             <p class="product-card-desc">Gerçek 19-22 kHz ultrasonik sesle sinek ve fareleri kovar. Telefon kamerasıyla test edilir.</p>
+
+            <!-- Perakende Fiyat Alanı -->
+            <div class="product-pricing-wrap">
+              <div class="pricing-row">
+                <span class="price-old">690 TL</span>
+                <span class="price-current">470 <small>TL</small></span>
+                <span class="discount-pill">%32 İndirim</span>
+              </div>
+              <div class="wholesale-hint">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 7h-4V4c0-1.1-.9-2-2-2h-4c-1.1 0-2 .9-2 2v3H4c-1.1 0-2 .9-2 2v11c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V9c0-1.1-.9-2-2-2z"/></svg>
+                <span>Toptan alımlarda özel iskonto için ulaşın</span>
+              </div>
+            </div>
+
+            <!-- Eylemler: Hemen Al + Sepete Ekle -->
+            <div class="product-actions-grid">
+              <button type="button" class="btn-product-buy" onclick="buyProductNow('hasere')">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.888 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                <span>Hemen Al</span>
+              </button>
+              <button type="button" class="btn-product-add-cart" onclick="addToCart('hasere')">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+                <span>Sepete Ekle</span>
+              </button>
+            </div>
+
             <button type="button" class="detail-link-btn" onclick="openProductModal('hasere')">
-              <span>Detayları Gör</span>
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              <span>Özellikleri İncele</span>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
             </button>
           </div>
         </article>
 
-        <!-- Ürün 9: Elektro Şok Cihazı (Yeni) -->
+        <!-- Ürün 10: Elektro Şok Cihazı (Yeni) -->
         <article class="product-card" data-category="yeni" data-product-id="elektrosok">
           <div class="product-thumb-container">
-            <span class="product-badge-pill badge-new">Sadece Toptan</span>
+            <span class="product-badge-pill badge-new">%31 İndirim</span>
             <img src="assets/images/urun/elektrosok.png" alt="Powerbox 400 kV Elektro Şok Cihazı" class="product-thumb-img" loading="lazy">
           </div>
           <div class="product-card-body">
             <div class="product-meta-sub">400 kV YÜKSEK GERİLİM</div>
             <h3 class="product-card-title">Powerbox Elektro Şok Cihazı</h3>
             <p class="product-card-desc">400 kV ark deşarjı, dahili LED fener ve şarjlı bataryasıyla üstün caydırıcı koruma.</p>
+
+            <!-- Perakende Fiyat Alanı -->
+            <div class="product-pricing-wrap">
+              <div class="pricing-row">
+                <span class="price-old">850 TL</span>
+                <span class="price-current">590 <small>TL</small></span>
+                <span class="discount-pill">%31 İndirim</span>
+              </div>
+              <div class="wholesale-hint">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 7h-4V4c0-1.1-.9-2-2-2h-4c-1.1 0-2 .9-2 2v3H4c-1.1 0-2 .9-2 2v11c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V9c0-1.1-.9-2-2-2z"/></svg>
+                <span>Toptan alımlarda özel iskonto için ulaşın</span>
+              </div>
+            </div>
+
+            <!-- Eylemler: Hemen Al + Sepete Ekle -->
+            <div class="product-actions-grid">
+              <button type="button" class="btn-product-buy" onclick="buyProductNow('elektrosok')">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.888 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                <span>Hemen Al</span>
+              </button>
+              <button type="button" class="btn-product-add-cart" onclick="addToCart('elektrosok')">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+                <span>Sepete Ekle</span>
+              </button>
+            </div>
+
             <button type="button" class="detail-link-btn" onclick="openProductModal('elektrosok')">
-              <span>Detayları Gör</span>
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              <span>Özellikleri İncele</span>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
             </button>
           </div>
         </article>
@@ -722,66 +1003,73 @@
         <div class="feature-bar-item">
           <div class="feature-bar-icon">
             <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#0284c7" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-              <circle cx="12" cy="12" r="3"/>
-              <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/>
+              <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
             </svg>
           </div>
-          <h4 class="feature-bar-title">Yerli Üretim</h4>
-          <p class="feature-bar-desc">Türkiye'de üretilen kaliteli ürünler.</p>
+          <h4 class="feature-bar-title">Kolay Bağlantı</h4>
+          <p class="feature-bar-desc">Kırmadan, delmeden pratik montaj.</p>
         </div>
 
         <!-- Feature 3 -->
         <div class="feature-bar-item">
           <div class="feature-bar-icon">
             <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#0284c7" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/>
-              <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/>
+              <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/>
+              <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
             </svg>
           </div>
-          <h4 class="feature-bar-title">Enerji Tasarrufu</h4>
-          <p class="feature-bar-desc">Daha verimli bir gelecek.</p>
+          <h4 class="feature-bar-title">Yerli Üretim</h4>
+          <p class="feature-bar-desc">Milli mühendislik ve yüksek kalite.</p>
         </div>
 
         <!-- Feature 4 -->
         <div class="feature-bar-item">
           <div class="feature-bar-icon">
             <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#0284c7" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M3 18v-6a9 9 0 0 1 18 0v6"/>
-              <path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"/>
+              <circle cx="12" cy="12" r="10"/>
+              <polyline points="12 6 12 12 16 14"/>
             </svg>
           </div>
-          <h4 class="feature-bar-title">Teknik Destek</h4>
-          <p class="feature-bar-desc">Her zaman yanınızdayız.</p>
+          <h4 class="feature-bar-title">2 Yıl Garanti</h4>
+          <p class="feature-bar-desc">Doğrudan üretici güvencesi.</p>
         </div>
 
         <!-- Feature 5 -->
         <div class="feature-bar-item">
           <div class="feature-bar-icon">
             <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#0284c7" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-              <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+              <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+              <polyline points="3.27 6.96 12 12.01 20.73 6.96"/>
+              <line x1="12" y1="22.08" x2="12" y2="12"/>
             </svg>
           </div>
-          <h4 class="feature-bar-title">Garantili Ürünler</h4>
-          <p class="feature-bar-desc">Kalite ve güvence bizimle.</p>
+          <h4 class="feature-bar-title">Toptan İskonto</h4>
+          <p class="feature-bar-desc">Koli ve bayilik avantajlı fiyatları.</p>
         </div>
 
       </div>
     </div>
   </section>
 
-  <!-- HAKKIMIZDA SECTION -->
+  <!-- ABOUT SECTION -->
   <section class="about-section" id="hakkimizda">
     <div class="site-container">
       <div class="about-grid">
         
-        <!-- Left Tech/Circuit Image -->
-        <div class="about-media-col">
-          <img src="assets/images/about-tech.jpg" alt="POWERBOX Ar-Ge ve Üretim Teknolojisi" class="about-tech-img" loading="lazy">
+        <!-- Left Tech Manufacturing Photo -->
+        <div class="about-img-col">
+          <div class="about-photo-wrap">
+            <img src="assets/images/about-tech.jpg" alt="Powerbox Elektronik Üretim Teknolojisi" class="about-img" loading="lazy">
+            <div class="about-exp-badge">
+              <span class="exp-num">100%</span>
+              <span class="exp-text">Yerli Mühendislik & İnovasyon</span>
+            </div>
+          </div>
         </div>
 
         <!-- Right Content -->
         <div class="about-content-col">
-          <p class="about-subheading">HAKKIMIZDA</p>
+          <span class="about-badge">HAKKIMIZDA</span>
           <h2 class="about-heading">POWER<span class="text-blue">BOX</span></h2>
           <p class="about-text">
             Elektronik ürünler alanında yenilikçi çözümler üreten <strong>POWERBOX</strong>, kaliteli ve güvenilir ürünleriyle hayatı kolaylaştırmayı hedefler. Ar-Ge ve üretim gücümüzle, elektronik cihazlarınız için akıllı ve sürdürülebilir çözümler sunuyoruz.
@@ -792,7 +1080,7 @@
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
             </a>
             <a href="https://wa.me/905494095353?text=Merhaba,%20Powerbox%20ürünleri%20ve%20toptan%20sipariş%20hakkında%20bilgi%20almak%20istiyorum." target="_blank" rel="noopener" class="btn btn-outline-pill">
-              <span>Toptan Sipariş</span>
+              <span>Toptan Fiyat Al</span>
             </a>
           </div>
         </div>
@@ -801,7 +1089,7 @@
     </div>
   </section>
 
-  <!-- PRODUCT DETAIL POPUP MODAL -->
+  <!-- PRODUCT DETAIL POPUP MODAL (Gelişmiş Fiyat & Aksiyon Butonları) -->
   <div class="product-modal-backdrop" id="productModal" aria-hidden="true">
     <div class="product-modal-container">
       <button type="button" class="modal-close-btn" id="modalCloseBtn" aria-label="Kapat">✕</button>
@@ -812,8 +1100,8 @@
           <img src="" alt="" id="modalImg" class="modal-product-img">
           <div class="modal-guarantee-badge">
             <span>🛡️ 2 Yıl Üretici Garantisi</span>
-            <span>💼 Sadece Toptan Satış</span>
             <span>⚡ Yerli Üretim</span>
+            <span>📦 Hızlı Kargo & Teslimat</span>
           </div>
         </div>
 
@@ -823,19 +1111,40 @@
           <h3 class="modal-product-title" id="modalTitle">Ürün Adı</h3>
           <p class="modal-product-desc" id="modalDesc">Ürün açıklaması burada yer alır.</p>
           
-          <div class="modal-features-list" id="modalFeatures">
-            <!-- Populated via JS -->
+          <!-- Modal Fiyat Alanı -->
+          <div class="modal-pricing-box">
+            <div class="modal-price-row">
+              <span class="modal-old-price" id="modalOldPrice">950 TL</span>
+              <span class="modal-final-price" id="modalFinalPrice">690 TL</span>
+              <span class="modal-discount-tag" id="modalDiscountTag">%27 İndirim</span>
+            </div>
+            <div class="modal-wholesale-callout">
+              <span class="callout-icon">💼</span>
+              <span class="callout-text"><strong>Toptan / Koli Alımlarında:</strong> Çok daha avantajlı toptan iskonto fiyat teklifi için iletişime geçin.</span>
+            </div>
           </div>
 
-          <!-- Conversion Buttons -->
+          <!-- Özellikler Listesi -->
+          <div class="modal-features-list" id="modalFeatures"></div>
+
+          <!-- Conversion Buttons (Hemen Al + Sepete Ekle + Toptan Teklif) -->
           <div class="modal-cta-group">
-            <a href="#" id="modalWaBtn" target="_blank" rel="noopener" class="btn btn-wa-order">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.888 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-              <span>WhatsApp Toptan Sipariş</span>
+            <button type="button" id="modalDirectBuyBtn" class="btn btn-modal-buy">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.888 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              <span>Hemen Al (WhatsApp)</span>
+            </button>
+
+            <button type="button" id="modalAddCartBtn" class="btn btn-modal-cart">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+              <span>Sepete Ekle</span>
+            </button>
+
+            <a href="#" id="modalWholesaleBtn" target="_blank" rel="noopener" class="btn btn-modal-wholesale">
+              <span>💼 Toptan Teklif İste</span>
             </a>
 
-            <a href="tel:+905494095353" class="btn btn-call-order">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <a href="tel:+905494095353" class="btn btn-modal-call">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
               <span>0549 409 53 53 Hemen Ara</span>
             </a>
           </div>
@@ -843,12 +1152,130 @@
           <div class="modal-trust-row">
             <span>⚡ Ambar & Hızlı Kargo</span>
             <span>📦 Fabrikadan Doğrudan Teslim</span>
-            <span>📞 7/24 Toptan Teknik Destek</span>
+            <span>📞 7/24 Teknik Destek</span>
           </div>
         </div>
       </div>
     </div>
   </div>
+
+  <!-- DEMONTE POSTER LIGHTBOX / MODAL -->
+  <div class="poster-modal-backdrop" id="posterModal" aria-hidden="true">
+    <div class="poster-modal-container">
+      <button type="button" class="poster-modal-close" id="posterModalCloseBtn" aria-label="Kapat">✕</button>
+      <div class="poster-modal-content">
+        <h3 id="posterModalTitle" class="poster-modal-heading">Demonte Devre Kiti</h3>
+        <div class="poster-zoom-frame">
+          <img src="" alt="" id="posterModalImg" class="poster-modal-large-img">
+        </div>
+        <div class="poster-modal-actions">
+          <a href="https://wa.me/905494095353?text=Merhaba%20Powerbox,%20bu%20demonte%20kit%20ve%20kutu%20için%20fiyat%20ve%20sipariş%20bilgisi%20almak%20istiyorum." target="_blank" rel="noopener" class="btn btn-poster-wa">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.888 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            <span>WhatsApp ile Bu Kiti Sipariş Et</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FLOATING CART BUTTON (Sağ Altta Sabit Sepet Widget'ı) -->
+  <button type="button" class="floating-cart-btn" id="floatingCartBtn" aria-label="Sepeti Aç">
+    <div class="cart-icon-wrap">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3">
+        <circle cx="9" cy="21" r="1"></circle>
+        <circle cx="20" cy="21" r="1"></circle>
+        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+      </svg>
+      <span class="floating-cart-badge" id="floatingCartBadge">0</span>
+    </div>
+    <div class="floating-cart-info">
+      <span class="floating-cart-lbl">Sepetim</span>
+      <span class="floating-cart-val" id="floatingCartTotal">0 TL</span>
+    </div>
+  </button>
+
+  <!-- CART FLYOUT DRAWER (Kayar Sepet Paneli) -->
+  <div class="cart-drawer-backdrop" id="cartDrawerBackdrop"></div>
+  <aside class="cart-drawer-panel" id="cartDrawer" aria-label="Alışveriş Sepeti">
+    
+    <!-- Drawer Header -->
+    <div class="cart-drawer-header">
+      <div class="drawer-title-wrap">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+        <h3>Alışveriş Sepetim (<span id="drawerCartCount">0</span>)</h3>
+      </div>
+      <button type="button" class="cart-drawer-close" id="cartDrawerCloseBtn" aria-label="Sepeti Kapat">✕</button>
+    </div>
+
+    <!-- Drawer Body -->
+    <div class="cart-drawer-body">
+      
+      <!-- Boş Sepet Görünümü -->
+      <div class="cart-empty-state" id="cartDrawerEmpty">
+        <div class="cart-empty-icon">🛒</div>
+        <h4>Sepetiniz Henüz Boş</h4>
+        <p>İhtiyacınıza uygun ürünleri inceleyip "Sepete Ekle" butonuyla sepetinize doldurabilirsiniz.</p>
+        <button type="button" class="btn btn-empty-browse" onclick="closeCartDrawer()">Ürünleri İncele</button>
+      </div>
+
+      <!-- Eklenen Ürünler Listesi (JS Tarafından Doldurulur) -->
+      <div class="cart-items-container" id="cartDrawerItems"></div>
+
+    </div>
+
+    <!-- Drawer Footer (Sipariş Özeti & WhatsApp Butonları) -->
+    <div class="cart-drawer-footer" id="cartDrawerFooter">
+      
+      <!-- Toptan Alım Uyarısı -->
+      <div class="cart-wholesale-notice">
+        <span class="notice-icon">💼</span>
+        <div class="notice-text">
+          <strong>Toptancı mısınız?</strong> 10 adet ve üzeri siparişlerinizde özel iskonto uygulanır. "Toptan Teklif İste" butonunu kullanabilirsiniz.
+        </div>
+      </div>
+
+      <!-- Fiyat Özeti -->
+      <div class="cart-summary-box">
+        <div class="summary-line">
+          <span>Liste Fiyatı Toplamı:</span>
+          <span class="sum-old" id="cartSumOld">0 TL</span>
+        </div>
+        <div class="summary-line line-discount">
+          <span>Lansman İndirimi:</span>
+          <span class="sum-discount" id="cartSumDiscount">- 0 TL</span>
+        </div>
+        <div class="summary-line line-final">
+          <span>Ödenecek Tutar:</span>
+          <span class="sum-final" id="cartSumFinal">0 TL</span>
+        </div>
+      </div>
+
+      <!-- Aksiyon Butonları -->
+      <div class="cart-footer-actions">
+        <!-- 1. Perakende WhatsApp Sipariş -->
+        <button type="button" class="btn-cart-checkout-wa" onclick="sendCartToWhatsApp()">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.888 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          <span>WhatsApp ile Siparişi Tamamla</span>
+        </button>
+
+        <!-- 2. Toptan Fiyat Teklifi -->
+        <button type="button" class="btn-cart-wholesale-wa" onclick="sendCartWholesaleToWhatsApp()">
+          <span>💼 Toptan İskontolu Fiyat Teklifi İste</span>
+        </button>
+
+        <!-- 3. Sepeti Temizle & Devam Et -->
+        <div class="cart-sub-actions">
+          <button type="button" class="btn-link-clear" onclick="clearCart()">Sepeti Boşalt</button>
+          <button type="button" class="btn-link-continue" onclick="closeCartDrawer()">Alışverişe Devam Et →</button>
+        </div>
+      </div>
+
+    </div>
+
+  </aside>
+
+  <!-- TOAST NOTIFICATION POPUP -->
+  <div class="pb-toast" id="pbToast" role="status" aria-live="polite"></div>
 
   <!-- FOOTER -->
   <footer class="site-footer" id="iletisim">
@@ -863,7 +1290,7 @@
             <img src="assets/images/logo-white.svg" alt="POWERBOX" width="190" height="42">
           </a>
           <p class="footer-slogan">
-            Hayatı Kolaylaştıran Pratik Çözümler • SADECE TOPTAN SATIŞ (Perakende Satışımız Yoktur)
+            Hayatı Kolaylaştıran Pratik Çözümler • Perakende & Toptan Satış • Yerli Üretim
           </p>
         </div>
 
@@ -939,9 +1366,13 @@
       <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
       <span>0549 409 53 53</span>
     </a>
+    <button type="button" class="dock-btn dock-btn-cart" onclick="toggleCartDrawer()">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+      <span>Sepetim</span>
+    </button>
     <a href="https://wa.me/905494095353?text=Merhaba,%20Powerbox%20ürünleri%20hakkında%20sipariş%20vermek%20istiyorum." target="_blank" rel="noopener" class="dock-btn dock-btn-wa">
       <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.888 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-      <span>WhatsApp Sipariş</span>
+      <span>WhatsApp</span>
     </a>
   </aside>
 

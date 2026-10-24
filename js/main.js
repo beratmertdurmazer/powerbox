@@ -1,14 +1,24 @@
 /**
  * POWERBOX TEKNOLOJİ - Main JavaScript
- * High-Converting Corporate Landing Page
+ * High-Converting Corporate Landing Page with B2B Wholesale & Direct Retail Cart
  */
 
+const PHONE_NUMBER = "0549 409 53 53";
+const WHATSAPP_INT_NUMBER = "905494095353";
+
+// ---------------- PRODUCTS MASTER DATA (Fiyatlar, İndirimler, Özellikler) ----------------
 const PRODUCTS_DATA = {
   px1: {
     id: "px1",
     title: "Powerbox PX1",
+    fullName: "Powerbox PX1 Yüksek Voltaj Koruma Modülü",
     category: "YÜKSEK VOLTAJ KORUMA MODÜLÜ",
     image: "assets/images/urun/px1.png",
+    oldPrice: 950,
+    price: 690,
+    discount: "%27 İndirim",
+    badge: "%27 İndirim",
+    wholesaleTip: "Koli ve toptan alımlarda özel iskonto",
     desc: "Tek bir modül ile evdeki tüm prizleri akım korumalı prize dönüştürün. Voltaj dalgalanmalarına karşı tüm elektronik cihazlarınızı koruyun.",
     features: [
       "Elektrik çarpma riski olmadan 1 dakikada kolay bağlantı",
@@ -17,13 +27,20 @@ const PRODUCTS_DATA = {
       "Ekstra kapasitör devresi ile ani pik dalgalanmalarını filtreler",
       "2 Yıl Üretici Garantisi"
     ],
-    waMsg: "Merhaba, Powerbox PX1 Yüksek Voltaj Koruma Modülü için toptan sipariş ve fiyat bilgisi almak istiyorum."
+    waMsg: "Merhaba Powerbox, kampanya kapsamında 1 adet Powerbox PX1 Yüksek Voltaj Koruma Modülü (690 TL) sipariş etmek istiyorum. Teslimat ve ödeme detaylarını alabilir miyim?",
+    wholesaleMsg: "Merhaba Powerbox, Powerbox PX1 Yüksek Voltaj Koruma Modülü için toptan alım fiyatı ve koli iskontosu hakkında bilgi almak istiyorum."
   },
   px2: {
     id: "px2",
     title: "Powerbox PX2",
+    fullName: "Powerbox PX2 Voltaj Koruma Modülü",
     category: "YÜKSEK VOLTAJ KORUMA MODÜLÜ",
     image: "assets/images/urun/px2.png",
+    oldPrice: 850,
+    price: 590,
+    discount: "%31 İndirim",
+    badge: "%31 İndirim",
+    wholesaleTip: "Koli ve toptan alımlarda özel iskonto",
     desc: "Gelişmiş çift kademeli koruma devresi ve dijital göstergesi ile evinizdeki tüm prizleri tek noktadan güvenceye alır.",
     features: [
       "Elektrik çarpma riski olmadan 1 dakikada kolay bağlantı",
@@ -32,13 +49,20 @@ const PRODUCTS_DATA = {
       "Ekstra kapasitör devresi ile ani pik dalgalanmalarını filtreler",
       "2 Yıl Üretici Garantisi"
     ],
-    waMsg: "Merhaba, Powerbox PX2 Yüksek Voltaj Koruma Modülü için toptan sipariş ve fiyat bilgisi almak istiyorum."
+    waMsg: "Merhaba Powerbox, kampanya kapsamında 1 adet Powerbox PX2 Voltaj Koruma Modülü (590 TL) sipariş etmek istiyorum. Teslimat ve ödeme detaylarını alabilir miyim?",
+    wholesaleMsg: "Merhaba Powerbox, Powerbox PX2 Voltaj Koruma Modülü için toptan sipariş ve iskonto detayları hakkında bilgi almak istiyorum."
   },
   px3: {
     id: "px3",
     title: "Powerbox PX3",
+    fullName: "Powerbox PX3 Voltaj Koruma Modülü",
     category: "YÜKSEK VOLTAJ KORUMA MODÜLÜ",
     image: "assets/images/urun/px3.png",
+    oldPrice: 650,
+    price: 450,
+    discount: "%31 İndirim",
+    badge: "%31 İndirim",
+    wholesaleTip: "Koli ve toptan alımlarda özel iskonto",
     desc: "Yüksek akım ve sanayi tipi hatlar için üst düzey aşırı gerilim kalkanı ve pik filtreleme modülüdür.",
     features: [
       "Elektrik çarpma riski olmadan 1 dakikada kolay bağlantı",
@@ -46,13 +70,20 @@ const PRODUCTS_DATA = {
       "Ekstra kapasitör devresi ile ani pik dalgalanmalarını filtreler",
       "2 Yıl Üretici Garantisi"
     ],
-    waMsg: "Merhaba, Powerbox PX3 Yüksek Voltaj Koruma Modülü için toptan sipariş ve fiyat bilgisi almak istiyorum."
+    waMsg: "Merhaba Powerbox, kampanya kapsamında 1 adet Powerbox PX3 Voltaj Koruma Modülü (450 TL) sipariş etmek istiyorum. Teslimat ve ödeme detaylarını alabilir miyim?",
+    wholesaleMsg: "Merhaba Powerbox, Powerbox PX3 Voltaj Koruma Modülü için toptan sipariş ve iskonto detayları hakkında bilgi almak istiyorum."
   },
   gc1: {
     id: "gc1",
-    title: "Powerbox G-C Fişli Gaz Alarm Cihazı",
+    title: "Powerbox G-C Fişli Gaz Alarmı",
+    fullName: "Powerbox G-C Fişli Gaz Alarm Cihazı",
     category: "220V PRİZE TAKILAN KABLOSUZ ALARM",
     image: "assets/images/urun/gc1-gaz.png",
+    oldPrice: 750,
+    price: 490,
+    discount: "%35 İndirim",
+    badge: "%35 İndirim",
+    wholesaleTip: "Koli ve toptan alımlarda özel iskonto",
     desc: "Kurulum ve kablo çekme derdi olmadan doğrudan prize takılarak kullanılan yüksek güvenlikli gaz kaçak uyarı sistemidir.",
     features: [
       "Dış sensör yapısı ile doğalgaz kaçağını anında algılar",
@@ -61,13 +92,20 @@ const PRODUCTS_DATA = {
       "Talebe göre alev algılama ve gaz çeşitlerine göre üretim yapılır",
       "Bazen küçük detaylar hayat kurtarır..!"
     ],
-    waMsg: "Merhaba, Powerbox G-C Fişli Gaz Alarm Cihazı için toptan sipariş ve fiyat bilgisi almak istiyorum."
+    waMsg: "Merhaba Powerbox, kampanya kapsamında 1 adet Powerbox G-C Fişli Gaz Alarm Cihazı (490 TL) sipariş etmek istiyorum. Teslimat ve ödeme detaylarını alabilir miyim?",
+    wholesaleMsg: "Merhaba Powerbox, Powerbox G-C Fişli Gaz Alarm Cihazı için toptan sipariş ve fiyat bilgisi almak istiyorum."
   },
   ga: {
     id: "ga",
-    title: "Powerbox G-A Araç İçi Gaz Alarmı",
+    title: "Powerbox G-A Araç Gaz Alarmı",
+    fullName: "Powerbox G-A Araç İçi Gaz Alarmı",
     category: "TÜRKİYE'DE İLK VE TEK ARAÇ LPG ALARMI",
     image: "assets/images/urun/ga-arac.png",
+    oldPrice: 900,
+    price: 650,
+    discount: "%28 İndirim",
+    badge: "%28 İndirim",
+    wholesaleTip: "Koli ve toptan alımlarda özel iskonto",
     desc: "LPG'li araçlar için üretilen bu ürün bagajda uygun yere koyularak sadece 12V besleme verilerek sabit veya pil kullanarak gaz kokusu endişesinde dedektör olarak kullanılabilir.",
     features: [
       "İster 3 adet kalem pil ile seyyar, ister 12V besleme soketine aküden voltaj vererek kullanım",
@@ -77,13 +115,20 @@ const PRODUCTS_DATA = {
       "Talebe göre alev algılama ve gaz çeşitlerine göre üretim yapılır",
       "Bazen küçük detaylar hayat kurtarır..!"
     ],
-    waMsg: "Merhaba, Powerbox G-A Araç İçi Gaz Alarmı için toptan sipariş ve fiyat bilgisi almak istiyorum."
+    waMsg: "Merhaba Powerbox, kampanya kapsamında 1 adet Powerbox G-A Araç İçi Gaz Alarmı (650 TL) sipariş etmek istiyorum. Teslimat ve ödeme detaylarını alabilir miyim?",
+    wholesaleMsg: "Merhaba Powerbox, Powerbox G-A Araç İçi Gaz Alarmı için toptan sipariş ve fiyat bilgisi almak istiyorum."
   },
   kg: {
     id: "kg",
-    title: "Powerbox K-G Karavan Gaz Alarmı",
+    title: "Powerbox K-G Karavan Alarmı",
+    fullName: "Powerbox K-G Karavan & Tekne Gaz Alarmı",
     category: "KARAVAN VE TEKNELERE ÖZEL ALARM",
     image: "assets/images/urun/kg-karavan.png",
+    oldPrice: 980,
+    price: 690,
+    discount: "%30 İndirim",
+    badge: "%30 İndirim",
+    wholesaleTip: "Koli ve toptan alımlarda özel iskonto",
     desc: "Karavan ve tekne sahiplerine özel olarak tasarlanan bu kompakt ürün montaj ve kablo çekme derdi olmadan seyyar veya yapışkanlı yüzeyi ile montaj sorunu olmadan kolayca kullanılır.",
     features: [
       "İster pil ile seyyar, dilerseniz 5V adaptör ile eviniz dahil dilediğiniz yerde kullanım",
@@ -94,13 +139,20 @@ const PRODUCTS_DATA = {
       "Talebe göre alev algılama ve gaz çeşitlerine göre üretim yapılır",
       "Bazen küçük detaylar hayat kurtarır..!"
     ],
-    waMsg: "Merhaba, Powerbox K-G Karavan Gaz Alarmı için toptan sipariş ve fiyat bilgisi almak istiyorum."
+    waMsg: "Merhaba Powerbox, kampanya kapsamında 1 adet Powerbox K-G Karavan Gaz Alarmı (690 TL) sipariş etmek istiyorum. Teslimat ve ödeme detaylarını alabilir miyim?",
+    wholesaleMsg: "Merhaba Powerbox, Powerbox K-G Karavan Gaz Alarmı için toptan sipariş ve fiyat bilgisi almak istiyorum."
   },
   tasarruf: {
     id: "tasarruf",
-    title: "Powerbox Elektrik Tasarruf Cihazı",
+    title: "Elektrik Tasarruf Cihazı",
+    fullName: "Powerbox Elektrik Tasarruf Cihazı (Monofaze / Trifaze)",
     category: "MONOFAZE & TRİFAZE ÖZEL ÜRETİM",
     image: "assets/images/kategori/elektriktasarrufcihazları.png",
+    oldPrice: 1450,
+    price: 990,
+    discount: "%32 İndirim",
+    badge: "%25 Tasarruf",
+    wholesaleTip: "kW değerinize özel imalat ve toptan iskonto",
     desc: "Ev ve iş yerlerine uygun monofaze ve trifaze modeller. Her kW değerine göre taleplere uygun özel yapım imalat.",
     features: [
       "Ev ve iş yerlerine uygun monofaze ve trifaze modeller",
@@ -109,13 +161,20 @@ const PRODUCTS_DATA = {
       "Mini kompanzasyon görevi görür, %25'e varan tasarruf sağlar",
       "2 Yıl Üretici Garantisi"
     ],
-    waMsg: "Merhaba, Powerbox Elektrik Tasarruf Cihazı (Monofaze/Trifaze) için kW değerimize uygun özel sipariş ve toptan teklif almak istiyorum."
+    waMsg: "Merhaba Powerbox, kampanya kapsamında 1 adet Powerbox Elektrik Tasarruf Cihazı (990 TL) sipariş etmek istiyorum. Tesisat ve kW detaylarını konuşabilir miyiz?",
+    wholesaleMsg: "Merhaba Powerbox, Elektrik Tasarruf Cihazı için işletmemize uygun kW projesi ve toptan fiyat teklifi almak istiyorum."
   },
   ap1: {
     id: "ap1",
     title: "Powerbox AP1 Akım Korumalı Priz",
+    fullName: "Powerbox AP1 16A Akım Korumalı Priz",
     category: "16A GÜÇLÜ AKIM KORUMALI PRİZ",
     image: "assets/images/urun/elektrik-tasarruf.png",
+    oldPrice: 550,
+    price: 370,
+    discount: "%33 İndirim",
+    badge: "%33 İndirim",
+    wholesaleTip: "Koli ve toptan alımlarda özel iskonto",
     desc: "Rakipleri gibi sadece yüksek voltaja karşı korumaz; ekstra kapasitör haznesi sayesinde voltaj oynamalarını minimize ederek elektronik eşyalarınızın rahat çalışmasını sağlar ve ömrünü uzatır.",
     features: [
       "16A Güçlü priz yapısı ile yüksek akım çeken cihazlara tam uyum",
@@ -124,13 +183,20 @@ const PRODUCTS_DATA = {
       "Prize doğrudan tak-çalıştır pratik kullanım",
       "2 Yıl Üretici Garantisi"
     ],
-    waMsg: "Merhaba, Powerbox AP1 Akım Korumalı Priz için toptan sipariş ve fiyat bilgisi almak istiyorum."
+    waMsg: "Merhaba Powerbox, kampanya kapsamında 1 adet Powerbox AP1 Akım Korumalı Priz (370 TL) sipariş etmek istiyorum. Teslimat ve ödeme detaylarını alabilir miyim?",
+    wholesaleMsg: "Merhaba Powerbox, Powerbox AP1 Akım Korumalı Priz için toptan koli siparişi ve fiyat teklifi almak istiyorum."
   },
   hasere: {
     id: "hasere",
-    title: "Powerbox Gerçek 22 kHz Haşere Kovucu",
+    title: "Powerbox Haşere Kovucu",
+    fullName: "Powerbox Gerçek 22 kHz Ultrasonik Haşere Kovucu",
     category: "220V PRİZE TAK-ÇALIŞTIR ULTRASONİK",
     image: "assets/images/urun/hasere-kovucu.png",
+    oldPrice: 690,
+    price: 470,
+    discount: "%32 İndirim",
+    badge: "%32 İndirim",
+    wholesaleTip: "Koli ve toptan alımlarda özel iskonto",
     desc: "220V prize takılarak kullanılan Powerbox haşere kovucu, yaydığı 19-22 kHz ultrasonik ses dalgaları ile sinek, sivrisinek, fare dahil tüm haşeratı ortamdan uzaklaştırır.",
     features: [
       "Gerçek 19-22 kHz ultrasonik ses çıkışı haşeratı uzaklaştırır, ortamda barınmalarına izin vermez",
@@ -138,13 +204,20 @@ const PRODUCTS_DATA = {
       "Kimyasal, tablet veya zehir içermez, çevre ve evcil hayvan dostudur",
       "Tak-çalıştır 7/24 kesintisiz koruma sağlar"
     ],
-    waMsg: "Merhaba, Powerbox Gerçek 22 kHz Haşere Kovucu için toptan sipariş ve fiyat bilgisi almak istiyorum."
+    waMsg: "Merhaba Powerbox, kampanya kapsamında 1 adet Powerbox Gerçek 22 kHz Haşere Kovucu (470 TL) sipariş etmek istiyorum. Teslimat ve ödeme detaylarını alabilir miyim?",
+    wholesaleMsg: "Merhaba Powerbox, Powerbox Haşere Kovucu için toptan koli siparişi ve iskonto detaylarını öğrenmek istiyorum."
   },
   elektrosok: {
     id: "elektrosok",
-    title: "Powerbox 400 kV Elektro Şok Cihazı",
+    title: "Powerbox Elektro Şok Cihazı",
+    fullName: "Powerbox 400 kV Kompakt Elektro Şok Cihazı",
     category: "YÜKSEK GERİLİM & KİŞİSEL GÜVENLİK",
     image: "assets/images/urun/elektrosok.png",
+    oldPrice: 850,
+    price: 590,
+    discount: "%31 İndirim",
+    badge: "%31 İndirim",
+    wholesaleTip: "Koli ve toptan alımlarda özel iskonto",
     desc: "Kişisel güvenlik ve caydırıcı koruma için özel olarak geliştirilmiş yüksek gerilimli kompakt elektro şok cihazı.",
     features: [
       "400 kva Yüksek gerilim ark deşarjı ile üstün caydırıcı ses ve kıvılcım etkisi",
@@ -152,7 +225,8 @@ const PRODUCTS_DATA = {
       "Kişisel savunma, esnaf ve güvenlik görevlileri için pratik caydırıcı çözüm",
       "Dahili şarj edilebilir batarya ve emniyet kilit mekanizması"
     ],
-    waMsg: "Merhaba, Powerbox 400 kV Elektro Şok Cihazı için toptan sipariş ve fiyat bilgisi almak istiyorum."
+    waMsg: "Merhaba Powerbox, kampanya kapsamında 1 adet Powerbox 400 kV Elektro Şok Cihazı (590 TL) sipariş etmek istiyorum. Teslimat ve ödeme detaylarını alabilir miyim?",
+    wholesaleMsg: "Merhaba Powerbox, Powerbox Elektro Şok Cihazı için toptan koli siparişi ve fiyat teklifi almak istiyorum."
   }
 };
 
@@ -163,111 +237,432 @@ const STORIES_DATA = [
     productId: "px1",
     tag: "YÜKSEK VOLTAJ KORUMA",
     title: "Powerbox PX1",
-    desc: "Tek bir modül ile evdeki tüm prizleri akım korumalıya dönüştürün. Anlık voltaj ve tüketim ekranlı.",
+    desc: "Tüm prizleri tek noktadan akım korumalıya çevirir. Anlık dijital voltaj & tüketim ekranı ile kombi ve beyaz eşyalarınızı güvende tutar.",
     image: "assets/images/urun/px1.png",
-    waMsg: "Merhaba, Powerbox PX1 Yüksek Voltaj Koruma Modülü için toptan sipariş ve fiyat bilgisi almak istiyorum."
+    waMsg: "Merhaba, Powerbox PX1 Yüksek Voltaj Koruma Modülü için sipariş ve fiyat bilgisi almak istiyorum."
   },
   {
     id: "px2",
     productId: "px2",
     tag: "YÜKSEK VOLTAJ KORUMA",
     title: "Powerbox PX2",
-    desc: "Çift kademeli koruma devresi ve anlık dijital voltaj göstergesi ile evinizdeki tüm prizleri tek noktadan korur.",
+    desc: "Çift kademeli koruma devresi ve dijital voltaj göstergesi ile evinizdeki tüm prizleri tek noktadan güvenceye alır.",
     image: "assets/images/urun/px2.png",
-    waMsg: "Merhaba, Powerbox PX2 Yüksek Voltaj Koruma Modülü için toptan sipariş ve fiyat bilgisi almak istiyorum."
+    waMsg: "Merhaba, Powerbox PX2 Voltaj Koruma Modülü için sipariş ve fiyat bilgisi almak istiyorum."
   },
   {
     id: "px3",
     productId: "px3",
     tag: "YÜKSEK VOLTAJ KORUMA",
     title: "Powerbox PX3",
-    desc: "Yüksek akım ve sanayi tipi hatlar için ekstra kapasitörlü aşırı gerilim kalkanı ve pik filtreleme modülüdür.",
+    desc: "Sigorta kutusu içi kompakt montaj. Ekstra kapasitör devresi ile ani gerilim darbelerini ve pik dalgalanmalarını filtreler.",
     image: "assets/images/urun/px3.png",
-    waMsg: "Merhaba, Powerbox PX3 Yüksek Voltaj Koruma Modülü için toptan sipariş ve fiyat bilgisi almak istiyorum."
+    waMsg: "Merhaba, Powerbox PX3 Voltaj Koruma Modülü için sipariş ve fiyat bilgisi almak istiyorum."
   },
   {
     id: "gc1",
     productId: "gc1",
-    tag: "220V KABLOSUZ ALARM",
+    tag: "KABLOSUZ GAZ ALARMI",
     title: "Powerbox G-C Fişli Gaz Alarmı",
-    desc: "Dış sensör yapısıyla doğalgaz kaçağını anında algılar, 100 dB güçlü sirenle ikaz eder. Bazen küçük detaylar hayat kurtarır!",
+    desc: "220V prize doğrudan tak-çalıştır. Dış sensörlü erken kaçak tespiti ve 100 dB güçlü siren ile mutfak ve kombiniz daima güvende.",
     image: "assets/images/urun/gc1-gaz.png",
-    waMsg: "Merhaba, Powerbox G-C Fişli Gaz Alarm Cihazı için toptan sipariş ve fiyat bilgisi almak istiyorum."
+    waMsg: "Merhaba, Powerbox G-C Fişli Gaz Alarm Cihazı için sipariş ve fiyat bilgisi almak istiyorum."
   },
   {
     id: "ga",
     productId: "ga",
-    tag: "TÜRKİYE'DE İLK VE TEK",
+    tag: "TÜRKİYE'DE İLK & TEK",
     title: "Powerbox G-A Araç Gaz Alarmı",
-    desc: "LPG'li araçlar için 3 kalem pil veya 12V akü beslemeli milisaniyelik gaz kaçak erken uyarı dedektörü.",
+    desc: "LPG'li araç sahipleri için ister 3 adet kalem pil ister 12V akü beslemesiyle seyyar ve sabit sızıntı dedektörü.",
     image: "assets/images/urun/ga-arac.png",
-    waMsg: "Merhaba, Powerbox G-A Araç İçi Gaz Alarmı için toptan sipariş ve fiyat bilgisi almak istiyorum."
+    waMsg: "Merhaba, Powerbox G-A Araç İçi Gaz Alarmı için sipariş ve fiyat bilgisi almak istiyorum."
   },
   {
     id: "kg",
     productId: "kg",
-    tag: "KARAVAN VE TEKNELERE ÖZEL",
+    tag: "KARAVAN & TEKNE ÖZEL",
     title: "Powerbox K-G Karavan Alarmı",
-    desc: "Karavan ve tekneler için pilli veya 5V adaptörle mobil taşınabilir gaz ve CO erken ikaz sistemi.",
+    desc: "Karavan ve tekneler için pilli veya 5V taşınabilir mobil gaz & CO erken uyarı dedektörü.",
     image: "assets/images/urun/kg-karavan.png",
-    waMsg: "Merhaba, Powerbox K-G Karavan Gaz Alarmı için toptan sipariş ve fiyat bilgisi almak istiyorum."
+    waMsg: "Merhaba, Powerbox K-G Karavan Gaz Alarmı için sipariş ve fiyat bilgisi almak istiyorum."
+  },
+  {
+    id: "tasarruf",
+    productId: "tasarruf",
+    tag: "MONOFAZE & TRİFAZE ÖZEL ÜRETİM",
+    title: "Powerbox Elektrik Tasarruf Cihazı",
+    desc: "Ev ve iş yerlerine uygun, her kW değerine göre taleplere özel imalat mini kompanzasyon teknolojisi ile %25'e varan tasarruf.",
+    image: "assets/images/kategori/elektriktasarrufcihazları.png",
+    waMsg: "Merhaba, Powerbox Elektrik Tasarruf Cihazı hakkında kW değerimize uygun sipariş ve fiyat almak istiyorum."
   },
   {
     id: "ap1",
     productId: "ap1",
     tag: "16A GÜÇLÜ PRİZ",
     title: "Powerbox AP1 Akım Korumalı Priz",
-    desc: "Ekstra kapasitör haznesiyle voltaj oynamalarını filtreler, cihazların rahat çalışmasını sağlayarak ömrünü uzatır.",
+    desc: "Ekstra kapasitör haznesi sayesinde voltaj oynamalarını filtreler, beyaz eşyaların ömrünü uzatır ve enerji tasarrufuna destek olur.",
     image: "assets/images/urun/elektrik-tasarruf.png",
-    waMsg: "Merhaba, Powerbox AP1 Akım Korumalı Priz için toptan sipariş ve fiyat bilgisi almak istiyorum."
+    waMsg: "Merhaba, Powerbox AP1 Akım Korumalı Priz için sipariş ve fiyat bilgisi almak istiyorum."
   },
   {
     id: "hasere",
     productId: "hasere",
-    tag: "GERÇEK 19-22 kHz",
-    title: "Powerbox Haşere Kovucu",
-    desc: "Gerçek 19-22 kHz ultrasonik sesle sinek, sivrisinek ve fareleri uzaklaştırır. Telefon kamerasıyla test edilebilir!",
+    tag: "GERÇEK 19-22 kHz SES",
+    title: "Powerbox Ultrasonik Haşere Kovucu",
+    desc: "Zehirsiz, kokusuz, gerçek 19-22 kHz frekansla sinek, sivrisinek ve fareleri uzaklaştırır. Telefon kamerasıyla anında test edilir.",
     image: "assets/images/urun/hasere-kovucu.png",
-    waMsg: "Merhaba, Powerbox Gerçek 22 kHz Haşere Kovucu için toptan sipariş ve fiyat bilgisi almak istiyorum."
+    waMsg: "Merhaba, Powerbox Gerçek 22 kHz Haşere Kovucu için sipariş ve fiyat bilgisi almak istiyorum."
   },
   {
     id: "elektrosok",
     productId: "elektrosok",
     tag: "400 kV YÜKSEK GERİLİM",
-    title: "Powerbox 400 kV Elektro Şok",
-    desc: "400 kV ark deşarjı, caydırıcı ses ve kıvılcım, dahili güçlü LED el feneri ve emniyet kilidi ile caydırıcı koruma.",
+    title: "Powerbox Elektro Şok Cihazı",
+    desc: "400 kV ark deşarjı, dahili LED feneri ve emniyet kilitli kompakt gövdesiyle üst düzey caydırıcı kişisel koruma.",
     image: "assets/images/urun/elektrosok.png",
-    waMsg: "Merhaba, Powerbox 400 kV Elektro Şok Cihazı için toptan sipariş ve fiyat bilgisi almak istiyorum."
+    waMsg: "Merhaba, Powerbox 400 kV Elektro Şok Cihazı için sipariş ve fiyat bilgisi almak istiyorum."
   },
   {
     id: "demonte",
     productId: "demonte",
     tag: "GENÇ ÜRETİCİLER & AR-GE",
     title: "Demonte Kit & Boş Plastik Kutular",
-    desc: "Yetenekli gençlerimiz ve geliştiriciler üretsin diye demonte devre kitleri ve boş plastik cihaz kutuları toptan fiyatlarla!",
-    image: "assets/images/kategori/yeniurunler.png",
-    waMsg: "Merhaba, Powerbox demonte kit paketleri ve boş plastik kutular hakkında toptan bilgi ve fiyat almak istiyorum."
+    desc: "Yetenekli gençlerimiz ve geliştiriciler üretsin diye demonte devre kitleri ve boş plastik cihaz kutuları avantajlı fiyatlarla!",
+    image: "assets/images/demonte-kutu-poster.jpg",
+    waMsg: "Merhaba, Powerbox demonte kit paketleri ve boş plastik kutular hakkında sipariş ve bilgi almak istiyorum."
   }
 ];
 
-const PHONE_NUMBER = "0549 409 53 53";
-const WHATSAPP_INT_NUMBER = "905494095353";
+// ---------------- SHOPPING CART SYSTEM (Sepet Yönetimi & LocalStorage) ----------------
+let cart = [];
 
-// ---------------- SCROLL TO DEDICATED TASARRUF SECTION ----------------
-function scrollToTasarrufSection() {
-  const sec = document.getElementById("elektrik-tasarruf");
-  if (sec) {
-    sec.scrollIntoView({ behavior: "smooth", block: "start" });
-    const card = sec.querySelector(".tasarruf-card-box");
-    if (card) {
-      card.style.boxShadow = "0 0 0 3px #38bdf8, 0 24px 60px rgba(56, 189, 248, 0.35)";
-      setTimeout(() => {
-        card.style.boxShadow = "";
-      }, 1500);
-    }
+function loadCart() {
+  try {
+    const saved = localStorage.getItem("powerbox_cart_v2");
+    cart = saved ? JSON.parse(saved) : [];
+  } catch (e) {
+    cart = [];
+  }
+  renderCartUI();
+}
+
+function saveCart() {
+  try {
+    localStorage.setItem("powerbox_cart_v2", JSON.stringify(cart));
+  } catch (e) {}
+  renderCartUI();
+}
+
+function addToCart(productId, qty = 1) {
+  const prod = PRODUCTS_DATA[productId];
+  if (!prod) return;
+
+  const existing = cart.find(item => item.id === productId);
+  if (existing) {
+    existing.qty += qty;
+  } else {
+    cart.push({ id: productId, qty: qty });
+  }
+
+  saveCart();
+  showToast(`✓ ${prod.title} sepete eklendi!`, true);
+  animateCartButton();
+}
+window.addToCart = addToCart;
+
+function removeFromCart(productId) {
+  cart = cart.filter(item => item.id !== productId);
+  saveCart();
+  showToast("Ürün sepetten kaldırıldı.");
+}
+window.removeFromCart = removeFromCart;
+
+function updateCartQty(productId, delta) {
+  const item = cart.find(i => i.id === productId);
+  if (!item) return;
+
+  item.qty += delta;
+  if (item.qty <= 0) {
+    removeFromCart(productId);
+  } else {
+    saveCart();
   }
 }
-window.scrollToTasarrufSection = scrollToTasarrufSection;
+window.updateCartQty = updateCartQty;
+
+function clearCart() {
+  if (cart.length === 0) return;
+  cart = [];
+  saveCart();
+  showToast("Sepetiniz temizlendi.");
+}
+window.clearCart = clearCart;
+
+function getCartTotals() {
+  let count = 0;
+  let subtotal = 0;
+  let oldSubtotal = 0;
+
+  cart.forEach(item => {
+    const prod = PRODUCTS_DATA[item.id];
+    if (prod) {
+      count += item.qty;
+      subtotal += prod.price * item.qty;
+      oldSubtotal += prod.oldPrice * item.qty;
+    }
+  });
+
+  const totalDiscount = Math.max(0, oldSubtotal - subtotal);
+  return { count, subtotal, oldSubtotal, totalDiscount };
+}
+
+function renderCartUI() {
+  const { count, subtotal, oldSubtotal, totalDiscount } = getCartTotals();
+
+  // Update Badges
+  const headerBadge = document.getElementById("headerCartBadge");
+  const floatingBadge = document.getElementById("floatingCartBadge");
+  const floatingTotal = document.getElementById("floatingCartTotal");
+  const drawerCount = document.getElementById("drawerCartCount");
+
+  if (headerBadge) {
+    headerBadge.textContent = count;
+    headerBadge.style.display = count > 0 ? "inline-flex" : "none";
+  }
+  if (floatingBadge) {
+    floatingBadge.textContent = count;
+  }
+  if (floatingTotal) {
+    floatingTotal.textContent = `${subtotal.toLocaleString("tr-TR")} TL`;
+  }
+  if (drawerCount) {
+    drawerCount.textContent = count;
+  }
+
+  // Floating button highlight
+  const floatingBtn = document.getElementById("floatingCartBtn");
+  if (floatingBtn) {
+    if (count > 0) {
+      floatingBtn.classList.add("has-items");
+    } else {
+      floatingBtn.classList.remove("has-items");
+    }
+  }
+
+  // Render Drawer Content
+  const drawerItems = document.getElementById("cartDrawerItems");
+  const drawerEmpty = document.getElementById("cartDrawerEmpty");
+  const drawerFooter = document.getElementById("cartDrawerFooter");
+
+  if (!drawerItems) return;
+
+  if (cart.length === 0) {
+    drawerItems.innerHTML = "";
+    if (drawerEmpty) drawerEmpty.style.display = "flex";
+    if (drawerFooter) drawerFooter.style.display = "none";
+  } else {
+    if (drawerEmpty) drawerEmpty.style.display = "none";
+    if (drawerFooter) drawerFooter.style.display = "block";
+
+    drawerItems.innerHTML = cart.map(item => {
+      const prod = PRODUCTS_DATA[item.id];
+      if (!prod) return "";
+      const lineTotal = prod.price * item.qty;
+      const lineOldTotal = prod.oldPrice * item.qty;
+
+      return `
+        <div class="cart-drawer-item">
+          <div class="cart-item-thumb-box">
+            <img src="${prod.image}" alt="${prod.title}" class="cart-item-img">
+          </div>
+          <div class="cart-item-main">
+            <div class="cart-item-top">
+              <h4 class="cart-item-title">${prod.title}</h4>
+              <button type="button" class="cart-item-delete" onclick="removeFromCart('${prod.id}')" title="Kaldır">✕</button>
+            </div>
+            <div class="cart-item-prices">
+              <span class="cart-item-now">${prod.price.toLocaleString("tr-TR")} TL</span>
+              <span class="cart-item-old">${prod.oldPrice.toLocaleString("tr-TR")} TL</span>
+              <span class="cart-item-disc">${prod.discount}</span>
+            </div>
+            <div class="cart-item-bottom">
+              <div class="cart-qty-ctrl">
+                <button type="button" class="qty-btn" onclick="updateCartQty('${prod.id}', -1)" aria-label="Azalt">−</button>
+                <span class="qty-display">${item.qty}</span>
+                <button type="button" class="qty-btn" onclick="updateCartQty('${prod.id}', 1)" aria-label="Artır">+</button>
+              </div>
+              <div class="cart-item-line-total">
+                <span class="lbl">Tutar:</span>
+                <strong>${lineTotal.toLocaleString("tr-TR")} TL</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      `;
+    }).join("");
+
+    // Update Drawer Summary Numbers
+    const sumOld = document.getElementById("cartSumOld");
+    const sumDiscount = document.getElementById("cartSumDiscount");
+    const sumFinal = document.getElementById("cartSumFinal");
+
+    if (sumOld) sumOld.textContent = `${oldSubtotal.toLocaleString("tr-TR")} TL`;
+    if (sumDiscount) sumDiscount.textContent = `- ${totalDiscount.toLocaleString("tr-TR")} TL`;
+    if (sumFinal) sumFinal.textContent = `${subtotal.toLocaleString("tr-TR")} TL`;
+  }
+}
+
+function animateCartButton() {
+  const floatingBtn = document.getElementById("floatingCartBtn");
+  if (floatingBtn) {
+    floatingBtn.classList.remove("cart-bounce");
+    void floatingBtn.offsetWidth; // trigger reflow
+    floatingBtn.classList.add("cart-bounce");
+  }
+}
+
+// ---------------- WHATSAPP DIRECT BUY & CART CHECKOUT ----------------
+function buyProductNow(productId) {
+  const prod = PRODUCTS_DATA[productId];
+  if (!prod) return;
+
+  const msg = `Merhaba Powerbox, lansman kampanyası kapsamında 1 adet *${prod.fullName || prod.title}* (${prod.price.toLocaleString("tr-TR")} TL) indirimli perakende fiyatıyla sipariş etmek istiyorum. Teslimat ve ödeme detaylarını alabilir miyim?`;
+  const url = `https://wa.me/${WHATSAPP_INT_NUMBER}?text=${encodeURIComponent(msg)}`;
+  window.open(url, "_blank");
+}
+window.buyProductNow = buyProductNow;
+
+function sendCartToWhatsApp() {
+  if (cart.length === 0) {
+    showToast("Sepetiniz boş! Lütfen sipariş etmek istediğiniz ürünleri sepete ekleyin.");
+    return;
+  }
+  const { count, subtotal, oldSubtotal, totalDiscount } = getCartTotals();
+
+  let msg = `Merhaba Powerbox, web sitenizden sepetime eklediğim ürünleri sipariş etmek istiyorum:\n\n`;
+  msg += `📦 *SİPARİŞ LİSTESİ:* (${count} Adet Ürün)\n`;
+
+  cart.forEach((item, index) => {
+    const prod = PRODUCTS_DATA[item.id];
+    if (prod) {
+      const itemTotal = prod.price * item.qty;
+      msg += `${index + 1}) *${prod.fullName || prod.title}* x ${item.qty} adet = ${itemTotal.toLocaleString("tr-TR")} TL\n`;
+    }
+  });
+
+  msg += `\n💰 *TOPLAM PERAKENDE TUTAR:* ${subtotal.toLocaleString("tr-TR")} TL`;
+  if (totalDiscount > 0) {
+    msg += ` (Lansman İndirimiyle ${totalDiscount.toLocaleString("tr-TR")} TL Kazanç)`;
+  }
+  msg += `\n\nTeslimat adresi ve ödeme bilgileri (Havale / EFT / Kapıda Ödeme / Kredi Kartı) için yardımcı olabilir misiniz?`;
+
+  const url = `https://wa.me/${WHATSAPP_INT_NUMBER}?text=${encodeURIComponent(msg)}`;
+  window.open(url, "_blank");
+}
+window.sendCartToWhatsApp = sendCartToWhatsApp;
+
+function sendCartWholesaleToWhatsApp() {
+  if (cart.length === 0) {
+    showToast("Sepetiniz boş! Lütfen toptan teklif almak istediğiniz ürünleri sepete ekleyin.");
+    return;
+  }
+  let msg = `Merhaba Powerbox, web sitenizden seçtiğim ürünler için koli bazlı / toptan alım özel iskonto teklifi rica ediyorum:\n\n`;
+  msg += `💼 *TALEP EDİLEN ÜRÜNLER:*\n`;
+
+  cart.forEach((item, index) => {
+    const prod = PRODUCTS_DATA[item.id];
+    if (prod) {
+      msg += `• *${prod.fullName || prod.title}* (Öngörülen Adet: ${item.qty})\n`;
+    }
+  });
+
+  msg += `\nToptan fiyat listenizi, koli adetlerini ve teslim koşullarınızı iletebilir misiniz?`;
+  const url = `https://wa.me/${WHATSAPP_INT_NUMBER}?text=${encodeURIComponent(msg)}`;
+  window.open(url, "_blank");
+}
+window.sendCartWholesaleToWhatsApp = sendCartWholesaleToWhatsApp;
+
+// ---------------- CART DRAWER TOGGLE ----------------
+function openCartDrawer() {
+  const drawer = document.getElementById("cartDrawer");
+  if (drawer) {
+    drawer.classList.add("is-active");
+    document.body.style.overflow = "hidden";
+  }
+}
+window.openCartDrawer = openCartDrawer;
+
+function closeCartDrawer() {
+  const drawer = document.getElementById("cartDrawer");
+  if (drawer) {
+    drawer.classList.remove("is-active");
+    document.body.style.overflow = "";
+  }
+}
+window.closeCartDrawer = closeCartDrawer;
+
+function toggleCartDrawer() {
+  const drawer = document.getElementById("cartDrawer");
+  if (drawer && drawer.classList.contains("is-active")) {
+    closeCartDrawer();
+  } else {
+    openCartDrawer();
+  }
+}
+window.toggleCartDrawer = toggleCartDrawer;
+
+// ---------------- TOAST NOTIFICATION SYSTEM ----------------
+function showToast(message, withCartLink = false) {
+  let toast = document.getElementById("pbToast");
+  if (!toast) {
+    toast = document.createElement("div");
+    toast.id = "pbToast";
+    toast.className = "pb-toast";
+    document.body.appendChild(toast);
+  }
+
+  if (withCartLink) {
+    toast.innerHTML = `
+      <div class="toast-msg-wrap">
+        <span>${message}</span>
+        <button type="button" class="toast-cart-btn" onclick="openCartDrawer()">Sepete Git →</button>
+      </div>
+    `;
+  } else {
+    toast.innerHTML = `<span>${message}</span>`;
+  }
+
+  toast.classList.add("show");
+  clearTimeout(toast._timer);
+  toast._timer = setTimeout(() => {
+    toast.classList.remove("show");
+  }, 3600);
+}
+window.showToast = showToast;
+
+// ---------------- DEMONTE POSTER LIGHTBOX / MODAL ----------------
+function openPosterModal(imageSrc, title) {
+  const modal = document.getElementById("posterModal");
+  const img = document.getElementById("posterModalImg");
+  const heading = document.getElementById("posterModalTitle");
+
+  if (!modal || !img) return;
+  img.src = imageSrc;
+  img.alt = title || "Demonte Kiti";
+  if (heading) heading.textContent = title || "Demonte Devre Kiti";
+
+  modal.classList.add("is-active");
+  document.body.style.overflow = "hidden";
+}
+window.openPosterModal = openPosterModal;
+
+function closePosterModal() {
+  const modal = document.getElementById("posterModal");
+  if (!modal) return;
+  modal.classList.remove("is-active");
+  document.body.style.overflow = "";
+}
+window.closePosterModal = closePosterModal;
 
 // ---------------- CATEGORY FILTER ("TIK TIK" SNAPPY NAVIGATION) ----------------
 function filterCategory(catKey) {
@@ -306,9 +701,12 @@ function filterCategory(catKey) {
 window.filterCategory = filterCategory;
 
 // ---------------- PRODUCT DETAIL MODAL ----------------
+let currentModalProductId = null;
+
 function openProductModal(productId) {
   const product = PRODUCTS_DATA[productId];
   if (!product) return;
+  currentModalProductId = productId;
 
   const modal = document.getElementById("productModal");
   const modalImg = document.getElementById("modalImg");
@@ -316,49 +714,88 @@ function openProductModal(productId) {
   const modalTitle = document.getElementById("modalTitle");
   const modalDesc = document.getElementById("modalDesc");
   const modalFeatures = document.getElementById("modalFeatures");
-  const modalWaBtn = document.getElementById("modalWaBtn");
 
-  modalImg.src = product.image;
-  modalImg.alt = product.title;
-  modalCategoryTag.textContent = product.category;
-  modalTitle.textContent = product.title;
-  modalDesc.textContent = product.desc;
+  // Price elements inside modal
+  const modalOldPrice = document.getElementById("modalOldPrice");
+  const modalFinalPrice = document.getElementById("modalFinalPrice");
+  const modalDiscountTag = document.getElementById("modalDiscountTag");
+
+  // Action buttons
+  const modalDirectBuyBtn = document.getElementById("modalDirectBuyBtn");
+  const modalAddCartBtn = document.getElementById("modalAddCartBtn");
+  const modalWholesaleBtn = document.getElementById("modalWholesaleBtn");
+
+  if (modalImg) {
+    modalImg.src = product.image;
+    modalImg.alt = product.title;
+  }
+  if (modalCategoryTag) modalCategoryTag.textContent = product.category;
+  if (modalTitle) modalTitle.textContent = product.fullName || product.title;
+  if (modalDesc) modalDesc.textContent = product.desc;
+
+  if (modalOldPrice) modalOldPrice.textContent = `${product.oldPrice.toLocaleString("tr-TR")} TL`;
+  if (modalFinalPrice) modalFinalPrice.textContent = `${product.price.toLocaleString("tr-TR")} TL`;
+  if (modalDiscountTag) modalDiscountTag.textContent = product.discount;
 
   // Features list
-  modalFeatures.innerHTML = product.features.map(f => `
-    <div class="modal-feat-item">
-      <span class="icon">✓</span>
-      <span>${f}</span>
-    </div>
-  `).join("");
+  if (modalFeatures) {
+    modalFeatures.innerHTML = product.features.map(f => `
+      <div class="modal-feat-item">
+        <span class="icon">✓</span>
+        <span>${f}</span>
+      </div>
+    `).join("");
+  }
 
-  // WhatsApp Order Link
-  const encodedMsg = encodeURIComponent(product.waMsg);
-  modalWaBtn.href = `https://wa.me/${WHATSAPP_INT_NUMBER}?text=${encodedMsg}`;
+  // Setup buttons
+  if (modalDirectBuyBtn) {
+    modalDirectBuyBtn.onclick = () => buyProductNow(productId);
+  }
+  if (modalAddCartBtn) {
+    modalAddCartBtn.onclick = () => {
+      addToCart(productId);
+      closeProductModal();
+    };
+  }
+  if (modalWholesaleBtn) {
+    const encodedWholesale = encodeURIComponent(product.wholesaleMsg || `Merhaba, ${product.title} için toptan teklif almak istiyorum.`);
+    modalWholesaleBtn.href = `https://wa.me/${WHATSAPP_INT_NUMBER}?text=${encodedWholesale}`;
+  }
 
   // Open modal
   modal.classList.add("is-active");
   document.body.style.overflow = "hidden";
 }
+window.openProductModal = openProductModal;
 
 function closeProductModal() {
   const modal = document.getElementById("productModal");
-  modal.classList.remove("is-active");
-  document.body.style.overflow = "";
+  if (modal) {
+    modal.classList.remove("is-active");
+    document.body.style.overflow = "";
+  }
+  currentModalProductId = null;
 }
+window.closeProductModal = closeProductModal;
 
 // ---------------- VIDEO MODAL ----------------
 function openVideoModal() {
   const modal = document.getElementById("videoModal");
-  modal.classList.add("is-active");
-  document.body.style.overflow = "hidden";
+  if (modal) {
+    modal.classList.add("is-active");
+    document.body.style.overflow = "hidden";
+  }
 }
+window.openVideoModal = openVideoModal;
 
 function closeVideoModal() {
   const modal = document.getElementById("videoModal");
-  modal.classList.remove("is-active");
-  document.body.style.overflow = "";
+  if (modal) {
+    modal.classList.remove("is-active");
+    document.body.style.overflow = "";
+  }
 }
+window.closeVideoModal = closeVideoModal;
 
 // ---------------- QUICK SEARCH ----------------
 function setupSearch() {
@@ -368,202 +805,294 @@ function setupSearch() {
   const productSearchInput = document.getElementById("productSearchInput");
   const searchResultsList = document.getElementById("searchResultsList");
 
-  if (!searchTriggerBtn || !searchModal) return;
+  if (!searchTriggerBtn || !searchModal || !productSearchInput || !searchResultsList) return;
 
   function openSearch() {
     searchModal.classList.add("is-active");
+    document.body.style.overflow = "hidden";
     setTimeout(() => productSearchInput.focus(), 100);
-    renderResults("");
+    renderSearchResults(productSearchInput.value);
   }
 
   function closeSearch() {
     searchModal.classList.remove("is-active");
+    document.body.style.overflow = "";
     productSearchInput.value = "";
   }
-
-  function renderResults(query) {
-    const q = query.trim().toLowerCase();
-    const productsArray = Object.values(PRODUCTS_DATA);
-    const filtered = q
-      ? productsArray.filter(p => 
-          p.title.toLowerCase().includes(q) || 
-          p.desc.toLowerCase().includes(q) || 
-          p.category.toLowerCase().includes(q)
-        )
-      : productsArray;
-
-    if (filtered.length === 0) {
-      searchResultsList.innerHTML = `<div style="padding: 20px; text-align: center; color: #64748b; font-size: 14px;">"${query}" ile ilgili ürün bulunamadı.</div>`;
-      return;
-    }
-
-    searchResultsList.innerHTML = filtered.map(p => `
-      <div class="search-result-item" onclick="closeSearch(); openProductModal('${p.id}')">
-        <img src="${p.image}" alt="${p.title}">
-        <div>
-          <h4>${p.title}</h4>
-          <p>${p.desc.substring(0, 70)}...</p>
-        </div>
-      </div>
-    `).join("");
-  }
+  window.closeSearch = closeSearch;
 
   searchTriggerBtn.addEventListener("click", openSearch);
-  searchCloseBtn.addEventListener("click", closeSearch);
+  if (searchCloseBtn) searchCloseBtn.addEventListener("click", closeSearch);
+
   searchModal.addEventListener("click", (e) => {
     if (e.target === searchModal) closeSearch();
   });
 
   productSearchInput.addEventListener("input", (e) => {
-    renderResults(e.target.value);
+    renderSearchResults(e.target.value.trim());
   });
 
-  window.closeSearch = closeSearch;
+  function renderSearchResults(query) {
+    const q = query.toLowerCase();
+    const products = Object.values(PRODUCTS_DATA);
+    const filtered = q === "" 
+      ? products 
+      : products.filter(p => 
+          p.title.toLowerCase().includes(q) || 
+          p.category.toLowerCase().includes(q) || 
+          p.desc.toLowerCase().includes(q) ||
+          p.id.toLowerCase().includes(q)
+        );
+
+    if (filtered.length === 0) {
+      searchResultsList.innerHTML = `
+        <div class="search-empty">
+          <p>Aradığınız kriterlere uygun ürün bulunamadı: "<strong>${escapeHtml(query)}</strong>"</p>
+        </div>
+      `;
+      return;
+    }
+
+    searchResultsList.innerHTML = filtered.map(p => `
+      <div class="search-result-item" onclick="onSearchResultClick('${p.id}')">
+        <img src="${p.image}" alt="${p.title}" class="search-thumb">
+        <div class="search-info">
+          <span class="search-cat">${p.category}</span>
+          <h4 class="search-title">${p.title}</h4>
+          <div class="search-price-row">
+            <span class="search-old-price">${p.oldPrice.toLocaleString("tr-TR")} TL</span>
+            <span class="search-final-price">${p.price.toLocaleString("tr-TR")} TL</span>
+            <span class="search-discount-badge">${p.discount}</span>
+          </div>
+        </div>
+        <button type="button" class="search-action-btn">İncele →</button>
+      </div>
+    `).join("");
+  }
 }
 
-// ---------------- INSTAGRAM STORY VIEWER LOGIC ----------------
+function onSearchResultClick(productId) {
+  if (window.closeSearch) window.closeSearch();
+  openProductModal(productId);
+}
+window.onSearchResultClick = onSearchResultClick;
+
+function escapeHtml(str) {
+  return str.replace(/[&<>'"]/g, 
+    tag => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;' }[tag] || tag)
+  );
+}
+
+// ---------------- INSTAGRAM STORY VIEWER ----------------
 let currentStoryIndex = 0;
 let storyTimer = null;
-const STORY_DURATION = 5000; // 5 seconds per story
+let storyProgressInterval = null;
+let storyProgress = 0;
+const STORY_DURATION = 6500; // ms
 
-function renderStoryProgress() {
+function openStory(index) {
+  currentStoryIndex = index;
+  const modal = document.getElementById("storyModal");
+  if (!modal) return;
+
+  modal.classList.add("is-active");
+  document.body.style.overflow = "hidden";
+
+  setupStoryProgressBars();
+  showCurrentStory();
+}
+window.openStory = openStory;
+
+function closeStory() {
+  const modal = document.getElementById("storyModal");
+  if (!modal) return;
+
+  modal.classList.remove("is-active");
+  document.body.style.overflow = "";
+
+  clearTimeout(storyTimer);
+  clearInterval(storyProgressInterval);
+}
+window.closeStory = closeStory;
+
+function setupStoryProgressBars() {
   const container = document.getElementById("storyProgressBar");
   if (!container) return;
+
   container.innerHTML = STORIES_DATA.map((_, i) => `
-    <div class="story-progress-segment ${i < currentStoryIndex ? 'is-viewed' : ''} ${i === currentStoryIndex ? 'is-active' : ''}">
-      <div class="story-progress-fill"></div>
+    <div class="progress-segment" data-index="${i}">
+      <div class="progress-fill"></div>
     </div>
   `).join("");
 }
 
-function openStory(index) {
-  currentStoryIndex = Math.max(0, Math.min(index, STORIES_DATA.length - 1));
+function showCurrentStory() {
+  clearTimeout(storyTimer);
+  clearInterval(storyProgressInterval);
+
   const story = STORIES_DATA[currentStoryIndex];
   if (!story) return;
 
-  const modal = document.getElementById("storyModal");
-  const slideImg = document.getElementById("storySlideImg");
-  const tagPill = document.getElementById("storyTagPill");
-  const captionTitle = document.getElementById("storyCaptionTitle");
-  const captionDesc = document.getElementById("storyCaptionDesc");
+  const tagEl = document.getElementById("storyTag");
+  const titleEl = document.getElementById("storyTitle");
+  const descEl = document.getElementById("storyDesc");
+  const imgEl = document.getElementById("storyImg");
   const waBtn = document.getElementById("storyWaBtn");
+  const jumpBtn = document.getElementById("storyJumpBtn");
 
-  slideImg.src = story.image;
-  slideImg.alt = story.title;
-  tagPill.textContent = story.tag;
-  captionTitle.textContent = story.title;
-  captionDesc.textContent = story.desc;
+  if (tagEl) tagEl.textContent = story.tag;
+  if (titleEl) titleEl.textContent = story.title;
+  if (descEl) descEl.textContent = story.desc;
+  if (imgEl) {
+    imgEl.src = story.image;
+    imgEl.alt = story.title;
+  }
 
-  const encodedMsg = encodeURIComponent(story.waMsg);
-  waBtn.href = `https://wa.me/${WHATSAPP_INT_NUMBER}?text=${encodedMsg}`;
+  if (waBtn) {
+    const encodedMsg = encodeURIComponent(story.waMsg);
+    waBtn.href = `https://wa.me/${WHATSAPP_INT_NUMBER}?text=${encodedMsg}`;
+  }
 
-  renderStoryProgress();
-  modal.classList.add("is-active");
-  document.body.style.overflow = "hidden";
-
-  startStoryTimer();
-}
-
-function startStoryTimer() {
-  clearTimeout(storyTimer);
-  storyTimer = setTimeout(() => {
-    if (currentStoryIndex < STORIES_DATA.length - 1) {
-      nextStory();
-    } else {
+  if (jumpBtn) {
+    jumpBtn.onclick = () => {
       closeStory();
-    }
-  }, STORY_DURATION);
-}
+      if (story.productId === "demonte") {
+        const sec = document.getElementById("demonte-kit");
+        if (sec) sec.scrollIntoView({ behavior: "smooth" });
+      } else {
+        openProductModal(story.productId);
+      }
+    };
+  }
 
-function closeStory() {
-  clearTimeout(storyTimer);
-  const modal = document.getElementById("storyModal");
-  if (modal) modal.classList.remove("is-active");
-  document.body.style.overflow = "";
+  // Update progress bars
+  const segments = document.querySelectorAll("#storyProgressBar .progress-segment");
+  segments.forEach((seg, i) => {
+    const fill = seg.querySelector(".progress-fill");
+    if (!fill) return;
+
+    if (i < currentStoryIndex) {
+      fill.style.width = "100%";
+      fill.style.transition = "none";
+    } else if (i === currentStoryIndex) {
+      fill.style.width = "0%";
+      fill.style.transition = "none";
+    } else {
+      fill.style.width = "0%";
+      fill.style.transition = "none";
+    }
+  });
+
+  // Animate current fill
+  requestAnimationFrame(() => {
+    const currentSeg = segments[currentStoryIndex];
+    if (currentSeg) {
+      const fill = currentSeg.querySelector(".progress-fill");
+      if (fill) {
+        fill.style.transition = `width ${STORY_DURATION}ms linear`;
+        fill.style.width = "100%";
+      }
+    }
+  });
+
+  storyTimer = setTimeout(() => {
+    nextStory();
+  }, STORY_DURATION);
 }
 
 function nextStory() {
   if (currentStoryIndex < STORIES_DATA.length - 1) {
-    openStory(currentStoryIndex + 1);
+    currentStoryIndex++;
+    showCurrentStory();
   } else {
     closeStory();
   }
 }
+window.nextStory = nextStory;
 
 function prevStory() {
   if (currentStoryIndex > 0) {
-    openStory(currentStoryIndex - 1);
+    currentStoryIndex--;
+    showCurrentStory();
   } else {
-    openStory(0);
+    showCurrentStory();
   }
 }
-
-function jumpFromStoryToProduct() {
-  const story = STORIES_DATA[currentStoryIndex];
-  closeStory();
-  if (!story) return;
-
-  if (story.productId === "demonte") {
-    const demonteSec = document.getElementById("demonte-kit");
-    if (demonteSec) demonteSec.scrollIntoView({ behavior: "smooth", block: "start" });
-    return;
-  }
-
-  // Filter category if needed and highlight card
-  const card = document.querySelector(`.product-card[data-product-id="${story.productId}"]`);
-  if (card) {
-    const cat = card.dataset.category;
-    if (cat && window.filterCategory) {
-      filterCategory(cat);
-    }
-    setTimeout(() => {
-      card.scrollIntoView({ behavior: "smooth", block: "center" });
-      card.style.transform = "scale(1.05)";
-      card.style.borderColor = "#0284c7";
-      setTimeout(() => {
-        card.style.transform = "";
-        card.style.borderColor = "";
-      }, 1200);
-    }, 250);
-  }
-}
-
-window.openStory = openStory;
-window.closeStory = closeStory;
-window.nextStory = nextStory;
 window.prevStory = prevStory;
-window.jumpFromStoryToProduct = jumpFromStoryToProduct;
 
-// ---------------- DOM CONTENT LOADED ----------------
+// ---------------- DOM CONTENT LOADED INITIALIZATION ----------------
 document.addEventListener("DOMContentLoaded", () => {
-  // Modal close buttons
-  const modalCloseBtn = document.getElementById("modalCloseBtn");
+  // Initialize shopping cart
+  loadCart();
+
+  // Floating Cart Button Listener
+  const floatingCartBtn = document.getElementById("floatingCartBtn");
+  if (floatingCartBtn) {
+    floatingCartBtn.addEventListener("click", toggleCartDrawer);
+  }
+
+  // Header Cart Button Listener
+  const headerCartBtn = document.getElementById("headerCartBtn");
+  if (headerCartBtn) {
+    headerCartBtn.addEventListener("click", toggleCartDrawer);
+  }
+
+  // Cart Drawer Backdrop Close
+  const cartDrawerBackdrop = document.getElementById("cartDrawerBackdrop");
+  if (cartDrawerBackdrop) {
+    cartDrawerBackdrop.addEventListener("click", closeCartDrawer);
+  }
+  const cartDrawerCloseBtn = document.getElementById("cartDrawerCloseBtn");
+  if (cartDrawerCloseBtn) {
+    cartDrawerCloseBtn.addEventListener("click", closeCartDrawer);
+  }
+
+  // Poster Modal Backdrop Close
+  const posterModal = document.getElementById("posterModal");
+  if (posterModal) {
+    posterModal.addEventListener("click", (e) => {
+      if (e.target === posterModal) closePosterModal();
+    });
+  }
+  const posterModalCloseBtn = document.getElementById("posterModalCloseBtn");
+  if (posterModalCloseBtn) {
+    posterModalCloseBtn.addEventListener("click", closePosterModal);
+  }
+
+  // Product Modal Backdrop Close
   const productModal = document.getElementById("productModal");
-  if (modalCloseBtn) modalCloseBtn.addEventListener("click", closeProductModal);
   if (productModal) {
     productModal.addEventListener("click", (e) => {
       if (e.target === productModal) closeProductModal();
     });
   }
+  const modalCloseBtn = document.getElementById("modalCloseBtn");
+  if (modalCloseBtn) {
+    modalCloseBtn.addEventListener("click", closeProductModal);
+  }
 
-  // Story modal backdrop click
+  // Video Modal Backdrop Close
+  const videoModal = document.getElementById("videoModal");
+  if (videoModal) {
+    videoModal.addEventListener("click", (e) => {
+      if (e.target === videoModal) closeVideoModal();
+    });
+  }
+  const videoCloseBtn = document.getElementById("videoCloseBtn");
+  if (videoCloseBtn) {
+    videoCloseBtn.addEventListener("click", closeVideoModal);
+  }
+
+  // Story Modal Backdrop Close
   const storyModal = document.getElementById("storyModal");
   if (storyModal) {
     storyModal.addEventListener("click", (e) => {
       if (e.target === storyModal) closeStory();
     });
   }
-
-  // Video Play Button
-  const heroPlayBtn = document.getElementById("heroPlayBtn");
-  const videoModal = document.getElementById("videoModal");
-  const videoModalClose = document.getElementById("videoModalClose");
-  if (heroPlayBtn) heroPlayBtn.addEventListener("click", openVideoModal);
-  if (videoModalClose) videoModalClose.addEventListener("click", closeVideoModal);
-  if (videoModal) {
-    videoModal.addEventListener("click", (e) => {
-      if (e.target === videoModal) closeVideoModal();
-    });
+  const storyCloseBtn = document.getElementById("storyCloseBtn");
+  if (storyCloseBtn) {
+    storyCloseBtn.addEventListener("click", closeStory);
   }
 
   // Keyboard navigation
@@ -572,6 +1101,8 @@ document.addEventListener("DOMContentLoaded", () => {
       closeProductModal();
       closeVideoModal();
       closeStory();
+      closePosterModal();
+      closeCartDrawer();
       if (window.closeSearch) window.closeSearch();
     } else if (e.key === "ArrowRight") {
       const sModal = document.getElementById("storyModal");
