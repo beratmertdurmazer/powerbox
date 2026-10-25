@@ -144,32 +144,32 @@ const PRODUCTS_DATA = {
   },
   tasarruf: {
     id: "tasarruf",
-    title: "Elektrik Tasarruf Cihazı",
-    fullName: "Powerbox Elektrik Tasarruf Cihazı (Monofaze / Trifaze)",
-    category: "MONOFAZE & TRİFAZE ÖZEL ÜRETİM",
-    image: "assets/images/kategori/elektriktasarrufcihazları.png",
+    title: "Elektrik Tasarruf Cihazı (Ev Tipi)",
+    fullName: "Powerbox Elektrik Tasarruf Cihazı (Ev Tipi Monofaze / Sanayi Özel kW)",
+    category: "MONOFAZE EV TİPİ & TRİFAZE SANAYİ",
+    image: "assets/images/urun/elektrik-tasarruf.png",
     oldPrice: 1450,
     price: 990,
     discount: "%32 İndirim",
     badge: "%25 Tasarruf",
-    wholesaleTip: "kW değerinize özel imalat ve toptan iskonto",
-    desc: "Ev ve iş yerlerine uygun monofaze ve trifaze modeller. Her kW değerine göre taleplere uygun özel yapım imalat.",
+    wholesaleTip: "İş yeri ve sanayi (trifaze) kW modelleri için özel teklif",
+    desc: "Ev tipi monofaze priz ve sigorta bağlantılı mini kompanzasyon cihazı. %25'e varan tasarruf sağlar. Sanayi ve iş yerleri için her kW değerine uygun trifaze özel mühendislik imalatı desteği sunulur.",
     features: [
-      "Ev ve iş yerlerine uygun monofaze ve trifaze modeller",
-      "Her kW değerine uygun özel mühendislik imalatı",
-      "Bobinli devrelerde oluşan ısınmadan ve zorlanmadan kaynaklı kayıp enerjiyi absorbe eder, hatları rahatlatır",
-      "Mini kompanzasyon görevi görür, %25'e varan tasarruf sağlar",
+      "Ev tipi monofaze sistemlere 1 dakikada pratik bağlantı",
+      "Mini kompanzasyon görevi görür, %25'e varan elektrik tasarrufu sağlar",
+      "Bobinli devrelerde oluşan ısınma ve zorlanmayı filtreler, hatları rahatlatır",
+      "Sanayi ve ticari işletmeler için kW değerine göre özel imalat desteği",
       "2 Yıl Üretici Garantisi"
     ],
-    waMsg: "Merhaba Powerbox, kampanya kapsamında 1 adet Powerbox Elektrik Tasarruf Cihazı (990 TL) sipariş etmek istiyorum. Tesisat ve kW detaylarını konuşabilir miyiz?",
-    wholesaleMsg: "Merhaba Powerbox, Elektrik Tasarruf Cihazı için işletmemize uygun kW projesi ve toptan fiyat teklifi almak istiyorum."
+    waMsg: "Merhaba Powerbox, kampanya kapsamındaki Powerbox Ev Tipi Elektrik Tasarruf Cihazı (990 TL) hakkında sipariş vermek istiyorum.",
+    wholesaleMsg: "Merhaba Powerbox, işletmemiz / iş yerimiz için sanayi tipi elektrik tasarruf cihazı ve kW değerimize uygun özel fiyat teklifi almak istiyorum."
   },
   ap1: {
     id: "ap1",
     title: "Powerbox AP1 Akım Korumalı Priz",
     fullName: "Powerbox AP1 16A Akım Korumalı Priz",
     category: "16A GÜÇLÜ AKIM KORUMALI PRİZ",
-    image: "assets/images/urun/elektrik-tasarruf.png",
+    image: "assets/images/urun/ap1.png",
     oldPrice: 550,
     price: 370,
     discount: "%33 İndirim",
@@ -310,11 +310,11 @@ const STORIES_DATA = [
   {
     id: "tasarruf",
     productId: "tasarruf",
-    tag: "MONOFAZE & TRİFAZE ÖZEL ÜRETİM",
-    title: "Powerbox Elektrik Tasarruf Cihazı",
-    desc: "Ev ve iş yerlerine uygun, her kW değerine göre taleplere özel imalat mini kompanzasyon teknolojisi ile %25'e varan tasarruf.",
-    image: "assets/images/kategori/elektriktasarrufcihazları.png",
-    waMsg: "Merhaba, Powerbox Elektrik Tasarruf Cihazı hakkında kW değerimize uygun sipariş ve fiyat almak istiyorum."
+    tag: "MONOFAZE EV & TRİFAZE SANAYİ",
+    title: "Powerbox Elektrik Tasarruf (Ev Tipi)",
+    desc: "Ev tipi monofaze sistemlerde %25'e varan tasarruf. Sanayi tipi modeller için işletmenize özel kW teklifi alın.",
+    image: "assets/images/urun/elektrik-tasarruf.png",
+    waMsg: "Merhaba, Powerbox Elektrik Tasarruf Cihazı hakkında bilgi ve sipariş almak istiyorum."
   },
   {
     id: "ap1",
@@ -322,7 +322,7 @@ const STORIES_DATA = [
     tag: "16A GÜÇLÜ PRİZ",
     title: "Powerbox AP1 Akım Korumalı Priz",
     desc: "Ekstra kapasitör haznesi sayesinde voltaj oynamalarını filtreler, beyaz eşyaların ömrünü uzatır ve enerji tasarrufuna destek olur.",
-    image: "assets/images/urun/elektrik-tasarruf.png",
+    image: "assets/images/urun/ap1.png",
     waMsg: "Merhaba, Powerbox AP1 Akım Korumalı Priz için sipariş ve fiyat bilgisi almak istiyorum."
   },
   {
@@ -799,6 +799,9 @@ function openProductModal(productId) {
   if (modalWholesaleBtn) {
     const encodedWholesale = encodeURIComponent(product.wholesaleMsg || `Merhaba, ${product.title} için toptan teklif almak istiyorum.`);
     modalWholesaleBtn.href = `https://wa.me/${WHATSAPP_INT_NUMBER}?text=${encodedWholesale}`;
+    modalWholesaleBtn.innerHTML = productId === "tasarruf"
+      ? `<span>🏭 Sanayi & İş Yeri (Özel kW) Teklifi Al</span>`
+      : `<span>💼 Toptan Teklif İste</span>`;
   }
 
   // Open modal
