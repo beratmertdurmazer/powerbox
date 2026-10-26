@@ -14,10 +14,10 @@ const PRODUCTS_DATA = {
     fullName: "Powerbox PX1 Yüksek Voltaj Koruma Modülü",
     category: "YÜKSEK VOLTAJ KORUMA MODÜLÜ",
     image: "assets/images/urun/px1.png",
-    oldPrice: 950,
-    price: 690,
-    discount: "%27 İndirim",
-    badge: "%27 İndirim",
+    oldPrice: 1950,
+    price: 1499,
+    discount: "%23 İndirim",
+    badge: "%23 İndirim",
     wholesaleTip: "Koli ve toptan alımlarda özel iskonto",
     desc: "Tek bir modül ile evdeki tüm prizleri akım korumalı prize dönüştürün. Voltaj dalgalanmalarına karşı tüm elektronik cihazlarınızı koruyun.",
     features: [
@@ -27,7 +27,7 @@ const PRODUCTS_DATA = {
       "Ekstra kapasitör devresi ile ani pik dalgalanmalarını filtreler",
       "2 Yıl Üretici Garantisi"
     ],
-    waMsg: "Merhaba Powerbox, kampanya kapsamında 1 adet Powerbox PX1 Yüksek Voltaj Koruma Modülü (690 TL) sipariş etmek istiyorum. Teslimat ve ödeme detaylarını alabilir miyim?",
+    waMsg: "Merhaba Powerbox, kampanya kapsamında 1 adet Powerbox PX1 Yüksek Voltaj Koruma Modülü (1.499 TL) sipariş etmek istiyorum. Teslimat ve ödeme detaylarını alabilir miyim?",
     wholesaleMsg: "Merhaba Powerbox, Powerbox PX1 Yüksek Voltaj Koruma Modülü için toptan alım fiyatı ve koli iskontosu hakkında bilgi almak istiyorum."
   },
   px2: {
@@ -36,10 +36,10 @@ const PRODUCTS_DATA = {
     fullName: "Powerbox PX2 Voltaj Koruma Modülü",
     category: "YÜKSEK VOLTAJ KORUMA MODÜLÜ",
     image: "assets/images/urun/px2.png",
-    oldPrice: 850,
-    price: 590,
-    discount: "%31 İndirim",
-    badge: "%31 İndirim",
+    oldPrice: 1690,
+    price: 1299,
+    discount: "%23 İndirim",
+    badge: "%23 İndirim",
     wholesaleTip: "Koli ve toptan alımlarda özel iskonto",
     desc: "Gelişmiş çift kademeli koruma devresi ve dijital göstergesi ile evinizdeki tüm prizleri tek noktadan güvenceye alır.",
     features: [
@@ -49,7 +49,7 @@ const PRODUCTS_DATA = {
       "Ekstra kapasitör devresi ile ani pik dalgalanmalarını filtreler",
       "2 Yıl Üretici Garantisi"
     ],
-    waMsg: "Merhaba Powerbox, kampanya kapsamında 1 adet Powerbox PX2 Voltaj Koruma Modülü (590 TL) sipariş etmek istiyorum. Teslimat ve ödeme detaylarını alabilir miyim?",
+    waMsg: "Merhaba Powerbox, kampanya kapsamında 1 adet Powerbox PX2 Voltaj Koruma Modülü (1.299 TL) sipariş etmek istiyorum. Teslimat ve ödeme detaylarını alabilir miyim?",
     wholesaleMsg: "Merhaba Powerbox, Powerbox PX2 Voltaj Koruma Modülü için toptan sipariş ve iskonto detayları hakkında bilgi almak istiyorum."
   },
   px3: {
@@ -58,10 +58,10 @@ const PRODUCTS_DATA = {
     fullName: "Powerbox PX3 Voltaj Koruma Modülü",
     category: "YÜKSEK VOLTAJ KORUMA MODÜLÜ",
     image: "assets/images/urun/px3.png",
-    oldPrice: 650,
-    price: 450,
-    discount: "%31 İndirim",
-    badge: "%31 İndirim",
+    oldPrice: 1350,
+    price: 999,
+    discount: "%26 İndirim",
+    badge: "%26 İndirim",
     wholesaleTip: "Koli ve toptan alımlarda özel iskonto",
     desc: "Yüksek akım ve sanayi tipi hatlar için üst düzey aşırı gerilim kalkanı ve pik filtreleme modülüdür.",
     features: [
@@ -70,7 +70,7 @@ const PRODUCTS_DATA = {
       "Ekstra kapasitör devresi ile ani pik dalgalanmalarını filtreler",
       "2 Yıl Üretici Garantisi"
     ],
-    waMsg: "Merhaba Powerbox, kampanya kapsamında 1 adet Powerbox PX3 Voltaj Koruma Modülü (450 TL) sipariş etmek istiyorum. Teslimat ve ödeme detaylarını alabilir miyim?",
+    waMsg: "Merhaba Powerbox, kampanya kapsamında 1 adet Powerbox PX3 Voltaj Koruma Modülü (999 TL) sipariş etmek istiyorum. Teslimat ve ödeme detaylarını alabilir miyim?",
     wholesaleMsg: "Merhaba Powerbox, Powerbox PX3 Voltaj Koruma Modülü için toptan sipariş ve iskonto detayları hakkında bilgi almak istiyorum."
   },
   gc1: {
@@ -79,10 +79,10 @@ const PRODUCTS_DATA = {
     fullName: "Powerbox G-C Fişli Gaz Alarm Cihazı",
     category: "220V PRİZE TAKILAN KABLOSUZ ALARM",
     image: "assets/images/urun/gc1-gaz.png",
-    oldPrice: 750,
-    price: 490,
-    discount: "%35 İndirim",
-    badge: "%35 İndirim",
+    oldPrice: 690,
+    price: 499,
+    discount: "%28 İndirim",
+    badge: "%28 İndirim",
     wholesaleTip: "Koli ve toptan alımlarda özel iskonto",
     desc: "Kurulum ve kablo çekme derdi olmadan doğrudan prize takılarak kullanılan yüksek güvenlikli gaz kaçak uyarı sistemidir.",
     features: [
@@ -92,7 +92,7 @@ const PRODUCTS_DATA = {
       "Talebe göre alev algılama ve gaz çeşitlerine göre üretim yapılır",
       "Bazen küçük detaylar hayat kurtarır..!"
     ],
-    waMsg: "Merhaba Powerbox, kampanya kapsamında 1 adet Powerbox G-C Fişli Gaz Alarm Cihazı (490 TL) sipariş etmek istiyorum. Teslimat ve ödeme detaylarını alabilir miyim?",
+    waMsg: "Merhaba Powerbox, kampanya kapsamında 1 adet Powerbox G-C Fişli Gaz Alarm Cihazı (499 TL) sipariş etmek istiyorum. Teslimat ve ödeme detaylarını alabilir miyim?",
     wholesaleMsg: "Merhaba Powerbox, Powerbox G-C Fişli Gaz Alarm Cihazı için toptan sipariş ve fiyat bilgisi almak istiyorum."
   },
   ga: {
@@ -101,10 +101,10 @@ const PRODUCTS_DATA = {
     fullName: "Powerbox G-A Araç İçi Gaz Alarmı",
     category: "TÜRKİYE'DE İLK VE TEK ARAÇ LPG ALARMI",
     image: "assets/images/urun/ga-arac.png",
-    oldPrice: 900,
-    price: 650,
-    discount: "%28 İndirim",
-    badge: "%28 İndirim",
+    oldPrice: 1100,
+    price: 799,
+    discount: "%27 İndirim",
+    badge: "%27 İndirim",
     wholesaleTip: "Koli ve toptan alımlarda özel iskonto",
     desc: "LPG'li araçlar için üretilen bu ürün bagajda uygun yere koyularak sadece 12V besleme verilerek sabit veya pil kullanarak gaz kokusu endişesinde dedektör olarak kullanılabilir.",
     features: [
@@ -115,7 +115,7 @@ const PRODUCTS_DATA = {
       "Talebe göre alev algılama ve gaz çeşitlerine göre üretim yapılır",
       "Bazen küçük detaylar hayat kurtarır..!"
     ],
-    waMsg: "Merhaba Powerbox, kampanya kapsamında 1 adet Powerbox G-A Araç İçi Gaz Alarmı (650 TL) sipariş etmek istiyorum. Teslimat ve ödeme detaylarını alabilir miyim?",
+    waMsg: "Merhaba Powerbox, kampanya kapsamında 1 adet Powerbox G-A Araç İçi Gaz Alarmı (799 TL) sipariş etmek istiyorum. Teslimat ve ödeme detaylarını alabilir miyim?",
     wholesaleMsg: "Merhaba Powerbox, Powerbox G-A Araç İçi Gaz Alarmı için toptan sipariş ve fiyat bilgisi almak istiyorum."
   },
   kg: {
@@ -124,10 +124,10 @@ const PRODUCTS_DATA = {
     fullName: "Powerbox K-G Karavan & Tekne Gaz Alarmı",
     category: "KARAVAN VE TEKNELERE ÖZEL ALARM",
     image: "assets/images/urun/kg-karavan.png",
-    oldPrice: 980,
-    price: 690,
-    discount: "%30 İndirim",
-    badge: "%30 İndirim",
+    oldPrice: 950,
+    price: 699,
+    discount: "%26 İndirim",
+    badge: "%26 İndirim",
     wholesaleTip: "Koli ve toptan alımlarda özel iskonto",
     desc: "Karavan ve tekne sahiplerine özel olarak tasarlanan bu kompakt ürün montaj ve kablo çekme derdi olmadan seyyar veya yapışkanlı yüzeyi ile montaj sorunu olmadan kolayca kullanılır.",
     features: [
@@ -139,7 +139,7 @@ const PRODUCTS_DATA = {
       "Talebe göre alev algılama ve gaz çeşitlerine göre üretim yapılır",
       "Bazen küçük detaylar hayat kurtarır..!"
     ],
-    waMsg: "Merhaba Powerbox, kampanya kapsamında 1 adet Powerbox K-G Karavan Gaz Alarmı (690 TL) sipariş etmek istiyorum. Teslimat ve ödeme detaylarını alabilir miyim?",
+    waMsg: "Merhaba Powerbox, kampanya kapsamında 1 adet Powerbox K-G Karavan Gaz Alarmı (699 TL) sipariş etmek istiyorum. Teslimat ve ödeme detaylarını alabilir miyim?",
     wholesaleMsg: "Merhaba Powerbox, Powerbox K-G Karavan Gaz Alarmı için toptan sipariş ve fiyat bilgisi almak istiyorum."
   },
   tasarruf: {
@@ -148,10 +148,10 @@ const PRODUCTS_DATA = {
     fullName: "Powerbox Elektrik Tasarruf Cihazı (Ev Tipi Monofaze / Sanayi Özel kW)",
     category: "MONOFAZE EV TİPİ & TRİFAZE SANAYİ",
     image: "assets/images/urun/elektrik-tasarruf.png",
-    oldPrice: 1450,
-    price: 990,
-    discount: "%32 İndirim",
-    badge: "%25 Tasarruf",
+    oldPrice: 690,
+    price: 499,
+    discount: "%28 İndirim",
+    badge: "%28 İndirim",
     wholesaleTip: "İş yeri ve sanayi (trifaze) kW modelleri için özel teklif",
     desc: "Ev tipi monofaze priz ve sigorta bağlantılı mini kompanzasyon cihazı. %25'e varan tasarruf sağlar. Sanayi ve iş yerleri için her kW değerine uygun trifaze özel mühendislik imalatı desteği sunulur.",
     features: [
@@ -161,7 +161,7 @@ const PRODUCTS_DATA = {
       "Sanayi ve ticari işletmeler için kW değerine göre özel imalat desteği",
       "2 Yıl Üretici Garantisi"
     ],
-    waMsg: "Merhaba Powerbox, kampanya kapsamındaki Powerbox Ev Tipi Elektrik Tasarruf Cihazı (990 TL) hakkında sipariş vermek istiyorum.",
+    waMsg: "Merhaba Powerbox, kampanya kapsamındaki Powerbox Ev Tipi Elektrik Tasarruf Cihazı (499 TL) hakkında sipariş vermek istiyorum.",
     wholesaleMsg: "Merhaba Powerbox, işletmemiz / iş yerimiz için sanayi tipi elektrik tasarruf cihazı ve kW değerimize uygun özel fiyat teklifi almak istiyorum."
   },
   ap1: {
@@ -170,10 +170,10 @@ const PRODUCTS_DATA = {
     fullName: "Powerbox AP1 16A Akım Korumalı Priz",
     category: "16A GÜÇLÜ AKIM KORUMALI PRİZ",
     image: "assets/images/urun/ap1.png",
-    oldPrice: 550,
-    price: 370,
-    discount: "%33 İndirim",
-    badge: "%33 İndirim",
+    oldPrice: 990,
+    price: 749,
+    discount: "%24 İndirim",
+    badge: "%24 İndirim",
     wholesaleTip: "Koli ve toptan alımlarda özel iskonto",
     desc: "Rakipleri gibi sadece yüksek voltaja karşı korumaz; ekstra kapasitör haznesi sayesinde voltaj oynamalarını minimize ederek elektronik eşyalarınızın rahat çalışmasını sağlar ve ömrünü uzatır.",
     features: [
@@ -183,7 +183,7 @@ const PRODUCTS_DATA = {
       "Prize doğrudan tak-çalıştır pratik kullanım",
       "2 Yıl Üretici Garantisi"
     ],
-    waMsg: "Merhaba Powerbox, kampanya kapsamında 1 adet Powerbox AP1 Akım Korumalı Priz (370 TL) sipariş etmek istiyorum. Teslimat ve ödeme detaylarını alabilir miyim?",
+    waMsg: "Merhaba Powerbox, kampanya kapsamında 1 adet Powerbox AP1 Akım Korumalı Priz (749 TL) sipariş etmek istiyorum. Teslimat ve ödeme detaylarını alabilir miyim?",
     wholesaleMsg: "Merhaba Powerbox, Powerbox AP1 Akım Korumalı Priz için toptan koli siparişi ve fiyat teklifi almak istiyorum."
   },
   hasere: {
@@ -193,9 +193,9 @@ const PRODUCTS_DATA = {
     category: "220V PRİZE TAK-ÇALIŞTIR ULTRASONİK",
     image: "assets/images/urun/hasere-kovucu.png",
     oldPrice: 690,
-    price: 470,
-    discount: "%32 İndirim",
-    badge: "%32 İndirim",
+    price: 499,
+    discount: "%28 İndirim",
+    badge: "%28 İndirim",
     wholesaleTip: "Koli ve toptan alımlarda özel iskonto",
     desc: "220V prize takılarak kullanılan Powerbox haşere kovucu, yaydığı 19-22 kHz ultrasonik ses dalgaları ile sinek, sivrisinek, fare dahil tüm haşeratı ortamdan uzaklaştırır.",
     features: [
@@ -204,7 +204,7 @@ const PRODUCTS_DATA = {
       "Kimyasal, tablet veya zehir içermez, çevre ve evcil hayvan dostudur",
       "Tak-çalıştır 7/24 kesintisiz koruma sağlar"
     ],
-    waMsg: "Merhaba Powerbox, kampanya kapsamında 1 adet Powerbox Gerçek 22 kHz Haşere Kovucu (470 TL) sipariş etmek istiyorum. Teslimat ve ödeme detaylarını alabilir miyim?",
+    waMsg: "Merhaba Powerbox, kampanya kapsamında 1 adet Powerbox Gerçek 22 kHz Haşere Kovucu (499 TL) sipariş etmek istiyorum. Teslimat ve ödeme detaylarını alabilir miyim?",
     wholesaleMsg: "Merhaba Powerbox, Powerbox Haşere Kovucu için toptan koli siparişi ve iskonto detaylarını öğrenmek istiyorum."
   },
   elektrosok: {
@@ -213,10 +213,10 @@ const PRODUCTS_DATA = {
     fullName: "Powerbox 400 kV Kompakt Elektro Şok Cihazı",
     category: "YÜKSEK GERİLİM & KİŞİSEL GÜVENLİK",
     image: "assets/images/urun/elektrosok.png",
-    oldPrice: 850,
-    price: 590,
-    discount: "%31 İndirim",
-    badge: "%31 İndirim",
+    oldPrice: 990,
+    price: 749,
+    discount: "%24 İndirim",
+    badge: "%24 İndirim",
     wholesaleTip: "Koli ve toptan alımlarda özel iskonto",
     desc: "Kişisel güvenlik ve caydırıcı koruma için özel olarak geliştirilmiş yüksek gerilimli kompakt elektro şok cihazı.",
     features: [
@@ -225,7 +225,7 @@ const PRODUCTS_DATA = {
       "Kişisel savunma, esnaf ve güvenlik görevlileri için pratik caydırıcı çözüm",
       "Dahili şarj edilebilir batarya ve emniyet kilit mekanizması"
     ],
-    waMsg: "Merhaba Powerbox, kampanya kapsamında 1 adet Powerbox 400 kV Elektro Şok Cihazı (590 TL) sipariş etmek istiyorum. Teslimat ve ödeme detaylarını alabilir miyim?",
+    waMsg: "Merhaba Powerbox, kampanya kapsamında 1 adet Powerbox 400 kV Elektro Şok Cihazı (749 TL) sipariş etmek istiyorum. Teslimat ve ödeme detaylarını alabilir miyim?",
     wholesaleMsg: "Merhaba Powerbox, Powerbox Elektro Şok Cihazı için toptan koli siparişi ve fiyat teklifi almak istiyorum."
   },
   demonte: {
@@ -234,19 +234,19 @@ const PRODUCTS_DATA = {
     fullName: "Demonte Devre Kiti & Boş Plastik Kutular",
     category: "GENÇ ÜRETİCİLER & AR-GE",
     image: "assets/images/demonte-kutu-poster.jpg",
-    oldPrice: 350,
-    price: 190,
-    discount: "Özel Fiyat",
-    badge: "Genç Üretici",
-    wholesaleTip: "Toplu okul ve proje alımlarında ekstra destek",
-    desc: "Yetenekli gençlerimiz üretim yapsın, projelerini hayata geçirsin diye demonte devre kitleri ve boş plastik kutular uygun fiyatlarla!",
+    oldPrice: 0,
+    price: 0,
+    discount: "Özel Teklif",
+    badge: "Okul & Proje",
+    wholesaleTip: "Okul ve atölye projelerine özel imalat ve iskonto",
+    desc: "Yetenekli gençlerimiz üretim yapsın, projelerini hayata geçirsin diye demonte devre kitleri ve boş plastik kutular avantajlı proje fiyatlarıyla! Her ürün grubuna özel kit hazırlanır.",
     features: [
-      "Yetenekli gençlerimiz ve öğrenciler için özel uygun fiyat",
+      "Yetenekli gençlerimiz ve öğrenciler için özel proje desteği",
       "Kendi devrenizi kutulamak için yüksek kaliteli plastik kutular",
-      "Demonte devre kartı ve bileşen paketleri",
-      "Powerbox ailesine siz de katılın..!"
+      "Voltaj, gaz, priz ve haşere devrelerine uygun demonte kart ve bileşenler",
+      "Toplu alımlarda teknik doküman ve şema desteği"
     ],
-    waMsg: "Merhaba Powerbox, demonte kit paketleri ve boş plastik kutular hakkında sipariş ve bilgi almak istiyorum.",
+    waMsg: "Merhaba Powerbox, okul ve projelerimiz için demonte devre kitleri ve boş kutular hakkında toptan fiyat teklifi almak istiyorum.",
     wholesaleMsg: "Merhaba Powerbox, demonte kit paketleri ve boş plastik kutular için toplu alım ve proje desteği hakkında görüşmek istiyorum."
   }
 };
@@ -555,10 +555,17 @@ function animateCartButton() {
 
 // ---------------- WHATSAPP DIRECT BUY & CART CHECKOUT ----------------
 function buyProductNow(productId) {
+  if (productId === "demonte") {
+    const msg = "Merhaba Powerbox, okul ve projelerimiz için demonte devre kitleri ve boş plastik kutu talebi hakkında toptan fiyat teklifi almak istiyoruz.";
+    const url = `https://wa.me/${WHATSAPP_INT_NUMBER}?text=${encodeURIComponent(msg)}`;
+    window.open(url, "_blank");
+    return;
+  }
+
   const prod = PRODUCTS_DATA[productId];
   if (!prod) return;
 
-  const msg = `Merhaba Powerbox, lansman kampanyası kapsamında 1 adet *${prod.fullName || prod.title}* (${prod.price.toLocaleString("tr-TR")} TL) indirimli perakende fiyatıyla sipariş etmek istiyorum. Teslimat ve ödeme detaylarını alabilir miyim?`;
+  const msg = prod.waMsg || `Merhaba Powerbox, lansman kampanyası kapsamında 1 adet *${prod.fullName || prod.title}* (${prod.price.toLocaleString("tr-TR")} TL) indirimli perakende fiyatıyla sipariş etmek istiyorum. Teslimat ve ödeme detaylarını alabilir miyim?`;
   const url = `https://wa.me/${WHATSAPP_INT_NUMBER}?text=${encodeURIComponent(msg)}`;
   window.open(url, "_blank");
 }
@@ -993,20 +1000,44 @@ function showCurrentStory() {
     imgEl.alt = story.title;
   }
 
-  // Pricing Elements
-  if (oldPriceEl) {
-    oldPriceEl.textContent = prod ? `${prod.oldPrice.toLocaleString("tr-TR")} TL` : "";
-  }
-  if (priceNowEl) {
-    priceNowEl.textContent = prod ? `${prod.price.toLocaleString("tr-TR")} TL` : "";
-  }
-  if (discountTagEl) {
-    discountTagEl.textContent = prod?.discount || "Lansman İndirimi";
-  }
-  if (wholesaleTipEl) {
-    wholesaleTipEl.textContent = prod?.wholesaleTip 
-      ? `💼 ${prod.wholesaleTip}` 
-      : "💼 Toptan alımlarda koli bazlı özel iskonto uygulanır";
+  // Pricing Elements & Action Buttons
+  const buyBtn = document.getElementById("storyBuyNowBtn");
+  const cartBtn = document.getElementById("storyAddCartBtn");
+
+  if (story.productId === "demonte") {
+    if (oldPriceEl) oldPriceEl.textContent = "";
+    if (priceNowEl) priceNowEl.textContent = "Teklif Usulü";
+    if (discountTagEl) discountTagEl.textContent = "Okul & Proje";
+    if (wholesaleTipEl) wholesaleTipEl.textContent = "💼 Her ürün için özel kit oluşturulur, teklif isteyiniz";
+    if (cartBtn) cartBtn.style.display = "none";
+    if (buyBtn) {
+      buyBtn.innerHTML = `
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.888 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        <span>💼 Proje & Kit Teklifi Al</span>
+      `;
+    }
+  } else {
+    if (oldPriceEl) {
+      oldPriceEl.textContent = prod ? `${prod.oldPrice.toLocaleString("tr-TR")} TL` : "";
+    }
+    if (priceNowEl) {
+      priceNowEl.textContent = prod ? `${prod.price.toLocaleString("tr-TR")} TL` : "";
+    }
+    if (discountTagEl) {
+      discountTagEl.textContent = prod?.discount || "Lansman İndirimi";
+    }
+    if (wholesaleTipEl) {
+      wholesaleTipEl.textContent = prod?.wholesaleTip 
+        ? `💼 ${prod.wholesaleTip}` 
+        : "💼 Toptan alımlarda koli bazlı özel iskonto uygulanır";
+    }
+    if (cartBtn) cartBtn.style.display = "inline-flex";
+    if (buyBtn) {
+      buyBtn.innerHTML = `
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.888 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        <span>Hemen Satın Al</span>
+      `;
+    }
   }
 
   // Key Highlights / Bullet Points
